@@ -1,0 +1,498 @@
+
+#font
+{
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  line-height: 118px;  
+  line-height: 123%;
+  font-style: Semibold ;
+}
+#curve
+{
+  background-image: url('C:\Users\ASUS\Desktop\HoverEffect\my-project\src\images\background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1443px;
+  width: 100%;
+  background-color: #f4f4f4;
+  overflow-x: hidden;  
+  position: relative;
+  left: 0px;
+}
+.container
+{
+  position: relative;
+}
+.top-left
+{
+  position: absolute;
+  left: 5px;
+  font-size: 48px;
+}
+.bottom-right
+{
+position: absolute;
+left: 5px;
+font-size: 96px;
+
+}
+
+
+.lines
+{
+  width: 1000px;
+  height: 45px;
+  position: relative;
+  left: 216px;
+}
+
+.lines::after, .lines::before
+{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #ffffff;
+  width: 100%;
+  top: 45%;
+}
+.lines::after
+{
+  left: 0;
+}
+.lines::before
+{
+  right: 0;
+}
+
+
+
+.one{
+  position: absolute;
+  right: 240px;
+  top : 45px;
+  transform: rotate(0deg);
+ visibility: hidden;
+width: 391px;
+height: 334px;
+
+
+animation-name: none;
+}
+
+#cont:hover .one{
+  visibility: visible;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in;
+ animation-name: moveUp;
+ animation-duration: 0.3s ;
+ animation-timing-function: ease-out;
+
+}
+.two{
+  position: absolute;
+  right: 240px;;
+  top : 270px;
+  transform: rotate(0deg);
+ visibility: hidden;
+width: 391px;
+height: 334px;
+
+
+animation-name: none;
+}
+
+#cont:hover .two{
+  visibility: visible;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in;
+ animation-name: moveUp;
+ animation-duration: 0.3s ;
+ animation-timing-function: ease-out;
+
+}
+.three{
+ position: absolute;
+ right: 240px; 
+  top : 520px;
+  transform: rotate(0deg);
+ visibility: hidden;
+width: 391px;
+height: 334px;
+
+
+animation-name: none;
+}
+
+#cont:hover .three{
+  visibility: visible;
+  transform: rotate(0deg);
+  transition: 0.3s  ease-in;
+ animation-name: moveUp;
+ animation-duration: 0.3s ;
+ animation-timing-function: ease-out;
+
+}
+.four{
+  position: absolute;
+  right: 240px;
+  top : 780px;
+ visibility: hidden;
+width: 391px;
+height: 334px;
+
+
+animation-name: none;
+}
+
+#cont:hover .four{
+  visibility: visible;
+  ;
+  transition: cubic-bezier(.04,.74,.83,.67);
+ animation-name: moveUp;
+ animation-duration: 0.4s ;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.container
+{
+  position: relative;
+}
+.top-left
+{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+
+}
+.bottom-right
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#counter  {
+  position: absolute;
+   top: 115px;
+   left: 216px;
+  height: 3em;
+  overflow: hidden;
+}
+
+
+
+
+
+.digits {
+  float:left;
+  list-style-type: none;
+  font-size: 48px;
+  line-height: 1em;
+}
+
+.digits-first {
+  margin-top: -4em; /* number 4! */
+}
+
+.digits-second {
+  margin-top: 0em; /* number 0! */
+}
+
+.digits-third {
+  margin-top: 0em; /* number 4! */
+}
+
+
+.digits-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+#first:hover .digits-third
+{
+ animation-name: anim;
+ animation-duration: 1.5s;
+ animation-timing-function: ease;
+ animation-delay: 0s;
+ animation-fill-mode: forwards;
+}
+#counter1 {
+  height: 3em;
+  overflow: hidden;
+}
+
+.digit {
+  float:left;
+  list-style-type: none;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.digit-first {
+  margin-top: -4em; /* number 4! */
+}
+
+.digit-second {
+  margin-top: 0em; /* number 0! */
+}
+
+.digit-third {
+  margin-top: 0em; /* number 4! */
+}
+
+
+.digit-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+#second:hover .digit-third
+{
+ animation-name: anim;
+ animation-duration: 1.5s;
+ animation-timing-function: ease;
+ animation-delay: 0s;
+ animation-fill-mode: forwards;
+}
+#font1
+{
+  position: absolute;
+  top: 445px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  line-height: 118px;  
+  line-height: 123%;
+  font-style: Semibold ;
+  left: 216px;
+}
+
+#font2
+{
+  position: absolute;
+  top: 710px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  line-height: 118px;  
+  line-height: 123%;
+  font-style: Semibold ;
+  left: 216px;
+}
+#counter2 {
+  height: 3em;
+  overflow: hidden;
+  position: absolute;
+  left: 216px;
+  top: 660px;
+}
+
+.digit2 {
+  float:left;
+  list-style-type: none;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.digit2-first {
+  margin-top: -4em; /* number 4! */
+}
+
+.digit2-second {
+  margin-top: 0em; /* number 0! */
+}
+
+.digit2-third {
+  margin-top: 0em; /* number 4! */
+}
+
+
+.digit2-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+#third:hover .digit2-third
+{
+ animation-name: anim;
+ animation-duration: 1.5s;
+ animation-timing-function: ease;
+ animation-delay: 0s;
+ animation-fill-mode: forwards;
+}
+
+#font3
+{
+  position: absolute;
+  top: 960px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  line-height: 118px;  
+  line-height: 123%;
+  font-style: Semibold ;
+  left: 216px;
+}
+
+#counter3 {
+  height: 3em;
+  overflow: hidden;
+  position: absolute;
+  left: 216px;
+  top: 910px;
+}
+
+.digit3 {
+  float:left;
+  list-style-type: none;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.digit3-first {
+  margin-top: -4em; /* number 4! */
+}
+
+.digit3-second {
+  margin-top: 0em; /* number 0! */
+}
+
+.digit3-third {
+  margin-top: 0em; /* number 4! */
+}
+
+
+.digit3-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+#fourth:hover .digit3-third
+{
+ animation-name: anim;
+ animation-duration: 1.5s;
+ animation-timing-function: ease;
+ animation-delay: 0s;
+ animation-fill-mode: forwards;
+}
+
+
+/* Animations */
+@keyframes anim {
+ from{transform: translateY(0)}
+ to{transform:  translateY(-50px)}
+} 
+@keyframes animout{
+ from{transform: translateY(-50px)}
+ to{transform:  translateY(0)}   
+
+}
+
+@keyframes moveUp{
+  from{transform: translateY(200px)}
+  to{transform:  translateY(40px)}
+}
+@media screen and (max-width: 1280px) {
+  .one{
+    right: 90px;
+  }
+  .two{
+    right: 90px;
+  }
+  .three{
+    right: 90px;
+  }
+  .four{
+    right: 90px;
+  }
+}
+
+@media  screen and (max-width: 1167px ) {
+  #font{
+    font-size: 60px;
+  }
+  #font1{
+    font-size: 60px;
+  }
+  #font2{
+    font-size: 60px;
+  }
+  #font3{
+    font-size: 60px;
+  }
+  #curve
+  {
+   
+  
+    height: 1443px;
+    width: 1167px;
+    
+    left: 0px;
+  }
+  }
+
+
+  @media screen and (max-width: 980px) {
+#curve
+{
+  width: auto;
+  height: 1443px;
+}
+    
+  }
+
+  @media screen and (max-width: 1137px) {
+    .one{
+      right: 90px;
+    }
+    .two{
+      right: 90px;
+    }
+    .three{
+      right: 90px;
+    }
+    .four{
+      right: 90px;
+    }
+  }
+  @media screen and (max-width: 932px) {
+    .one{
+      right: 50px;
+    }
+    .two{
+      right: 50px;
+    }
+    .three{
+      right:  50px;
+    }
+    .four{
+      right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 877px) {
+  #cont:hover .one{
+      visibility: hidden;
+    }
+    #cont:hover .two{
+      visibility: hidden;
+    }
+    #cont:hover .three{
+      visibility: hidden;
+    }
+    #cont:hover .four{
+      visibility: hidden;
+    }
+  }

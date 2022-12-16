@@ -1,0 +1,17 @@
+.large_circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  pointer-events: none;
+  transition: 0.1s;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 900px ){
+ .overall_cursor{
+    display: none;
+  }
+}
