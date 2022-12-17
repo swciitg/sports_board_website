@@ -8,7 +8,7 @@
 }
 #curve
 {
-  background-image: url('C:\Users\ASUS\Desktop\HoverEffect\my-project\src\images\background1.jpg');
+  background-image: url('../images/background1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 1443px;

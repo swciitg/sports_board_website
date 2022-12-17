@@ -1,0 +1,19 @@
+import About_us from "../components/about_us";
+import Facilities from "../components/facilities";
+import Footer from "../components/Footer";
+import Navbar from "../components/navbar";
+import Team_members from "../components/team_members";
+
+const AquaticsClub = () => {
+    return (
+      <div>
+        <Navbar />
+        <About_us />
+        <Team_members />
+        <Facilities />
+        <Footer />
+       </div> 
+    );
+}
+ 
+export default AquaticsClub;

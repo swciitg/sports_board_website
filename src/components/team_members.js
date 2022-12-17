@@ -1,6 +1,7 @@
 import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
 import Cursor from "./cursor";
+import { MotionConfig } from "framer-motion";
 
 
 
@@ -10,6 +11,7 @@ const Team_members = ()=>{
     let startX;
     let scrollLeft;
     const ref = useRef();
+    const refoverall = useRef();
     const handleMouseDown = (e)=>{ isDown = true; startX=(e.pageX)-ref.current.offsetLeft;scrollLeft = ref.current.scrollLeft;}
     const handleMouseLeave = ()=>{ isDown = false;}
     const handleMouseUp = ()=>{ isDown = false;}
@@ -22,10 +24,18 @@ const Team_members = ()=>{
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; 
     }
+    const handle=(e)=>{
+      window.addEventListener('scroll',()=>{
+        console.log(refoverall.current.style)
+        console.log(refoverall.current.style.backgroundSize)
+        let v=100+(window.pageYOffset)/20;
+        refoverall.current.style.backgroundSize= 100 + '%'+ " "+v+'%';
+      })
+    }
     return(
         <>
          <Cursor />
-        <div className="team_blockoverall" ref={ref}>
+        <div className="team_blockoverall" ref={refoverall} onMouseEnter={handle}>
         <div className="team_block"  onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} >
           <div className="containerteam1">
             <div className="containerteam2">
@@ -38,8 +48,8 @@ const Team_members = ()=>{
               </div>
             </div>
           </div>
-          
-            <div className="gridcontainer">
+            <div ref={ref} className="flex overflow-x-hidden cursor-grab">
+            <div className="gridcontainer cursor-grab">
               <div className="imggrid">
               <img src={img1} className="gridimg" alt=""/>
               <img src={img1} className="gridimg" alt=""/>
@@ -61,6 +71,7 @@ const Team_members = ()=>{
               <img src={img1} className="gridimg" alt=""/>  
               </div>
             </div>
+           </div>
           </div>
         </div>
         <div className="smoverallcontainer_team">

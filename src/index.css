@@ -20,7 +20,7 @@ code {
     monospace;
 }
 
-.about_block{
+.about_block,.clubrng_block{
  /* background-image: url('./images/teams.png'); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,9 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
 }
-
+.clubrng_block{
+  background-image: url('./images/teams.png');
+}
 
 .team_blockoverall{
   background-image: url('./images/teams.png'); 
@@ -41,7 +43,7 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
   flex-direction: row;
-  overflow-x: hidden;
+  background-size: 100% 200%;
 }
 .team_blockoverall::-webkit-scrollbar,.facilities_blockoverall::-webkit-scrollbar,.smgrid::-webkit-scrollbar{
   display: none;
@@ -57,12 +59,13 @@ code {
   column-gap: 20px;
   background-color: #7BB9C4;
   overflow-x: hidden;
+  background-size: 100% 200%;
 }
 .team_block{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
-  cursor:grab;
+  
 }
 .about_block{
   display: grid;
@@ -72,7 +75,7 @@ code {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
-  cursor:grab;
+  
 }
 
 .head_about{

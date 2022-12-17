@@ -8,12 +8,18 @@ const Cursor = ({ scaling }) => {
 
   useEffect(() => {
     const mousemove = (e) => {
-      setlargecircle({ x: e.clientX, y: e.clientY ,opacity:0.9 });
+      const targ=e.target.className;
+      if((targ == "imggrid")|| (targ == "gridimg")|| (targ == "flex overflow-x-hidden cursor-grab")){
+        setlargecircle({ x: e.clientX, y: e.clientY ,opacity:0.9 });
+      }
+      else{
+        setlargecircle({x:0 ,y:0, opacity: 0 });
+      }
+      
  
     };
     window.addEventListener("mousemove", mousemove);
     const pagemove = (e) => {
-      console.log(e);
       setlargecircle({x:0 ,y:0, opacity: 0 });
     }
     window.addEventListener("scroll",pagemove)

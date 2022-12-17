@@ -2,6 +2,7 @@ import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
 import Cursor from "./cursor";
 const Facilities = ()=>{
+  const refoverall=useRef();
   let isDown = false;
     let startX;
     let scrollLeft;
@@ -17,10 +18,18 @@ const Facilities = ()=>{
       /*console.log({x,startX});
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; }
+      const handle=(e)=>{
+        window.addEventListener('scroll',()=>{
+          console.log(refoverall.current.style)
+          console.log(refoverall.current.style.backgroundSize)
+          let v= 150+(window.pageYOffset)/10;
+          refoverall.current.style.backgroundSize= 100 + '%'+ " "+v+'%';
+        })
+      }
     return(
       <>
       <Cursor />
-    <div className="facilities_blockoverall" ref={ref}>
+    <div className="facilities_blockoverall"ref={refoverall} onMouseEnter={handle}>
       <div className="facilities_block " onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
           <div className="containerteam1">
             <div className="containerteam2">
@@ -33,7 +42,8 @@ const Facilities = ()=>{
                 </div>
             </div>
           </div>
-          <div className="gridcontainer">
+        <div ref={ref} className="flex overflow-x-hidden "> 
+          <div className="gridcontainer cursor-grab">
               <div className="imggrid">
               <img src={img1} className="gridimg" alt=""/>
               <img src={img1} className="gridimg" alt=""/>
@@ -55,6 +65,7 @@ const Facilities = ()=>{
               <img src={img1} className="gridimg" alt=""/>  
               </div>
             </div>
+          </div> 
       </div>
     </div>
       <div className="smoverallConatiner_facilities">

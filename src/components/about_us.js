@@ -1,8 +1,19 @@
 import img1 from "../images/about_icon.png";
+import React , { useRef }from "react";
+
 const About_us = ()=>{
+    const refoverall = useRef();
+    const handle=(e)=>{
+        window.addEventListener('scroll',()=>{
+          console.log(refoverall.current.style)
+          console.log(refoverall.current.style.backgroundSize)
+          let v=100+(window.pageYOffset)/20;
+          refoverall.current.style.backgroundSize= 100 + '%'+ " "+v+'%';
+        })
+      }
     return(
         <>
-        <div className="about_block"  >
+        <div className="about_block" ref={refoverall} onMouseEnter={handle} >
             <div className="container1">
                 <div >
                     <img src={img1} className="img1" alt="" />

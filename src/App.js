@@ -1,9 +1,13 @@
-import Homepage from "./homepage";
+import BasketballClub from "./pages/basketballClub";
+import Homepage from "./pages/homepage";
 
 function App() {
   return (
-    <div className="App">
+   /* <div className="App">
       <Homepage />
+    </div>*/
+    <div>
+      <BasketballClub />
     </div>
   );
 }
