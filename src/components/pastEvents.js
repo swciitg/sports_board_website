@@ -3,38 +3,38 @@ const PastEvents = () => {
     return ( 
         <div className="events_overall">
             <div className="grid grid-rows-2 gap-y-32">
-            <div className="pasteventsContainer1">
-            <div className="flex flex-col pr-6">
-                <div className="head_about">Past Events</div>
-                    <p className="para_about">
-                    <ul className="para_about">
-                    <li>Inter IIT: The primary goal of every sports club of the IIT (annual event).</li>
-                    <li>Basketball Spardha: Inter hostel competition (annual event)</li>
-                    <li>Basketball Spirit: Inter college competition (annual event)</li>
-                    <li>Friendly Matches : Held at regular intervals against the local clubs.</li>
-                    </ul> 
-                    </p>
-                </div>
-                <div>
-                    <img src={img1} className="img1" alt="" />
-                </div>
-            </div>
-            <div className="pasteventsContainer2">
-                <div className="flex flex-row-reverse">
-                    <img src={img1} className="img1" alt="" />
-                </div>
-                <div className="flex flex-col pl-6">
-                <div className="head_about">Acheivements.</div>
-                    <p className="para_about">
+                <div className="pasteventsContainer1">
+                <div className="flex flex-col">
+                    <div className="head_about max-sm:text-3xl ">Past Events</div>
+                        <p className="para_about">
                         <ul className="para_about">
                         <li>Inter IIT: The primary goal of every sports club of the IIT (annual event).</li>
                         <li>Basketball Spardha: Inter hostel competition (annual event)</li>
                         <li>Basketball Spirit: Inter college competition (annual event)</li>
                         <li>Friendly Matches : Held at regular intervals against the local clubs.</li>
                         </ul> 
-                    </p>
+                        </p>
+                    </div>
+                    <div>
+                        <img src={img1} className="img1" alt="" />
+                    </div>
                 </div>
-            </div>
+                <div className="pasteventsContainer2">
+                    <div className="flex flex-row-reverse">
+                        <img src={img1} className="img1" alt="" />
+                    </div>
+                    <div className="flex flex-col pl-6 max-[900px]:pl-0 ">
+                    <div className="head_about max-sm:text-3xl ">Acheivements.</div>
+                        <p className="para_about">
+                            <ul className="para_about">
+                            <li>Inter IIT: The primary goal of every sports club of the IIT (annual event).</li>
+                            <li>Basketball Spardha: Inter hostel competition (annual event)</li>
+                            <li>Basketball Spirit: Inter college competition (annual event)</li>
+                            <li>Friendly Matches : Held at regular intervals against the local clubs.</li>
+                            </ul> 
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
      );

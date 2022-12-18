@@ -30,6 +30,8 @@ const Team_members = ()=>{
         console.log(refoverall.current.style.backgroundSize)
         let v=100+(window.pageYOffset)/20;
         refoverall.current.style.backgroundSize= 100 + '%'+ " "+v+'%';
+        
+
       })
     }
     return(

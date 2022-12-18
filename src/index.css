@@ -59,7 +59,6 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
   flex-direction: row;
-
 }
 .team_blockoverall::-webkit-scrollbar,.facilities_blockoverall::-webkit-scrollbar,.smgrid::-webkit-scrollbar{
   display: none;
@@ -75,6 +74,9 @@ code {
   column-gap: 20px;
   background-color: #7BB9C4;
   overflow-x: hidden;
+  transition-delay: 1s;
+  transition-duration: 2s;
+
 }
 .team_block{
   display: grid;
@@ -116,6 +118,7 @@ code {
   font-weight: bolder;
   font-family: 'Merriweather', serif;
   font-size: 50px;
+  text-transform: uppercase;
 }
 .container1{
   display: flex;
@@ -277,16 +280,35 @@ code {
 
  
 @media screen and (max-width: 900px ){
-  .about_block,.facilities_blockoverall,.team_blockoverall{
+  .about_block,.cnrg_overall,.facilities_blockoverall,.team_blockoverall{
     display: none;
   }
   .gridimg{
     height: 50%;
     width: 70%;
   }
+  .events_overall{
+    height: 1600px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  .pasteventsContainer1,.pasteventsContainer2{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  .pasteventsContainer2{
+    flex-direction: column;
+  }
+  .pasteventsContainer1{
+    flex-direction: column-reverse;
+  }
 }
 
-.smabout_block,.smteam_block,.smfacilities_block{
+.smabout_block,.smteam_block,.smfacilities_block,.smcnrg_block{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +317,7 @@ code {
   padding-left: 10%;
   padding-top: 10%;
 }
-.smabout_block{
+.smabout_block,.smcnrg_block{
   padding-bottom: 10%;
 }
 .smabout_block{
@@ -309,7 +331,7 @@ code {
 .smoverallConatiner_facilities{
       background-color: #7BB9C4;
 }
-.smoverallcontainer_team{
+.smoverallcontainer_team,.smcnrg_overall{
   background-image: url('./images/smallteams.png'); 
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,9 +348,10 @@ code {
 }
 
 @media screen and (min-width: 900px ){
-  .smabout_block,.smoverallConatiner_facilities,.smoverallcontainer_team{
+  .smabout_block,.smoverallConatiner_facilities,.smoverallcontainer_team,.smcnrg_overall{
     display: none;
   }
+
  
 }
 
