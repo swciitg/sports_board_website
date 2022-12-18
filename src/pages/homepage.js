@@ -10,10 +10,10 @@ function pages() {
     <div className="App">
       <Navbar />
       <About_us />
-      <Team_members />
-      <Facilities />
       <Event/>
-      <Footer></Footer>
+      <Facilities />
+      <Team_members />
+      <Footer />
     </div>
   );
 }

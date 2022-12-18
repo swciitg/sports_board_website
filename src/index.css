@@ -20,7 +20,7 @@ code {
     monospace;
 }
 
-.about_block,.clubrng_block{
+.about_block{
  /* background-image: url('./images/teams.png'); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,10 +30,26 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
 }
-.clubrng_block{
+.cnrg_overall{
   background-image: url('./images/teams.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 1000px;
+  width:100%;
+  align-items: center; 
+  background-color: #f4f4f4;
 }
-
+.events_overall{
+  background-image: url('./images/smallunion.png'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1400px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #7BB9C4;
+}
 .team_blockoverall{
   background-image: url('./images/teams.png'); 
   background-repeat: no-repeat;
@@ -43,7 +59,7 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
   flex-direction: row;
-  background-size: 100% 200%;
+
 }
 .team_blockoverall::-webkit-scrollbar,.facilities_blockoverall::-webkit-scrollbar,.smgrid::-webkit-scrollbar{
   display: none;
@@ -59,13 +75,30 @@ code {
   column-gap: 20px;
   background-color: #7BB9C4;
   overflow-x: hidden;
-  background-size: 100% 200%;
 }
 .team_block{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
   
+}
+.crng_block{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  width:100%;
+  padding-left: 10%;
+  padding-right: 2%;
+}
+.pasteventsContainer1{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-left: 10%;
+  padding-right: 2%;
+}
+.pasteventsContainer2{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding-left: 10%;
 }
 .about_block{
   display: grid;
@@ -93,6 +126,7 @@ code {
   padding-right: 4%;
   font-size: 20px;
 }
+
 .containerteam1{
   display: flex;
   flex-direction: row;
