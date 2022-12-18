@@ -294,6 +294,8 @@ code {
     padding-right: 10%;
     padding-left: 10%;
     padding-top: 10%;
+    background-image: url('./images/smallunion.png');
+    background-size: 100% 100%;
   }
   .pasteventsContainer1,.pasteventsContainer2{
     display: flex;
