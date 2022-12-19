@@ -18,6 +18,19 @@
  
     font-family: 'Familjen Grotesk';
    }
+   #two
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #three
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #four
+   {
+    font-family: 'Familjen Grotesk';
+   }
+
    @media screen and (max-width:880px) {
     #part2
     {
@@ -30,6 +43,18 @@
       {
           font-size: 12px;
       } 
+      #two
+      {
+          font-size: 12px;
+      }
+      #three
+      {
+          font-size: 12px;
+      }
+      #four
+      {
+          font-size: 12px;
+      }
       #img
       {
          width: 150px;
@@ -77,4 +102,68 @@
             position: absolute;
             left: 320px;
          }
+   }
+
+   @media screen and (max-width:390px) {
+    #img{
+       width:107.42px;
+       height: 115px;
+    }
+    #head
+    {
+        font-size: 25px;
+    }
+   #img1
+   {
+    width: 52.25px;
+    height: 52.25px;
+   }
+   #img3
+   {
+    width: 43px;
+    height: 46px;
+   
+   }
+   .heading
+   {
+    flex-direction: column;
+   }
+ 
+   #small
+   {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+   }
+  
+   #container
+   {
+    height: 443px;
+   }
+   #one
+   {
+    font-size: 14px;
+    position: absolute;
+    top: 235px;
+    left: -170px;
+   }
+   #two
+   {
+    font-size: 14px;
+    position: absolute;
+    top: 300px;
+    left: -170px;
+   }
+    #part2
+    {
+        position: absolute;
+        width: 158px;
+        left: 240px;
+        margin-top: 240px;
+    }
+   #imglast
+   {
+    visibility: hidden;
+   }
+
    }
