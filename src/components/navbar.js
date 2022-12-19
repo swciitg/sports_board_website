@@ -46,8 +46,8 @@ const Navbar = () => {
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Clubs</a>
+            <a href="#contact">Events</a>
             <a href="#contact">Contact</a>
              </div>
             </div>
