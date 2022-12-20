@@ -8,7 +8,10 @@ import "aos/dist/aos.css";
 import './clubs.css';
 import { useEffect } from 'react';
 import {motion} from 'framer-motion';
+
 import  fullHori from '../images/fullHori.svg';
+
+
 
 
 
@@ -125,7 +128,7 @@ window.addEventListener('scroll',() => {
 
   <div class="flex flex-row w-screen justify-evenly items-center " >
     <div class="w-1/3 m-8 flex flex-col gap-y-36 items-center justify-evenly ">
-    <motion.div class="group relative "
+   <motion.div class="group relative "
          initial={{opacity:0, y:50,}} 
          whileInView={{opacity:1,y:10}}    
          transition={{
@@ -135,7 +138,7 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
-         <img  data-aos="fade-up" class="mt-60 "   src={vert} alt ="my aqua team"/>
+          <img  data-aos="fade-up" class="mt-60 "   src={vert} alt ="my aqua team"/>
          <div class="text-xl md:text-2xl lg:text-3xl absolute top-60 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold">
           AQUATICS CLUB
         </div>
@@ -155,7 +158,7 @@ window.addEventListener('scroll',() => {
         }}
         whileHover={{scale:1.05}}
         viewport={{amount:0.25}}>
-     <img data-aos="fade-up"  class=""  src={hori} alt ="my aqua team"/>
+         <img data-aos="fade-up"  class=""  src={hori} alt ="my aqua team"/>
         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
           ATHELETICS CLUB
@@ -338,18 +341,23 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
+
          <img data-aos="fade-up" class="  "   src={vert} alt ="my aqua team"/>
-         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         
+
+         
+         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-14 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
           TABLE TENNIS CLUB
         </motion.div>
         <div class="text-4xl md:text-7xl lg:text-8xl absolute bottom-3 right-2 text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500">
           08
         </div>
+     
      </motion.div>
 
      <motion.div class="relative group"
-         initial={{opacity:0, y:50,}} 
+         initial={{opacity:0, y:50}} 
          whileInView={{opacity:1,y:10}}    
          transition={{
            ease:"easeIn",

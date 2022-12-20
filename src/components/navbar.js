@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [open,setOpen] = useState(false);
 
@@ -8,10 +9,16 @@ const Navbar = () => {
     <div>
               <div className="nav">
                  <div className="topnav">
-                <a className="active" href="#home">Contacts</a>
-                <a href="#news">Events</a>
-                <a href="#contact">Clubs</a>
-                <a href="#about">Home</a>
+                  <NavLink  to="/"   style={isActive => ({
+    color: isActive ? "white" : "blue"})}> Home </NavLink>
+                  <NavLink to="/events" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Events</NavLink>
+                  <NavLink to="/clubs" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Clubs</NavLink>
+                  <NavLink to="/contacts" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Contacts</NavLink>
+             
+             
                
                </div>
 
@@ -45,10 +52,15 @@ const Navbar = () => {
 
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">Clubs</a>
-            <a href="#contact">Events</a>
-            <a href="#contact">Contact</a>
+            <NavLink  to="/"   style={isActive => ({
+    color: isActive ? "green" : "black"})}> Home </NavLink>
+                  <NavLink to="/events" style={isActive => ({
+    color: isActive ? "green" : "black"})}>Events</NavLink>
+                  <NavLink to="/clubs" style={isActive => ({
+    color: isActive ? "green" : "black"})}>Clubs</NavLink>
+                  <NavLink to="/contacts" style={isActive => ({
+    color: isActive ? "green" : "black"})}>Contacts</NavLink>
+             
              </div>
             </div>
         </div>
