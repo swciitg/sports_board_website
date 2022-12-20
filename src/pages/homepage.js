@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Event from "../components/event";
 
 function pages() {
-  return (
+  return(
     <div className="App">
       <Navbar />
       <About_us />

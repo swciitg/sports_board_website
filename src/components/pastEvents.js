@@ -23,7 +23,7 @@ const PastEvents = () => {
                     <div className="flex flex-row-reverse">
                         <img src={img1} className="img1" alt="" />
                     </div>
-                    <div className="flex flex-col pl-6 max-[900px]:pl-0 ">
+                    <div className="flex flex-col max-pd ">
                     <div className="head_about max-sm:text-3xl ">Acheivements.</div>
                         <p className="para_about">
                             <ul className="para_about">

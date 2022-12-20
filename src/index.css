@@ -294,6 +294,8 @@ code {
     padding-right: 10%;
     padding-left: 10%;
     padding-top: 10%;
+    background-image: url('./images/smallunion.png');
+    background-size: 100% 100%;
   }
   .pasteventsContainer1,.pasteventsContainer2{
     display: flex;
@@ -306,6 +308,7 @@ code {
   .pasteventsContainer1{
     flex-direction: column-reverse;
   }
+  
 }
 
 .smabout_block,.smteam_block,.smfacilities_block,.smcnrg_block{
@@ -351,7 +354,9 @@ code {
   .smabout_block,.smoverallConatiner_facilities,.smoverallcontainer_team,.smcnrg_overall{
     display: none;
   }
-
+  .max-pd{
+    padding-left: 24px;
+  }
  
 }
 
