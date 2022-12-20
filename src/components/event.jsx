@@ -10,8 +10,8 @@ return(
      <div id="first" className="flex flex-col ">
      <div className='flex flex-col  ' >
      <div id="counter" class="animated">
-               <ul class="digits digits-third luckie"> <li> 0</li> <li> 0</li><li>0</li> </ul>
-               <ul class="digits digits-third luckie"> <li> 1 </li><li> 1</li> <li>0</li></ul>
+               <ul id="digit" class="digits digits-third luckie"> <li> 0</li> <li> 0</li> </ul>
+               <ul id="digit" class="digits digits-third luckie"> <li> 1 </li><li> 1</li> </ul>
            </div>
     <h1 id="font" className="text-8xl absolute left-52">SPARDHA</h1>
      </div>
@@ -30,8 +30,8 @@ return(
       <div>
       <div id="counter1" class="animated absolute left-52">
                
-               <ul class="digit digit-third luckie"> <li> 0</li> <li> 0</li></ul>
-               <ul class="digit digit-third luckie"> <li> 2</li> <li> 2</li></ul>
+               <ul id="digit" class="digit digit-third luckie"> <li> 0</li> <li> 0</li></ul>
+               <ul id="digit" class="digit digit-third luckie"> <li> 2</li> <li> 2</li></ul>
            </div>
     <h1 id="font1" className="text-8xl ">INTER IIT</h1>
     </div>
@@ -50,8 +50,8 @@ return(
     <div>
     <div id="counter2" class="animated">
                
-               <ul class="digit2 digit2-third luckie"> <li> 0</li> <li> 0</li></ul>
-               <ul class="digit2 digit2-third luckie"> <li> 3</li> <li> 3</li></ul>
+               <ul id="digit" class="digit2 digit2-third luckie"> <li> 0</li> <li> 0</li></ul>
+               <ul id="digit" class="digit2 digit2-third luckie"> <li> 3</li> <li> 3</li></ul>
            </div>
     <h1 id="font2" className="text-8xl  ">SPIRIT</h1>
     </div>
@@ -69,8 +69,8 @@ return(
     <div>
     <div id="counter3" class="animated">
                
-               <ul class="digit3 digit3-third luckie"> <li> 0 </li><li> 0</li></ul>
-               <ul class="digit3 digit3-third luckie"> <li> 4</li>  <li> 4</li></ul>
+               <ul id="digit" class="digit3 digit3-third luckie"> <li> 0 </li><li> 0</li></ul>
+               <ul id="digit" class="digit3 digit3-third luckie"> <li> 4</li>  <li> 4</li></ul>
            </div>
     <h1 id="font3" className="text-8xl  ">MANTHAN</h1>
     </div>
