@@ -13,6 +13,7 @@ function pages() {
       <Event/>
       <Facilities />
       <Team_members />
+     
       <Footer />
     </div>
   );
