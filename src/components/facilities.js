@@ -1,6 +1,7 @@
 import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
 import Cursor from "./cursor";
+import { NavLink } from "react-router-dom";
 const Facilities = ()=>{
   const refoverall=useRef();
   let isDown = false;
@@ -45,7 +46,7 @@ const Facilities = ()=>{
         <div ref={ref} className="flex overflow-x-hidden "> 
           <div className="gridcontainer cursor-grab">
               <div className="imggrid">
-              <img src={img1} className="gridimg" alt=""/>
+              <img src={img1} className="gridimg" alt=""/> 
               <img src={img1} className="gridimg" alt=""/>
               <img src={img1} className="gridimg" alt=""/>
               <img src={img1} className="gridimg" alt=""/>

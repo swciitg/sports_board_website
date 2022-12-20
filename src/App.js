@@ -7,7 +7,14 @@ import { Route , Routes} from "react-router-dom";
 function App() {
   return (
    <div className="App">
-      <ClubPages/>
+     <Routes>
+   <Route   path='/' element={<Homepage />} />
+        <Route   path='/clubs' element={< ClubPages/>} />
+        <Route   path='/events'  />
+          <Route path='/clubs/basketball' element={<BasketballClub />} />
+          <Route path='/basketball' element={<AquaticsClub />} />
+   </Routes>
+   
     </div>
 
   );
