@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open,setOpen] = useState(false);
 
@@ -8,10 +9,12 @@ const Navbar = () => {
     <div>
               <div className="nav">
                  <div className="topnav">
-                <a className="active" href="#home">Contacts</a>
-                <a href="#news">Events</a>
-                <a href="#contact">Clubs</a>
-                <a href="#about">Home</a>
+                  <Link to="/">Home</Link>
+                  <Link to="/clubs">Events</Link>
+                  <Link to="/events">Clubs</Link>
+                  <Link to="/contacts">Contacts</Link>
+             
+             
                
                </div>
 
