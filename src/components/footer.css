@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
+
+
+.h1{
+ 
+    font-family: 'Fira Sans Extra Condensed';
+    
+    
+    }
+   #head
+   {
+    font-family: 'Fira Sans Extra Condensed';
+    
+   } 
+
+   #one{
+ 
+    font-family: 'Familjen Grotesk';
+   }
+   #two
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #three
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #four
+   {
+    font-family: 'Familjen Grotesk';
+   }
+
+   @media screen and (max-width:880px) {
+    #part2
+    {
+        position: absolute;
+        left: 550px;
+    }
+   }
+   @media screen and (max-width:726px) {
+      #one
+      {
+          font-size: 12px;
+      } 
+      #two
+      {
+          font-size: 12px;
+      }
+      #three
+      {
+          font-size: 12px;
+      }
+      #four
+      {
+          font-size: 12px;
+      }
+      #img
+      {
+         width: 150px;
+         height: 150px;
+      }   
+      #img1
+       {
+          width: 25px;
+          height: 25px;
+       }
+       #head
+       {
+        font-size: 20px;
+       }
+       #part1
+       {
+        position: absolute;
+        left: 5px;
+       }
+       #part3
+       {
+        position: absolute;
+        left: 150px;
+       }
+       #small
+       {
+        position: absolute;
+        top: 160px;
+        left: 2px;
+       }
+       #part2
+    {
+        
+        left: 400px;
+    }
+    #img3
+    {
+        width: 45px;
+        height: 45px;
+    }
+   }
+   @media screen and (max-width:538px) {
+         #part2
+         {
+            position: absolute;
+            left: 320px;
+         }
+   }
+
+   @media screen and (max-width:390px) {
+    #img{
+       width:107.42px;
+       height: 115px;
+    }
+    #head
+    {
+        font-size: 25px;
+    }
+   #img1
+   {
+    width: 52.25px;
+    height: 52.25px;
+   }
+   #img3
+   {
+    width: 43px;
+    height: 46px;
+   
+   }
+   .heading
+   {
+    flex-direction: column;
+   }
+ 
+   #small
+   {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+   }
+  
+   #container
+   {
+    height: 443px;
+   }
+   #one
+   {
+    font-size: 14px;
+    position: absolute;
+    top: 235px;
+    left: -170px;
+   }
+   #two
+   {
+    font-size: 14px;
+    position: absolute;
+    top: 300px;
+    left: -170px;
+   }
+    #part2
+    {
+        position: absolute;
+        width: 158px;
+        left: 240px;
+        margin-top: 240px;
+    }
+   #imglast
+   {
+    visibility: hidden;
+   }
+
+   }
