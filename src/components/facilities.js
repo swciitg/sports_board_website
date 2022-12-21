@@ -3,7 +3,6 @@ import React , { useRef }from "react";
 import Cursor from "./cursor";
 import { NavLink } from "react-router-dom";
 const Facilities = ()=>{
-  const refoverall=useRef();
   let isDown = false;
     let startX;
     let scrollLeft;
@@ -19,18 +18,11 @@ const Facilities = ()=>{
       /*console.log({x,startX});
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; }
-      const handle=(e)=>{
-        window.addEventListener('scroll',()=>{
-          console.log(refoverall.current.style)
-          console.log(refoverall.current.style.backgroundSize)
-          let v= 150+(window.pageYOffset)/10;
-          refoverall.current.style.backgroundSize= 100 + '%'+ " "+v+'%';
-        })
-      }
+
     return(
       <>
       <Cursor />
-    <div className="facilities_blockoverall"ref={refoverall} onMouseEnter={handle}>
+    <div className="facilities_blockoverall">
       <div className="facilities_block " onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
           <div className="containerteam1">
             <div className="containerteam2">
