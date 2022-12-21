@@ -21,26 +21,30 @@ text-align: center;
 background-image: url('./images/hm.png');
 background-size:100% 100%;
 background-repeat: no-repeat;
-background-size: cover;
+
 
 }
 .topnav {
   
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   overflow: hidden;
-  min-width: 100%;
+ 
 min-height: 850px;
+padding-right: 80px;
 }
 .topnav a {
   float: right;
   color: #f2f2f2;
   text-align:left ;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
+  font-size: 2.5vh;
+  padding: 1vh;
  box-sizing: border-box;
   box-shadow: rgb(248, 242, 242);/*
   border-radius: 3cm;*/
+  margin-right: 40px;
+  margin-top:35px;
 }
 .topnav a:hover {
    color: rgb(89, 89, 250);
@@ -53,7 +57,7 @@ width: 86px;
 height: 92px;
 left: 180px;
 top: 2px;
-text-align: right;
+text-align:left;
 
 
 /*right:left;*/
@@ -71,10 +75,10 @@ text-align: right;
 .find .inactive{
 
   position: absolute;
-  width: 110px;
+  
   height: 60px;
-  left: 80px;
-  top: 2px;
+  left: 93px;
+  top: 4px;
   
   font-family: 'Fira Sans Extra Condensed';
   font-style: normal;
@@ -82,7 +86,7 @@ text-align: right;
   font-size: 16px;
   line-height: 123%;
   /* or 20px */
-  
+  text-align: left;
   letter-spacing: -0.02em;
   
   color: #FFFFFF;
@@ -93,7 +97,7 @@ text-align: right;
 position :absolute;
 display:flex;
 flex-direction: column;
-top: 200px;
+top: 300px;
 
 margin-left:auto;
 margin-right:auto;
@@ -120,7 +124,7 @@ width:100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow:ellipsis;
-  
+  -webkit-text-size-adjust: 100%;
   margin-bottom: 0px;
   text-transform: uppercase;
   
@@ -132,14 +136,14 @@ width:100%;
  position: relative;
   width: 751px;
   height: 157px;
-  left: 99px;
-  top: 71px;
-
+  left: 86px;
+  top: 65px;
+  -webkit-text-size-adjust: 100%;
   white-space: nowrap;
   font-family: 'Familjen Grotesk';
   font-style: normal;
   font-weight: 100;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 123%;
   /* identical to box height, or 16px */
   
@@ -156,10 +160,10 @@ margin-top: 20px;
 font-family: 'Familjen Grotesk';
 font-style: normal;
 font-weight: 400;
-font-size: 3vw;
+font-size: 2vw;
 line-height: 13%;
 /* or 49px */
-
+-webkit-text-size-adjust: 100%;
 
 color: #FFFFFF;
 }
@@ -305,12 +309,12 @@ width: 100%;
   font-family: 'Fira Sans Extra Condensed';
   font-style: normal;
   font-weight: 600;
-  font-size: 9vw;
+  font-size: 11vw;
   
 text-transform: uppercase;
 
 color: #FFFFFF;
-
+-webkit-text-size-adjust: 100%;
 }
  .bodysss{
   color: #FFFFFF;
@@ -320,14 +324,17 @@ color: #FFFFFF;
   font-size: 4vw;
   line-height: 123%;
  top:20px;
+text-align-last: center;
+ overflow:visible;
+ -webkit-text-size-adjust: 100%;
 }
 
 
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #07c07c;
   opacity:1;
   color: white;
-  padding: 3px;
+  padding: 6px;
   
   border: none;
  

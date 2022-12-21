@@ -9,6 +9,9 @@ import './clubs.css';
 import { useEffect } from 'react';
 import {motion} from 'framer-motion';
 
+import  fullHori from '../images/fullHori.svg';
+
+
 
 
 
@@ -30,7 +33,7 @@ const Clubs = () => {
   
   useEffect(() => {
     const handleScroll = (event) => {
-      const value = window.scrollY/4650;
+      const value = (-2000) +    (window.scrollY)/4650 ;
       animate_svg_on_scroll(value);
     };
 
@@ -116,7 +119,7 @@ window.addEventListener('scroll',() => {
   return (
 
    
-<div>  
+<div class="bg-neutral-100">  
 <div class=" flex justify-center w-full  geet1 relative" data-aos-easing="ease" w-full>
           
     <svg  class=" absolute  pt-40  md:pt-16 w-3/5  h-auto lg:w-auto border-dashed"  width="738" height="3322" viewBox="0 0 738 3322" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +128,7 @@ window.addEventListener('scroll',() => {
 
   <div class="flex flex-row w-screen justify-evenly items-center " >
     <div class="w-1/3 m-8 flex flex-col gap-y-36 items-center justify-evenly ">
-    <motion.div class="group relative "
+   <motion.div class="group relative "
          initial={{opacity:0, y:50,}} 
          whileInView={{opacity:1,y:10}}    
          transition={{
@@ -135,7 +138,7 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
-         <img  data-aos="fade-up" class="mt-60 "   src={vert} alt ="my aqua team"/>
+          <img  data-aos="fade-up" class="mt-60 "   src={vert} alt ="my aqua team"/>
          <div class="text-xl md:text-2xl lg:text-3xl absolute top-60 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold">
           AQUATICS CLUB
         </div>
@@ -155,7 +158,7 @@ window.addEventListener('scroll',() => {
         }}
         whileHover={{scale:1.05}}
         viewport={{amount:0.25}}>
-     <img data-aos="fade-up"  class=""  src={hori} alt ="my aqua team"/>
+         <img data-aos="fade-up"  class=""  src={hori} alt ="my aqua team"/>
         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
           ATHELETICS CLUB
@@ -218,8 +221,8 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
-         <img  data-aos="fade-up" class="mt-60 "   src={vert} alt ="my aqua team"/>
-         <div class="text-xl md:text-2xl lg:text-3xl absolute top-60 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold">
+         <img  data-aos="fade-up" class=" "   src={vert} alt ="my aqua team"/>
+         <div class="text-xl md:text-2xl lg:text-3xl absolute top-4 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold">
           FOOTBALL CLUB
         </div>
         <div class="text-4xl md:text-7xl lg:text-8xl absolute bottom-3 right-2 text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500">
@@ -261,8 +264,8 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
-         <img data-aos="fade-up" class="  "   src={hori} alt ="my aqua team"/>
-         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         <img data-aos="fade-up" class=" mt-36 "   src={hori} alt ="my aqua team"/>
+         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-36 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
           BASKETBALL CLUB
         </motion.div>
@@ -327,15 +330,8 @@ window.addEventListener('scroll',() => {
           07
         </div>
      </motion.div>
-    </div>
-  </div>
-</div>
 
-<div class=" geet2   ">
-
-   
-    
-      <motion.div class="relative group"
+     <motion.div class="relative group"
          initial={{opacity:0, y:50,}} 
          whileInView={{opacity:1,y:10}}    
          transition={{
@@ -345,27 +341,192 @@ window.addEventListener('scroll',() => {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}>
-         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5"   src={hori} alt ="my aqua team"/>
+
+         <img data-aos="fade-up" class="  "   src={vert} alt ="my aqua team"/>
+         
+
+         
          <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-14 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
-           CRICKET CLUB
+          TABLE TENNIS CLUB
         </motion.div>
         <div class="text-4xl md:text-7xl lg:text-8xl absolute bottom-3 right-2 text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500">
-          07
+          08
+        </div>
+     
+     </motion.div>
+
+     <motion.div class="relative group"
+         initial={{opacity:0, y:50}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.25}}>
+         <img data-aos="fade-up" class="  "   src={hori} alt ="my aqua team"/>
+         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         transition={{type:'spring'}}>
+           BADMINTON CLUB
+        </motion.div>
+        <div class="text-4xl md:text-7xl lg:text-8xl absolute bottom-3 right-2 text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500">
+          10
         </div>
      </motion.div>
-      
-     <div>
-      <img data-aos="fade-up" class=" mb-20 w-4/5 float-right "   src={hori} alt ="my aqua team"/>
-     </div> 
-     
-     <div>
-      <img data-aos="fade-up" class="mb-20 w-4/5  "   src={hori} alt ="my aqua team"/>
-     </div> 
 
-     <div>
-      <img data-aos="fade-up" class=" w-4/5 float-right "   src={hori} alt ="my aqua team"/>
-     </div> 
+     <motion.div class="relative group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.25}}>
+         <img data-aos="fade-up" class="  "   src={vert} alt ="my aqua team"/>
+         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-3 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         transition={{type:'spring'}}>
+          WEIGHTLIFTING CLUB
+        </motion.div>
+        <div class="text-4xl md:text-7xl lg:text-8xl absolute bottom-3 right-2 text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500">
+          12
+        </div>
+     </motion.div>
+    </div>
+  </div>
+</div>
+
+<div class=" geet2   ">
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-right "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-left "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-right "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-left "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-right "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-left "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-right "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-left "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img data-aos="fade-up" class=" mt-12 mb-20 w-4/5  float-right "   src={fullHori} alt ="my aqua team"/>
+         
+      </motion.div>
+      
+     
     
 
 
