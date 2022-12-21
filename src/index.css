@@ -288,12 +288,13 @@ code {
     width: 70%;
   }
   .events_overall{
-    height: 1600px;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
     padding-top: 10%;
+    padding-bottom: 10%;
     background-image: url('./images/smallunion.png');
     background-size: 100% 100%;
   }
