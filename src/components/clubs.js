@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import {motion} from 'framer-motion';
 
 import  fullHori from '../images/fullHori.svg';
+import {  NavLink } from 'react-router-dom'
 
 
 
