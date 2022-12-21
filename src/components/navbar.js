@@ -9,15 +9,16 @@ const Navbar = () => {
     <div>
               <div className="nav">
                  <div className="topnav">
-                  <NavLink  to="/"   style={isActive => ({
-    color: isActive ? "white" : "blue"})}> Home </NavLink>
-                  <NavLink to="/events" style={isActive => ({
-    color: isActive ? "white" : "blue"})}>Events</NavLink>
+             
+
+                   <NavLink to="/contacts" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Contacts</NavLink>
                   <NavLink to="/clubs" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Clubs</NavLink>
-                  <NavLink to="/contacts" style={isActive => ({
-    color: isActive ? "white" : "blue"})}>Contacts</NavLink>
-             
+                  <NavLink to="/events" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Events</NavLink>
+                  <NavLink  to="/"   style={isActive => ({
+    color: isActive ? "white" : "blue"})}> Home </NavLink>
              
                
                </div>
@@ -70,7 +71,7 @@ const Navbar = () => {
           <div className="bodys">
             
            <div className="bodyss"> <span> Lorem Epsum</span></div>
-            <div className="bodysss"><span> Empowering athlets something something has to be written</span>
+            <div className="bodysss"> Empowering athlets something something has to be written
            
             </div>         
             </div>
