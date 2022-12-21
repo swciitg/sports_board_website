@@ -39,10 +39,16 @@ code {
   .geet2 {
     
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     max-width: 90vw;
     margin: auto;
-  } 
+  }
+  
+.dnb{
+    top:13%;
+    left:23%;
+    position:absolute;
+  }
 
   
   .geet1{
