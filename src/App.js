@@ -2,6 +2,7 @@ import AquaticsClub from "./pages/aquatics_club";
 import BasketballClub from "./pages/basketballClub";
 import ClubPages from "./pages/clubsPages";
 import Homepage from "./pages/homepage";
+import { Routes,Route } from "react-router-dom";
 
 function App() {
   return (
