@@ -11,8 +11,8 @@ function Footer()
 {
 return(
 
-<div id="container"  className="  flex flex-row gap-64 w-100% h-76 mt-6 pl-12 px-10 " >
-<div id="part1" className="flex flex-row ml-12 ">
+<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0 " >
+<div id="part1" className="flex flex-row ml-44 gap-x-6 ">
   <div className="image w-52 h-52"><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
   <div className="content flex flex-col flex-wrap items-start justify-start   ">
     <div id="part3" className="details flex flex-col flex-wrap items-start justify-start gap-1  p-1 m-1 ">
