@@ -5,9 +5,9 @@ const ClubRnG = () => {
         <>
         <div className="cnrg_overall">
             <div className="crng_block">
-                <div className="flex flex-col pr-6">
-                <div className="head_about">Rules and guidelines</div>
-                    <p className="para_about">
+                <div className="flex flex-col pr-6 w-[90%]">
+                <div className="head_about text-6xl"style={{lineHeight:'123%'}}>Rules and guidelines</div>
+                    <p className="para_about lg:text-2xl pt-5" style={{lineHeight:'160%'}}>
                     You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
                     All outdoor sports like athletics, swimming, cricket, 
                     You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
