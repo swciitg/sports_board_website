@@ -17,7 +17,7 @@ return(
    <div className='icons'>
     <div className='ico'><IoMdCall size={50}/></div>
     <div className='ico'><GrMail size={50}/></div>
-    <div className='ico'><SiLinkedin size={50}/></div>
+    <div className='ico'><SiLinkedin size={45}/></div>
    
     </div> 
 </div>

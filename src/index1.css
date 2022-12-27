@@ -379,22 +379,30 @@ text-align-last: center;
 
 }
 /*----------------------------*/
-.idhar{
+.idhar{ 
+  background-image:  url('./images/Union.png');
+ 
+   
+  
+   background-repeat: no-repeat;
+   
   background-color: #f4f4f4;
  
-  width: 1580px;
+  width:auto;
   height:  997px;
   position: relative;
   display: flex;
-
+ 
 
 }
 .main_chair 
 {
-display: flex;
-flex-direction: row;
-width: 100%;
-height: 100%;
+position: relative;
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height:  997px;
+  top: 10%;
 }
 
 
@@ -403,24 +411,27 @@ display: flex;
 flex-direction: column;
 position: relative;
 margin-top: 15%;
-
+width: 40%;
+height: 20%;
+left:-5%;
 }
 .main_image{
   position: relative;
-  top: 187px;
-width: 416px;
-height: 497px;
-left: 282px;
-border-radius: 10px;
+  top: 15%;
+width: 35%;
+height: 35%;
+left: 15%;
+
+
 }
 .para{
   position: relative;
 border-radius: 1vh;
-padding: 10px;
-width: 550px;
-height: 289px;
-left: 60%;
-top: 10%;
+padding: 1vh;
+width: 80%;
+height: 80%;
+left: 64%;
+top: 50.0%;
 
 font-family: 'Familjen Grotesk';
 font-style: normal;
@@ -437,16 +448,16 @@ color: #565656;
 {
 position: relative;
 
-width: 388px;
-height: 118px;
-left: 60%;
-top: 05%;
+width: 80%;
+height: 12%;
+left: 65%;
+top: 5%;
 
 font-family: 'Fira Sans Extra Condensed';
 font-style: normal;
 font-weight: 600;
 font-size: 8vh;
-line-height: 123%;
+line-height: 126%;
 /* identical to box height, or 118px */
 
 text-transform: uppercase;
@@ -468,11 +479,11 @@ color: #000000;
   display: flex;
   flex-direction: row;
   position: relative;
-  left: -54px;
+  left: -15%;
 }
 .ico{
   align-items: flex-start;
-  margin-left: 10%;
+  margin-left: 15%;
  
 }
 /******-----*********/
@@ -488,10 +499,12 @@ color: #000000;
 }
 .main_chair2 
 {
-display: flex;
-flex-direction:row;
-width: 1580px;
-height:  997px;
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  width: 1580px;
+  height:  997px;
+  top: 10%;
 
 }
 
@@ -504,27 +517,27 @@ display: flex;
 flex-direction: column;
 position: relative;
 margin-top: 15%;
-
+width: 40%;
+height: 20%;
+top:10%;
 }
 .main_image2{
-  
   position: relative;
-  display: flex;
-  flex-direction: column;
- 
-  top: 245px;
-  width: 416px;
-  height: 497px;
-  right: -48%;
+  top: 30%;
+width: 35%;
+height: 35%;
+right: -50%;
+
 }
 .para2{
   position: relative;
-border-radius: 1vh;
-padding: 10px;
-width: 550px;
-height: 289px;
-right: 20%;
-top: 15%;
+  border-radius: 1vh;
+  padding: 1vh;
+  width: 80%;
+  height: 80%;
+
+right: 45%;
+top: 70%;
 
 font-family: 'Familjen Grotesk';
 font-style: normal;
@@ -541,15 +554,15 @@ color: #565656;
 {
 position: relative;
 
-width: 388px;
-height: 118px;
-right: 20%;
-top: 10%;
+width: 50%;
+height: 8%;
+right: 45%;
+top: 30%;
 
 font-family: 'Fira Sans Extra Condensed';
 font-style: normal;
 font-weight: 600;
-font-size: 8vh;
+font-size: 7vh;
 line-height: 123%;
 /* identical to box height, or 118px */
 
@@ -572,7 +585,7 @@ color: #000000;
   display: flex;
   flex-direction: row;
   position: relative;
-  left: -54px;
+  left: -10%;
 }
 .ico2{
   align-items: flex-start;
@@ -603,24 +616,28 @@ top: 10%;
   flex-direction: column;
   position: relative;
   margin-top: 15%;
+  width: 40%;
+  height: 20%;
+  left:-5%;
   
   }
   .main_image3{
     position: relative;
-    top: 307px;
-  width: 416px;
-  height: 497px;
-  left: 282px;
-  border-radius: 10px;
+  top: 28%;
+width: 35%;
+height: 35%;
+left: 15%;
+
   }
   .para3{
     position: relative;
-  border-radius: 1vh;
-  padding: 10px;
-  width: 550px;
-  height: 289px;
-  left: 60%;
-  top: 25%;
+    border-radius: 1vh;
+    padding: 1vh;
+    width: 80%;
+    height: 80%;
+  
+ left: 63.5%;
+  top: 95%;
   
   font-family: 'Familjen Grotesk';
   font-style: normal;
@@ -635,22 +652,22 @@ top: 10%;
   }
   .heading3
   {
-  position: relative;
-  
-  width: 388px;
-  height: 118px;
-  left: 60%;
-  top: 20%;
-  
-  font-family: 'Fira Sans Extra Condensed';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8vh;
-  line-height: 123%;
-  /* identical to box height, or 118px */
-  
-  text-transform: uppercase;
-  
-  color: #000000;
+    position: relative;
+
+    width: 50%;
+    height: 8%;
+    left: 65%;
+    top: 65%;
+   
+font-family: 'Fira Sans Extra Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 7vh;
+line-height: 123%;
+/* identical to box height, or 118px */
+
+text-transform: uppercase;
+
+color: #000000;
   
   }
