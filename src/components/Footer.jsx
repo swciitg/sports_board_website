@@ -16,8 +16,9 @@ return(
   <div className="image w-52 h-52"><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
   <div className="content flex flex-col flex-wrap items-start justify-start   ">
     <div id="part3" className="details flex flex-col flex-wrap items-start justify-start gap-1  p-1 m-1 ">
-      <div className=" flex flex-col flex-wrap items-start justify-start"  ><div id="heading" className=" heading flex flex-row gap-1"><h1  id="head" className=" text-2xl mt-2 font-extrabold ">STUDENTS</h1> <h1 id="head" className=" text-2xl mt-2 font-extrabold " > GYMKHANA</h1></div> 
-         <h1 id="head" className="text-2xl ml-0 font-extrabold ">COUNCIL</h1></div> 
+    <div id="heading"><h1 className="text-2xl font-extrabold " id="head"  >STUDENTS GYMKHANA</h1><h1 className=" text-2xl   font-extrabold" id="head" >COUNCIL</h1></div>
+      {/* <div className=" flex flex-row flex-wrap items-start justify-start"  ><div id="heading" className=" heading flex flex-row gap-2 "><h1  id="head" className=" text-2xl mt-2 font-extrabold ">STUDENTS</h1> <h1 id="head" className=" text-2xl mt-2 font-extrabold " > GYMKHANA</h1></div> 
+         <h1 id="head" className="text-2xl ml-0 font-extrabold ">COUNCIL</h1></div>  */}
         <p align="left" id="one" className="  text-sm ">New SAC Building IIT Guwahati,<br/> Guwahati, Assam - 781039</p>
         <p align="left" id="two" className="text-sm">+91 -361-258162<br/>sgc@iitg.ac.in</p>
     </div>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const Navbar = (props) => {
   const [open,setOpen] = useState(false);
 
   return (
@@ -30,8 +30,8 @@ const Navbar = () => {
                 <a className="inactive" href="#"> Students Gymkhana Council</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
-           <div className="align">   <h3 className="texting">Lorem Epsum</h3>
-                <h6 className="text">Empowering athlets something something has to be written</h6>
+           <div className="align">   <h3 className="texting">{props.name}</h3>
+                <h6 className="text">{props.info}</h6>
         </div>
           <div className="tomp">
               </div>
