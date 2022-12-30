@@ -89,19 +89,36 @@ code {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   width:100%;
-  padding-left: 10%;
+  padding-left: 15%;
   padding-right: 2%;
+  padding-top: 10%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #565656;
 }
 .pasteventsContainer1{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   padding-left: 10%;
   padding-right: 2%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #565656;
 }
 .pasteventsContainer2{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   padding-left: 10%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #565656;
 }
 .about_block{
   display: grid;
