@@ -200,7 +200,7 @@ code {
   grid-template-columns: 1fr 1fr 1fr;
 }*/
 
-@media screen and (min-width: 400px ){
+@media screen and (min-width: 600px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     color: #000;
@@ -256,13 +256,13 @@ code {
   height: 100%;
 }
 }
-@media screen and (max-width: 400px ){
+@media screen and (max-width: 600px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     color: #000;
     text-transform: uppercase;
     min-height: 68px;
-    min-width: 180px;
+    min-width: 210px;
     border: 1px solid #000;
     display: inline-flex;
     flex-wrap: wrap;
@@ -274,7 +274,6 @@ code {
     align-items: center;
     justify-content: center;
     padding-right: 65px;
-    padding-left: 10px;
     position: relative;
     z-index: 2; 
 }
