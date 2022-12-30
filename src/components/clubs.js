@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import {motion} from 'framer-motion';
 
 import  fullHori from '../images/fullHori.svg';
+import {  NavLink } from 'react-router-dom'
 
 
 
@@ -346,7 +347,7 @@ window.addEventListener('scroll',() => {
          
 
          
-         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-14 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         <motion.div class="text-xl md:text-2xl lg:text-3xl absolute top-8 duration-500 left-2 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
          transition={{type:'spring'}}>
           TABLE TENNIS CLUB
         </motion.div>
