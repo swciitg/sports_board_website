@@ -89,19 +89,36 @@ code {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   width:100%;
-  padding-left: 10%;
+  padding-left: 15%;
   padding-right: 2%;
+  padding-top: 10%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #565656;
 }
 .pasteventsContainer1{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   padding-left: 10%;
   padding-right: 2%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #565656;
 }
 .pasteventsContainer2{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   padding-left: 10%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #565656;
 }
 .about_block{
   display: grid;
@@ -183,7 +200,7 @@ code {
   grid-template-columns: 1fr 1fr 1fr;
 }*/
 
-@media screen and (min-width: 400px ){
+@media screen and (min-width: 600px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     color: #000;
@@ -239,13 +256,13 @@ code {
   height: 100%;
 }
 }
-@media screen and (max-width: 400px ){
+@media screen and (max-width: 600px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     color: #000;
     text-transform: uppercase;
     min-height: 68px;
-    min-width: 180px;
+    min-width: 210px;
     border: 1px solid #000;
     display: inline-flex;
     flex-wrap: wrap;
@@ -257,7 +274,6 @@ code {
     align-items: center;
     justify-content: center;
     padding-right: 65px;
-    padding-left: 10px;
     position: relative;
     z-index: 2; 
 }
