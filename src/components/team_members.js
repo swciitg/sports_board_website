@@ -2,7 +2,6 @@ import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
 import Cursor from "./cursor";
 const Team_members = ()=>{
-  
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -19,6 +18,7 @@ const Team_members = ()=>{
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; 
     }
+   
     return(
         <>
          <Cursor />

@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Fira+Sans+Extra+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@600&display=swap');
 
 body {
   margin: 0;
@@ -53,8 +53,9 @@ code {
 .team_blockoverall{
   background-image: url('./images/teams.png'); 
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
+  background-size:cover;
+  min-height: 1000px;
+  max-height: 1500px;
   display: flex;
   align-items: center; 
   background-color: #f4f4f4;
@@ -80,7 +81,7 @@ code {
 }
 .team_block{
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1.5fr;
   align-items: center;
   
 }
@@ -104,11 +105,11 @@ code {
 }
 .about_block{
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.2fr 1.5fr;
 }
 .facilities_block{
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1.5fr;
   align-items: center;
   
 }
@@ -116,8 +117,9 @@ code {
 .head_about{
   color: black ;
   font-weight: bolder;
-  font-family: 'Merriweather', serif;
-  font-size: 50px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 350%;
+  line-height: 123%;
   text-transform: uppercase;
 }
 .container1{
@@ -125,26 +127,37 @@ code {
   flex-direction: row;
   align-items:center ;
   column-gap: 10%;
-  padding-left: 20%;
+  padding-left: 30%;
   padding-right: 4%;
   font-size: 20px;
+}
+.container2{
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  color: #565656;
 }
 
 .containerteam1{
   display: flex;
   flex-direction: row;
-  align-items:center ;
+  align-items: flex-start;
   column-gap: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 30%;
   font-size: 20px;
 }
 .containerteam2{
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 80px;
- font-family: 'Merriweather', serif;
+  font-family: 'Familjen Grotesk', sans-serif;
+  color: #565656;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
 }
 
 .gridcontainer{
@@ -173,15 +186,18 @@ code {
 @media screen and (min-width: 400px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
-    font-size: 21px;
     color: #000;
-    font-weight: 600;
     text-transform: uppercase;
     min-height: 71px;
     min-width: 280px;
     border: 1px solid #000;
     display: inline-flex;
     flex-wrap: wrap;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 123%;
     align-items: center;
     justify-content: center;
     padding-right: 70px;
@@ -226,15 +242,18 @@ code {
 @media screen and (max-width: 400px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
-    font-size: 21px;
     color: #000;
-    font-weight: 600;
     text-transform: uppercase;
     min-height: 68px;
     min-width: 180px;
     border: 1px solid #000;
     display: inline-flex;
     flex-wrap: wrap;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 123%;
     align-items: center;
     justify-content: center;
     padding-right: 65px;
@@ -320,6 +339,12 @@ code {
   padding-right: 10%;
   padding-left: 10%;
   padding-top: 10%;
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #565656;
 }
 .smabout_block,.smcnrg_block{
   padding-bottom: 10%;
