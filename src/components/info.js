@@ -6,7 +6,7 @@ const info = [
         email: "jack@nowhere.com"
     },
     {
-      name: "Jack Bauer",
+      name: "Clubs",
       info:
         "Something something something",
      
