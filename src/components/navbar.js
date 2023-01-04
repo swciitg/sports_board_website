@@ -76,7 +76,7 @@ const Navbar = (props) => {
             </div>         
             </div>
           <div className="last">
-
+                      <div className="div_image"></div>
           </div>
        
     </div>
