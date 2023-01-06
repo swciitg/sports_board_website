@@ -11,13 +11,13 @@ const Navbar = (props) => {
                  <div className="topnav">
              
 
-                   <NavLink to="/contacts" style={isActive => ({
+                   <NavLink to="/stud/gymkhana/sports/contacts" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Contacts</NavLink>
-                  <NavLink to="/clubs" style={isActive => ({
+                  <NavLink to="/stud/gymkhana/sports/clubs" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Clubs</NavLink>
-                  <NavLink to="/events" style={isActive => ({
+                  <NavLink to="/stud/gymkhana/sports/events" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Events</NavLink>
-                  <NavLink  to="/"   style={isActive => ({
+                  <NavLink  to="/stud/gymkhana/sports/"   style={isActive => ({
     color: isActive ? "white" : "blue"})}> Home </NavLink>
              
                
@@ -54,13 +54,13 @@ const Navbar = (props) => {
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
             <NavLink  to="/"   style={isActive => ({
-    color: isActive ? "green" : "black"})}> Home </NavLink>
+    color: isActive ? "black" : "green"})}> Home </NavLink>
                   <NavLink to="/events" style={isActive => ({
-    color: isActive ? "green" : "black"})}>Events</NavLink>
+    color: isActive ? "black" : "green"})}>Events</NavLink>
                   <NavLink to="/clubs" style={isActive => ({
-    color: isActive ? "green" : "black"})}>Clubs</NavLink>
+    color: isActive ? "black" : "green"})}>Clubs</NavLink>
                   <NavLink to="/contacts" style={isActive => ({
-    color: isActive ? "green" : "black"})}>Contacts</NavLink>
+    color: isActive ? "black" : "green"})}>Contacts</NavLink>
              
              </div>
             </div>

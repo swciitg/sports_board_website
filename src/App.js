@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
     <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/clubs' element={< ClubPages/>} />
-          <Route path='/events'  />
-          <Route path='/clubs/basketball' element={<BasketballClub />} />
-          <Route path='/basketball' element={<AquaticsClub />} />
-          <Route path='/contacts' element={<Contactus />} />
+          <Route path='/stud/gymkhana/sports/' element={<Homepage />} />
+          <Route path='/stud/gymkhana/sports/clubs' element={< ClubPages/>} />
+          <Route path='/stud/gymkhana/sports/events'  />
+          <Route path='/stud/gymkhana/sports/clubs/basketball' element={<BasketballClub />} />
+          <Route path='/stud/gymkhana/sports/basketball' element={<AquaticsClub />} />
+          <Route path='/stud/gymkhana/sports/contacts' element={<Contactus />} />
    </Routes>
   
    </div>
