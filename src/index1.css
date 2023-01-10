@@ -16,20 +16,17 @@ code {
     monospace;
 }
 .nav{
-text-align: center;
-background-image: url('./images/hm.png');
-background-size:100% 100%;
-background-repeat: no-repeat;
-
-
+  text-align: center;
+  background-image: url('./images/hm.png');
+  background-size:100% 100%;
+  background-repeat: no-repeat;
 }
 .topnav {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    overflow: hidden;
   
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
-  overflow: hidden;
- 
-min-height: 850px;
-padding-right: 80px;
+  min-height: 850px;
+  padding-right: 80px;
 }
 .topnav a {
   float: right;

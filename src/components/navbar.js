@@ -6,7 +6,8 @@ const Navbar = (props) => {
   const [open,setOpen] = useState(false);
 
   return (
-    <div>
+    <div style={{  position: 'sticky',
+      top:0}}>
               <div className="nav">
                  <div className="topnav">
              

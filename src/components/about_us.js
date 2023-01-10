@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const About_us = ()=>{
     return(
-        <>
+        <div className="overall_about">
         <div className="about_block">
             <div className="container1">
                 <div>
@@ -32,7 +32,7 @@ const About_us = ()=>{
                 </p>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 

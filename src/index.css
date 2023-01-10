@@ -19,19 +19,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.about_block{
- /* background-image: url('./images/teams.png'); */
+.overall_about{
+  position: sticky;
+  overflow-y:scroll;
+  background-color: #f4f4f4;
   background-repeat: no-repeat;
   background-size: cover;
-  width:100%;
-  height: 1000px;
+  scroll-snap-type: y mandatory;
+  height: 800px;
   align-items: center; 
+  top:0;
+}
+.about_block{
+ /* ; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width:100%;
   background-color: #f4f4f4;
   position: static;
-  top:36px;
-  scroll-behavior: smooth;
-  overflow-y:visible;
+  top:0px;
+
 }
 .cnrg_overall{
   background-image: url('./images/teams.png');
@@ -63,6 +70,9 @@ code {
   align-items: center; 
   background-color: #f4f4f4;
   flex-direction: row;
+  position: sticky;
+  overflow-y:visible;
+  z-index: 1;
 }
 .team_blockoverall::-webkit-scrollbar,.facilities_blockoverall::-webkit-scrollbar,.smgrid::-webkit-scrollbar{
   display: none;
@@ -72,14 +82,18 @@ code {
   background-image: url('./images/smallunion.png'); 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 900px;
   display: flex;
+  top:0;
+  position: sticky;
+  overflow-y: scroll;
   align-items: center; 
   column-gap: 20px;
   background-color: #7BB9C4;
   overflow-x: hidden;
   transition-delay: 1s;
   transition-duration: 2s;
+  z-index: 1;
 
 }
 .team_block{
@@ -131,7 +145,8 @@ code {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr;
   align-items: center;
-  
+  padding-top: 20%;
+  padding-bottom: 15%;
 }
 
 .head_about{
