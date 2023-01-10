@@ -9,7 +9,7 @@ import PastEvents from "../components/pastEvents";
 const BasketballClub = () => {
     return ( 
         <div>
-        <Navbar />
+        <Navbar  />
         <About_us />
         <ClubRnG />
         <PastEvents />

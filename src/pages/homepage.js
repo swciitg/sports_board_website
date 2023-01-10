@@ -4,16 +4,15 @@ import Facilities from "../components/facilities";
 import Team_members from "../components/team_members";
 import Footer from "../components/Footer";
 import Event from "../components/event";
-
 function pages() {
+   
   return(
     <div className="App">
-      <Navbar />
+      <Navbar /> 
       <About_us />
-      <Event></Event>
+      <Event />  
       <Facilities />
       <Team_members />
-      
       <Footer />
     </div>
   );
