@@ -5,6 +5,7 @@
   line-height: 118px;  
   line-height: 123%;
   font-style: Semibold ;
+  left: 230.4px;
 }
 #curve
 {
@@ -42,10 +43,10 @@ font-size: 96px;
 
 .lines
 {
-  width: 1000px;
+  width: 1152px;
   height: 45px;
   position: relative;
-  left: 216px;
+  left: 192px;
 }
 
 .lines::after, .lines::before
@@ -179,7 +180,7 @@ animation-name: none;
 #counter  {
   position: absolute;
    top: 115px;
-   left: 216px;
+   left: 230.4px;
   height: 3em;
   overflow: hidden;
 }
@@ -228,6 +229,8 @@ animation-name: none;
 #counter1 {
   height: 3em;
   overflow: hidden;
+  position: absolute;
+  left: 230.4px;
 }
 
 .digit {
@@ -275,7 +278,7 @@ animation-name: none;
   line-height: 118px;  
   line-height: 123%;
   font-style: Semibold ;
-  left: 216px;
+  left: 230.4px;
 }
 
 #font2
@@ -286,13 +289,13 @@ animation-name: none;
   line-height: 118px;  
   line-height: 123%;
   font-style: Semibold ;
-  left: 216px;
+  left: 230.4px;
 }
 #counter2 {
   height: 3em;
   overflow: hidden;
   position: absolute;
-  left: 216px;
+  left: 230.4px;
   top: 660px;
 }
 
@@ -342,14 +345,14 @@ animation-name: none;
   line-height: 118px;  
   line-height: 123%;
   font-style: Semibold ;
-  left: 216px;
+  left: 230.4px;
 }
 
 #counter3 {
   height: 3em;
   overflow: hidden;
   position: absolute;
-  left: 216px;
+  left: 230.4px;
   top: 910px;
 }
 
@@ -562,20 +565,20 @@ animation-name: none;
  @media screen and (max-width:795px) {
   #font
   {
-    font-size: 50px;
+    font-size: 56px;
   }
   #font1
   {
-    font-size: 50px;
+    font-size: 56px;
   }
   #font2
   {
-    font-size: 50px;
+    font-size: 56px;
   }
   
   #font3
   {
-    font-size: 50px;
+    font-size: 56px;
   }
   
 
@@ -634,7 +637,7 @@ animation-name: none;
  }
  }
  @media screen and (max-width:612px) {
-    #font
+    /* #font
     {
       font-size: 40px;
     }
@@ -649,7 +652,7 @@ animation-name: none;
     #font3
     {
       font-size: 40px;
-    }
+    } */
     .lines{
       width: 470px;
     }
@@ -665,7 +668,7 @@ animation-name: none;
   {
     width: 340px;
   }
-  #font
+  /* #font
   {
     font-size: 35px;
   }
@@ -680,7 +683,7 @@ animation-name: none;
   #font3
   {
     font-size: 35px;
-  }
+  } */
 
  }
  @media screen and (max-width:390px) {
@@ -688,6 +691,29 @@ animation-name: none;
   {
     width: 250px;
   }
+  #font
+  {
+    font-size: 56px;
+  }
+  #font1
+  {
+    font-size: 56px;
+  }
+  #font2
+  {
+    font-size: 56px;
+  }
+  #font3
+  {
+    font-size: 56px;
+  }
+
+
+
+  
+ }
+ @media  screen and (max-width:320px) {
+  
  }
 
 

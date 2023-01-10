@@ -38,12 +38,12 @@ padding-right: 80px;
     text-decoration: none;
     font-weight: 500;
   font-size: 2.5vh;
-  padding: 1vh;
+  padding: 1%;
  box-sizing: border-box;
   box-shadow: rgb(248, 242, 242);/*
   border-radius: 3cm;*/
-  margin-right: 40px;
-  margin-top:35px;
+  margin-right: 1.5%;
+  margin: 1.5%;
 }
 .topnav a:hover {
    color: rgb(89, 89, 250);
@@ -175,9 +175,9 @@ border-width:0px;
 position: absolute;
 width: 100%;
 height: 100.26px;
-left: 1px;
-top: 752px;
-
+left: -0px;
+top: 750px;
+object-fit: fill;
 } 
 @media screen and (min-width: 980px)
 {
@@ -268,15 +268,21 @@ color: #FFFFFF;
     background-image: url('./images/Union.png');
     background-repeat: no-repeat;
     background-size: cover;
-   
+    overflow: hidden;
    position: absolute;
    width: 100%;
    
-height: 45px;
-left: .54px;
+height: 50px;
+left: 0%;
 top: 809px;
    
 
+  }
+  .div_image{
+
+
+    width: 100%;
+    
   }
 
 .topnav-link{
@@ -445,23 +451,18 @@ color: #565656;
 }
 .heading
 {
-position: relative;
-
-width: 80%;
-height: 12%;
-left: 65%;
-top: 5%;
-
-font-family: 'Fira Sans Extra Condensed';
-font-style: normal;
-font-weight: 600;
-font-size: 8vh;
-line-height: 126%;
-/* identical to box height, or 118px */
-
-text-transform: uppercase;
-
-color: #000000;
+  position: relative;
+  width: 50%;
+  height: 12%;
+  left: 65%;
+  top: 5%;
+  font-family: 'Fira Sans Extra Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7vh;
+  line-height: 123%;
+  text-transform: uppercase;
+  color: #000000;
 
 }
 .union_footer{

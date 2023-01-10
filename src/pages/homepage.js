@@ -4,11 +4,16 @@ import Facilities from "../components/facilities";
 import Team_members from "../components/team_members";
 import Footer from "../components/Footer";
 import Event from "../components/event";
+import info from "../components/info"
+
 function pages() {
    
   return(
     <div className="App">
-      <Navbar /> 
+      <Navbar 
+        name = {info[0].name}
+        info = {info[0].info}
+      />
       <About_us />
       <Event />  
       <Facilities />

@@ -1,7 +1,7 @@
 import Clubs from "../components/clubs";
 import Footer from "../components/Footer";
 import Navbar from "../components/navbar";
-
+import info from "../components/info"
 
 
 
@@ -9,7 +9,10 @@ import Navbar from "../components/navbar";
 const ClubPages = () => {
    return (
        <div>
-          <Navbar/>
+          <Navbar
+            name = {info[1].name}
+            info = {info[1].info}
+          />
           <Clubs/>
           <Footer/>
 
