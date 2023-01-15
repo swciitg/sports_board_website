@@ -5,7 +5,7 @@ import Team_members from "../components/team_members";
 import Footer from "../components/Footer";
 import Event from "../components/event";
 import info from "../components/info"
-
+import Eventone from "../components/event1";
 function pages() {
    
   return(
@@ -15,7 +15,7 @@ function pages() {
         info = {info[0].info}
       />
       <About_us />
-      <Event />  
+      <Eventone />  
       <Facilities />
       <Team_members />
       <Footer />
