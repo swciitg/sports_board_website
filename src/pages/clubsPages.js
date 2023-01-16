@@ -2,20 +2,20 @@ import Clubs from "../components/clubs";
 import Footer from "../components/Footer";
 import Navbar from "../components/navbar";
 import info from "../components/info"
-
-
+import Animation from "../components/animation";
+import Clubone from "../components/clubone";
 
 
 const ClubPages = () => {
    return (
        <div>
-          <Navbar
+           {/* <Navbar
             name = {info[1].name}
             info = {info[1].info}
           />
-          <Clubs/>
-          <Footer/>
-
+           <Animation/> 
+          <Footer/>  */}
+         <Clubone></Clubone>
 
        </div>
 

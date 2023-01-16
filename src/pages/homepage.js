@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Event from "../components/event";
 import info from "../components/info"
 import Eventone from "../components/event1";
+import Animation from "../components/animation";
 function pages() {
    
   return(
@@ -19,6 +20,8 @@ function pages() {
       <Facilities />
       <Team_members />
       <Footer />
+    
+
     </div>
   );
 }
