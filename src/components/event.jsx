@@ -6,7 +6,7 @@ import "./hover.css";
 function Event(){
 return(
 <div className="overall_evemain">
-<div id="curve" className=" space-y-48 absolute left-48  " >
+<div id="curve" className="space-y-40 absolute left-48  " >
 {/* <div className="container1" > */}
      <div id="cont" className=" font-extrabold pl-0 flex flex-row space-x-24 mt-40 ">
      <div id="first" className="flex flex-col ">

@@ -1,8 +1,27 @@
 import img1 from "../images/about_icon.png";
+import { useEffect, useRef } from "react";
+import { useState } from "react";
 const PastEvents = () => {
+    const [sc,setsc]=useState('hidden');
+
+    const ref=useRef();
+    const handle=(e)=>{
+        console.log(ref);
+        console.log(e.target.offsetTop);
+        if(e.target.offsetTop<2450){
+            setsc('hidden');
+        }
+        else{
+            setsc('scroll');
+        }
+    }
+
+    
     return ( 
-        <div className="events_overall">
-            <div className="grid grid-rows-2 gap-y-32">
+        <div className="events_overall" onScroll={handle} ref={ref} style={{overflowY:{sc}}}>
+            <div className="grid grid-rows-2 gap-y-32" style={{paddingTop: '40%',
+  paddingBottom: '10%',
+  scrollSnapType: 'y mandatory'}}>
                 <div className="pasteventsContainer1">
                 <div className="flex flex-col">
                     <div className="head_about text-6xl max-sm:text-3xl" style={{lineHeight:'123%'}}>Past Events</div>

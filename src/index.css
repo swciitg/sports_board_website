@@ -20,6 +20,8 @@ code {
     monospace;
 }
 .overall_about{
+  display: flex;
+  align-items: center;
   position: sticky;
   overflow-y:scroll;
   background-color: #f4f4f4;
@@ -45,20 +47,27 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 1000px;
+  position: sticky;
+  overflow-y:scroll;
+  height: 800px;
+  top:0;
   width:100%;
   align-items: center; 
   background-color: #f4f4f4;
+  scroll-snap-type: y mandatory;
 }
 .events_overall{
   background-image: url('./images/smallunion.png'); 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1400px;
+  height: 800px;
   display: flex;
   align-items: center; 
   justify-content: center;
   background-color: #7BB9C4;
+  position: sticky;
+  overflow-y:scroll;
+  top: 0;
 }
 .team_blockoverall{
   background-image: url('./images/teams.png'); 
@@ -68,7 +77,6 @@ code {
   max-height: 1500px;
   display: flex;
   align-items: center; 
-  background-color: #f4f4f4;
   flex-direction: row;
   position: sticky;
   overflow-y:visible;
@@ -146,7 +154,8 @@ code {
   grid-template-columns: 1.5fr 1.5fr;
   align-items: center;
   padding-top: 20%;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
+  scroll-snap-type: y mandatory;
 }
 
 .head_about{
