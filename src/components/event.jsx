@@ -6,11 +6,11 @@ import "./hover.css";
 function Event(){
 return(
 <div className="overall_evemain">
-<div id="curve" className="space-y-40 absolute left-48  " >
+<div id="curve" className=" space-y-48 relative left-4em  " >
 {/* <div className="container1" > */}
      <div id="cont" className=" font-extrabold pl-0 flex flex-row space-x-24 mt-40 ">
      <div id="first" className="flex flex-col ">
-     <div className='flex flex-col  ' >
+     <div className='flex flex-col   ' >
      <div id="counter" class="animated">
                <ul id="digit" class="digits digits-third luckie"> <li> 0</li> <li> 0</li> </ul>
                <ul id="digit" class="digits digits-third luckie"> <li> 1 </li><li> 1</li> </ul>

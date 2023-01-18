@@ -1,0 +1,363 @@
+.overall_evemain{
+    position: sticky;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    padding-bottom: 10%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: #7BB9C4;
+  }
+  #line1
+  {
+    margin-top: -0.75%;
+  }
+.lines
+{
+  width: 1152px;
+  height: 45px;
+  position: relative;
+  margin-left: 1%;
+}
+
+.lines::after, .lines::before
+{
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #ffffff;
+  width: 100%;
+  top: 45%;
+}
+.lines::after
+{
+  left: 0;
+}
+.lines::before
+{
+  right: 0;
+}
+.digits {
+    float:left;
+    list-style-type: none;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  
+  .digits-first {
+    margin-top: -4em; /* number 4! */
+  }
+  
+  .digits-second {
+    margin-top: 0em; /* number 0! */
+  }
+  
+  .digits-third {
+    margin-top: 0em; /* number 4! */
+  }
+  
+  
+  .digits-third {
+    animation-name: animout;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  #part1:hover .digits-third
+  {
+   animation-name: anim;
+   animation-duration: 1.5s;
+   animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+  }
+  .font1
+  {
+    font-size: 75px;
+    margin-left: 13.5%;
+    line-height: 118px;
+    font-weight: bolder;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    
+  }
+  #part1
+  {
+    margin-top: 3.85%;
+  }
+  #counter
+  {
+    height: 3em;
+    overflow: hidden;
+    position: absolute;
+    top: 32px;
+  }
+  .digit1 {
+    float:left;
+    list-style-type: none;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  
+  .digit1-first {
+    margin-top: -4em; /* number 4! */
+  }
+  
+  .digit1-second {
+    margin-top: 0em; /* number 0! */
+  }
+  
+  .digit1-third {
+    margin-top: 0em; 
+  } 
+  .digit1-third {
+    animation-name: animout;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  #part2:hover .digit1-third
+  {
+   animation-name: anim;
+   animation-duration: 1.5s;
+   animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+  }
+  #part2
+  {
+    margin-top: 3.85%;
+  }
+  #counter1
+  {
+    height: 3em;
+    overflow: hidden;
+    position: absolute;
+    top: 195px;
+  }
+  .digit2 {
+    float:left;
+    list-style-type: none;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  
+  .digit2-first {
+    margin-top: -4em; /* number 4! */
+  }
+  
+  .digit2-second {
+    margin-top: 0em; /* number 0! */
+  }
+  
+  .digit2-third {
+    margin-top: 0em; /* number 4! */
+  }
+  
+  
+  .digit2-third {
+    animation-name: animout;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  #part3:hover .digit2-third
+  {
+   animation-name: anim;
+   animation-duration: 1.5s;
+   animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+  }
+ 
+  #part3
+  {
+    margin-top: 3.85%;
+  }
+  #counter2
+  {
+    height: 3em;
+    overflow: hidden;
+    position: absolute;
+    top: 365px;
+  }
+
+
+
+  .digit3 {
+    float:left;
+    list-style-type: none;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  
+  .digit3-first {
+    margin-top: -4em; /* number 4! */
+  }
+  
+  .digit3-second {
+    margin-top: 0em; /* number 0! */
+  }
+  
+  .digit3-third {
+    margin-top: 0em; /* number 4! */
+  }
+  
+  
+  .digit3-third {
+    animation-name: animout;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  #part4:hover .digit3-third
+  {
+   animation-name: anim;
+   animation-duration: 1.5s;
+   animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+  }
+ 
+  #part4
+  {
+    margin-top: 3.85%;
+  }
+  #counter3
+  {
+    height: 3em;
+    overflow: hidden;
+    position: absolute;
+    top: 530px;
+  }
+
+
+  .one{
+    position: absolute;
+    right: 240px;
+    top : 45px;
+    transform: rotate(0deg);
+   visibility: hidden;
+  width: 325px;
+  height:340px;
+  
+  
+  animation-name: none;
+  }
+  
+  #part1:hover .one{
+    visibility: visible;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in;
+   animation-name: moveUp;
+   animation-duration: 0.3s ;
+   animation-timing-function: ease-out;
+  
+  }
+  .two{
+    position: absolute;
+    right: 240px;;
+    top : 270px;
+    transform: rotate(0deg);
+   visibility: hidden;
+  width: 391px;
+  height: 334px;
+  
+  
+  animation-name: none;
+  }
+  
+  #part2:hover .two{
+    visibility: visible;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in;
+   animation-name: moveUp;
+   animation-duration: 0.3s ;
+   animation-timing-function: ease-out;
+  
+  }
+  
+.three{
+  position: absolute;
+  right: 240px; 
+   top : 520px;
+   transform: rotate(0deg);
+  visibility: hidden;
+ width: 391px;
+ height: 334px;
+ 
+ 
+ animation-name: none;
+ }
+ 
+ #part3:hover .three{
+   visibility: visible;
+   transform: rotate(0deg);
+   transition: 0.3s  ease-in;
+  animation-name: moveUp;
+  animation-duration: 0.3s ;
+  animation-timing-function: ease-out;
+ 
+ }
+ .four{
+   position: absolute;
+   right: 240px;
+   top : 780px;
+  visibility: hidden;
+ width: 391px;
+ height: 334px;
+ 
+ 
+ animation-name: none;
+ }
+ 
+ #part4:hover .four{
+   visibility: visible;
+   ;
+   transition: cubic-bezier(.04,.74,.83,.67);
+  animation-name: moveUp;
+  animation-duration: 0.4s ;
+   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes anim {
+  from{transform: translateY(0)}
+  to{transform:  translateY(-50px)}
+ } 
+ @keyframes animout{
+  from{transform: translateY(-50px)}
+  to{transform:  translateY(0)}   
+ 
+ }
+ 
+ @keyframes moveUp{
+   from{transform: translateY(200px)}
+   to{transform:  translateY(40px)}
+ }
+
+

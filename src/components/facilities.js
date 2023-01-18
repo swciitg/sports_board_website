@@ -63,7 +63,7 @@ const Facilities = ()=>{
     </div>
       <div className="smoverallConatiner_facilities">
         <div className="smfacilities_block">
-            <div className="head_about">OUR FACILITIES</div>
+            <div className="head_about max-sm:text-6xl">OUR FACILITIES</div>
             <div>
               <p className="para_about">
               You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.

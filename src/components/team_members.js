@@ -63,7 +63,7 @@ const Team_members = ()=>{
         </div>
         <div className="smoverallcontainer_team">
         <div className="smteam_block" >
-          <div className="head_about">TEAM MEMBERS</div>
+          <div className="head_about max-sm:text-6xl">TEAM MEMBERS</div>
           <div>
           <p className="para_about">
              You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
