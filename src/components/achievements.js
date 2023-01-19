@@ -5,7 +5,7 @@ const Achievements = () => {
         <div className="events_overall">
             <div>
         <div className="pasteventsContainer2">
-                    <div className="flex flex-row-reverse " style={{display:'contents'}}>
+                    <div className="lg:flex lg:flex-row-reverse flex justify-center">
                         <img src={img1} className="gridimg" alt="" />
                     </div>
                     <div className="flex flex-col max-pd ">

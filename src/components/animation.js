@@ -66,10 +66,10 @@ function Animation() {
 
     <div class="flex relative flex-row-reverse">
         <img  src={bg} class=""></img>
-      <div class="flex gap-16 justify-center absolute top-24 left-48  flex-row-reverse ">
+      <div class="flex gap-16 justify-center absolute top-24 left-48  flex-row-reverse pl-24">
        <motion.div 
-         initial={{opacity:0, x:50,}} 
-         whileInView={{opacity:1,x:10}}    
+         initial={{opacity:0, x:100,}} 
+         whileInView={{opacity:1,x:0}}    
          transition={{
            ease:"easeIn",
             bounce:0.4,
