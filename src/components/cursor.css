@@ -1,6 +1,6 @@
 .large_circle{
-  width: 120px;
-  height: 120px;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%;
   background-color: black;
   position: absolute;
@@ -9,6 +9,7 @@
   color: white;
   font-weight: 500;
   text-transform: uppercase;
+  z-index: 2;
 }
 @media screen and (max-width: 900px ){
  .overall_cursor{

@@ -2,6 +2,8 @@ import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
 import Cursor from "./cursor";
 import { NavLink } from "react-router-dom";
+import Marquee from "react-marquee-slider";
+import times from "lodash/times"
 const Facilities = ()=>{
   let isDown = false;
     let startX;
@@ -37,25 +39,17 @@ const Facilities = ()=>{
           </div>
         <div ref={ref} className="flex overflow-x-hidden "> 
           <div className="gridcontainer cursor-grab">
+            <Marquee velocity={20}>
+            {times(7, Number).map(id => (
+              <img src={img1} key={`marquee-example-people-${id}`} className="scrollerimg" />
+            ))}
+              </Marquee>
               <div className="imggrid">
-              <img src={img1} className="gridimg" alt=""/> 
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>  
-              </div>
-              <div className="imggrid">
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>  
+              <Marquee velocity={20}>
+            {times(7, Number).map(id => (
+              <img src={img1} key={`marquee-example-people-${id}`} className="scrollerimg"/>
+            ))}
+              </Marquee>
               </div>
             </div>
           </div> 

@@ -56,6 +56,18 @@ code {
   background-color: #7BB9C4;
   scroll-snap-type: y mandatory;
 }
+.overall_message{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: sticky;
+    height: 100vh;
+    top:0;
+    width:100%;
+    z-index: 1;
+    align-items: center; 
+    background-color:#f4f4f4;
+}
 .events_overall{
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,6 +213,11 @@ code {
   display: grid;
   grid-template-rows: 40vh 40vh;
 }
+.scrollerimg{
+  height: 40vh;
+  padding:10px 10px 10px;
+  box-sizing: border-box;
+}
 .gridimg{
   padding:10px 10px 10px;
   box-sizing: border-box;
@@ -222,6 +239,7 @@ code {
 .img1{
   width:4000px
 }
+
 @media screen and (min-width: 600px ){
   .btn{
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
