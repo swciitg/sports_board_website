@@ -10,7 +10,7 @@ const Navbar = (props) => {
   const {pathname}=useLocation();
   const [index, setIndex] = React.useState(0);
   const colors = [img1,img1];
-const delay = 2500;
+  const delay = 2500;
   React.useEffect(() => {
     setTimeout(
       () =>
@@ -23,7 +23,6 @@ const delay = 2500;
     return () => {};
   }, [index]);
   useEffect(()=>{
-    console.log(ref.current.style);
     if(pathname==="/stud/gymkhana/sports/clubs"){
       ref.current.style.position='relative';
     }
@@ -31,7 +30,6 @@ const delay = 2500;
       ref.current.style.position='sticky';
       ref.current.style.top='0';
     }
-    
   })
   
   return (
@@ -61,7 +59,7 @@ const delay = 2500;
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
            <div className="align">   <h3 className="texting">{props.name}</h3>
-                <h6 className="text">{props.info}</h6>
+                <h6 className="text">{props.slogan}</h6>
         </div>
           <div className="tomp">
               </div>

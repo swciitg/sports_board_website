@@ -23,7 +23,6 @@ const Team_members = ()=>{
     const ref2=useRef();
     const {pathname}=useLocation();
     useEffect(()=>{
-      console.log(ref2.current.style);
       if(pathname==="/stud/gymkhana/sports"){
         ref2.current.style.position='relative';
       }

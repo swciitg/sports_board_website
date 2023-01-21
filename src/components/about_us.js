@@ -3,7 +3,8 @@ import React from "react";
 import { useEffect } from "react";
 
 
-const About_us = ()=>{
+
+const About_us = (props)=>{
     return(
         <div className="overall_about">
         <div className="about_block">
@@ -35,5 +36,6 @@ const About_us = ()=>{
         </div>
     )
 }
+
 
 export default About_us;

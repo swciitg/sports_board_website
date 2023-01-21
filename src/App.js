@@ -12,7 +12,7 @@ function App() {
           <Route path='/stud/gymkhana/sports/clubs' element={< ClubPages/>} />
           <Route path='/stud/gymkhana/sports/events'  />
           <Route path='/stud/gymkhana/sports/clubs/basketball' element={<BasketballClub />} />
-          <Route path='/stud/gymkhana/sports/basketball' element={<AquaticsClub />} />
+          <Route path='/stud/gymkhana/sports/clubs/aquatics' element={<AquaticsClub />} />
           <Route path='/stud/gymkhana/sports/contacts' element={<Contactus />} />
    </Routes>
   
