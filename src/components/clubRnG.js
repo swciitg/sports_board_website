@@ -22,7 +22,7 @@ const ClubRnG = () => {
             <div className="smcnrg_overall">
                 <div className="smcnrg_block">
                 <div className="head_about text-6xl max-sm:text-3xl">Rules and guidelines</div>
-                    <div style={{display:'contents'}}>
+                    <div style={{display:'flex',justifyContent:'center'}}>
                         <img src={img1} className="gridimg" alt="" />
                     </div>
                     <div className="flex flex-col pr-6">

@@ -1,13 +1,42 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
 import { NavLink } from "react-router-dom";
+import img1 from "../images/hm.png";
+import { useLocation } from "react-router-dom";
 const Navbar = (props) => {
   const [open,setOpen] = useState(false);
-
+  const ref=useRef();
+  const {pathname}=useLocation();
+  const [index, setIndex] = React.useState(0);
+  const colors = [img1,img1];
+const delay = 2500;
+  React.useEffect(() => {
+    setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+      ref.current.style.backgroundImage=colors[index];
+    return () => {};
+  }, [index]);
+  useEffect(()=>{
+    console.log(ref.current.style);
+    if(pathname==="/stud/gymkhana/sports/clubs"){
+      ref.current.style.position='relative';
+    }
+    else{
+      ref.current.style.position='sticky';
+      ref.current.style.top='0';
+    }
+    
+  })
+  
   return (
-    <div style={{  position: 'sticky',
-      top:0}}>
+
+    <div ref={ref}>
               <div className="nav">
                  <div className="topnav">
              

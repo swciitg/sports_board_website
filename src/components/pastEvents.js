@@ -20,7 +20,7 @@ const PastEvents = () => {
                         </ul> 
                         </p>
                     </div>
-                    <div style={{display:'contents'}}>
+                    <div style={{display:'flex',justifyContent:'center'}}>
                         <img src={img1} className="gridimg" alt="" />
                     </div>
                 </div>

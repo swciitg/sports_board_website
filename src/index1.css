@@ -16,10 +16,11 @@ code {
     monospace;
 }
 .nav{
-  text-align: center;
   background-image: url('./images/hm.png');
+  text-align: center;
   background-size:100% 100%;
   background-repeat: no-repeat;
+  height: 100vh;
 
 }
 .topnav {

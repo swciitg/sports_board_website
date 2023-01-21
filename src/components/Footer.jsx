@@ -11,7 +11,7 @@ function Footer()
 {
 return(
 
-<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0 " >
+<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0 " style={{position:'relative' ,zIndex:'1'}} >
 <div id="part1" className="flex flex-row ml-44 gap-x-6 ">
   <div className="image w-52 h-52"><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
   <div className="content flex flex-col flex-wrap items-start justify-start   ">
