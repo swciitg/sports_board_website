@@ -7,6 +7,7 @@ import Event from "../components/event";
 import info from "../components/info"
 import Eventone from "../components/event1";
 import Animation from "../components/animation";
+import Message from "../components/message";
 function pages() {
    
   return(
@@ -19,6 +20,7 @@ function pages() {
       <Event />  
       <Facilities />
       <Team_members />
+      <Message />
       <Footer />
     
 
