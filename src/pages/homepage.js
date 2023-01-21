@@ -16,7 +16,7 @@ function pages() {
         info = {info[0].info}
       />
       <About_us />
-      <Eventone />  
+      <Event />  
       <Facilities />
       <Team_members />
       <Footer />

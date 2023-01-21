@@ -18,7 +18,9 @@
   line-height: 118px;  
   line-height: 123%;
   font-style: Semibold ;
-  left: 230.4px;
+  left: 200.4px;
+  top: 70px;
+  font-size: 80px;
 }
 #curve
 {
@@ -236,6 +238,7 @@ animation-name: none;
   height: 3em;
   overflow: hidden;
   position: absolute;
+  top: 235px;
   left: 230.4px;
 }
 
@@ -276,33 +279,42 @@ animation-name: none;
  animation-delay: 0s;
  animation-fill-mode: forwards;
 }
+#line1
+{
+top: -85%;  
+}
+#line2
+{
+  top: -110px;
+}
 #font1
 {
   position: absolute;
-  top: 445px;
+  top: 260px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
-  line-height: 118px;  
+  line-height: 70px;  
+  font-size: 80px;
   line-height: 123%;
   font-style: Semibold ;
-  left: 230.4px;
+  left: 200.4px;
 }
 
 #font2
 {
   position: absolute;
-  top: 710px;
+  top: 450px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
-  line-height: 118px;  
-  line-height: 123%;
+  line-height: 70px;  
+  font-size: 80px;
   font-style: Semibold ;
-  left: 230.4px;
+  left: 200.4px;
 }
 #counter2 {
   height: 3em;
   overflow: hidden;
   position: absolute;
   left: 230.4px;
-  top: 660px;
+  bottom: 470px;
 }
 
 .digit2 {
@@ -342,16 +354,21 @@ animation-name: none;
  animation-delay: 0s;
  animation-fill-mode: forwards;
 }
+#line3
+{
+  top: -200px;
+}
 
 #font3
 {
   position: absolute;
-  top: 960px;
+  top: 590px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 118px;  
   line-height: 123%;
+  font-size: 80px;
   font-style: Semibold ;
-  left: 230.4px;
+  left: 200.4px;
 }
 
 #counter3 {
@@ -359,7 +376,7 @@ animation-name: none;
   overflow: hidden;
   position: absolute;
   left: 230.4px;
-  top: 910px;
+  bottom: 310px;
 }
 
 .digit3 {
@@ -416,6 +433,17 @@ animation-name: none;
   from{transform: translateY(200px)}
   to{transform:  translateY(40px)}
 }
+@media screen and (max-width:1454px) {
+  #counter2 {
+     position: absolute;
+
+  }
+  #counter3 {
+    position: absolute;
+  
+    
+ }
+}
 @media screen and (max-width: 1280px) {
   .one{
     right: 90px;
@@ -429,6 +457,7 @@ animation-name: none;
   .four{
     right: 90px;
   }
+ 
 }
 
 @media  screen and (max-width: 1167px ) {
@@ -452,7 +481,24 @@ animation-name: none;
   {
     width: 750px;
   }
-  
+  #counter
+  {
+   left: 220px;
+   top: 98px;
+  }
+  #counter1
+  {
+    left: 220px;
+  }
+  #counter2
+  {
+    left: 220px;
+  }
+  #counter3
+  {
+    left: 220px;
+
+  }
   
  
   }

@@ -17,7 +17,7 @@ return(
            </div>
     <h1 id="font" className="text-8xl absolute left-52">SPARDHA</h1>
      </div>
-     <div className="lines absolute top-40"></div>
+     <div className="lines absolute top-1"></div>
      </div>
      {/* <div className="container">
         <img className="one" src={img1}></img>
@@ -38,7 +38,7 @@ return(
            </div>
     <h1 id="font1" className="text-8xl ">INTER IIT</h1>
     </div>
-    <div className="lines absolute top-52 "></div>
+    <div id="line1" className="lines absolute top-0 "></div>
     </div>
     {/* <div>
         <img className="two" src={img1}></img>
@@ -58,7 +58,7 @@ return(
            </div>
     <h1 id="font2" className="text-8xl  ">SPIRIT</h1>
     </div>
-    <div className="lines absolute top-56"></div>
+    <div id="line2" className="lines absolute top-0"></div>
     </div>
     {/* <div>
         <img className="three" src={img1}></img>
@@ -77,7 +77,7 @@ return(
            </div>
     <h1 id="font3" className="text-8xl  ">MANTHAN</h1>
     </div>
-    <div className="lines absolute top-64 "></div>
+    <div id="line3" className="lines absolute top-1 "></div>
     </div>
     {/* <div>
         <img className="four" src={img1}></img>

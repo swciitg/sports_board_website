@@ -96,16 +96,15 @@
   {
     height: 3em;
     overflow: hidden;
-    position: absolute;
-    top: 32px;
+   margin-top: -6%;
+   margin-bottom: 2%;
     margin-left: -1.4%;
   }
   #counter1
   {
     height: 3em;
     overflow: hidden;
-    position: absolute;
-    top: 200px;
+    margin-top: -1.6%;
     margin-left: -1.4%;
   }
   .digit1 {
@@ -151,8 +150,7 @@
   {
     height: 3em;
     overflow: hidden;
-    position: absolute;
-    top: 360px;
+   margin-top: -19%;
     margin-left: -1.4%;
   }
   .digit2 {
@@ -197,8 +195,7 @@
   {
     height: 3em;
     overflow: hidden;
-    position: absolute;
-    top: 540px;
+     margin-top: -24%;
     margin-left: -1.4%;
   }
   .digit3 {
@@ -360,8 +357,8 @@
    }
    
    @keyframes moveUp{
-     from{transform: translateY(200px)}
-     to{transform:  translateY(40px)}
+     from{transform: translateX(200px)}
+     to{transform:  translateX(40px)}
    }
    @media screen and (max-width:1378px) {
     .lines
@@ -369,3 +366,29 @@
         width: 1000px;
     }
    }
+   @media screen and (max-width:1225px) {
+    .lines
+    {
+        width: 800px;
+    }
+   }
+   @media screen and (max-width:1055px) {
+    .lines
+    {
+        width: 800px;
+    }
+    .font1{
+      font-size: 50px;
+    }
+    .four
+    {
+    height: 50px;
+    width: 270px;
+   }
+   .counter
+   {
+    margin-top: 10%;
+   margin-left: -4%;
+   }
+
+  }
