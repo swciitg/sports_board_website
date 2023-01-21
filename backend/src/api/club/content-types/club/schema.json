@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clubs",
+  "info": {
+    "singularName": "club",
+    "pluralName": "clubs",
+    "displayName": "Club",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClubName": {
+      "type": "string",
+      "required": true
+    },
+    "ClubSlogan": {
+      "type": "text"
+    },
+    "Components": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.component"
+    },
+    "Media_Components": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-components.media-component"
+    },
+    "Thumbnail_Content": {
+      "type": "richtext"
+    },
+    "Thumbnail_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Background_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

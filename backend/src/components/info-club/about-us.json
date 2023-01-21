@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_info_club_aboutuses",
+  "info": {
+    "displayName": "AboutUs"
+  },
+  "options": {},
+  "attributes": {
+    "Information": {
+      "type": "text"
+    }
+  }
+}
