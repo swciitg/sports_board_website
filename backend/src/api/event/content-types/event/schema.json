@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Event_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Event_Slogan": {
+      "type": "text"
+    },
+    "Component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.component"
+    },
+    "Media_Component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-components.media-component"
+    }
+  }
+}
