@@ -8,7 +8,7 @@ const ClubRnG = (props) => {
                 <div className="flex flex-col pr-6 w-[90%]">
                 <div className="head_about" style={{fontSize: '500%'}}>{props.name}</div>
                     <p className="para_about" style={{lineHeight:'160%'}} >
-                    {props.data} 
+                    {props.desc} 
                     </p>
                 </div>
                 <div>

@@ -22,7 +22,7 @@ const AquaticsClub =  () => {
       <div>
         <Navbar name={data.data.attributes.ClubName} slogan={data.data.attributes.ClubSlogan}/>
         {data.data.attributes.Components.map(item =>{
-            return (item.id)%2?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image}/>:<ClubRnG name={item.Component_name} desc={item.desc}/>
+            return (item.id)%2?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image}/>:<ClubRnG name={item.Component_name} desc={item.Component_data}/>
         })}
         <Team_members />
         <Facilities />
