@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * basketball service
+ * clubinfo service
  */
 
 module.exports = () => ({});
