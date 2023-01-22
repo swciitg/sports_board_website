@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 
 const About_us = (props)=>{
+
     return(
         <div className="overall_about">
         <div className="about_block">
@@ -14,10 +15,9 @@ const About_us = (props)=>{
                 </div>
             </div>
             <div className="container2">
-            <div className="head_about max-sm:text-3xl" style={{lineHeight:'123%'}}>About US</div>
+            <div className="head_about max-sm:text-3xl" style={{lineHeight:'123%'}}>{props.name}</div>
             <p className="para_about " style={{lineHeight:'160%'}}>
-            You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-            All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
+                {props.desc}
             </p>
             </div>   
         </div>
