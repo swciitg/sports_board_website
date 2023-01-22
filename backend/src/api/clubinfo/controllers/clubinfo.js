@@ -9,11 +9,10 @@ module.exports = {
     try {
       ctx.body = await strapi.entityService.findMany('api::club.club', {
         filters: {
-          $and: [
-            {
-              ClubName: ctx.request.query["page"]
-            }
-          ],
+          ClubName: 
+              {
+                $containsi: ctx.request.query["page"],
+              },
         },
         populate: {
           Components : {
