@@ -11,7 +11,7 @@ const ClubRnG = (props) => {
                     {props.desc} 
                     </p>
                 </div>
-                <div>
+                <div style={{display:'flex',alignItems:'center'}}>
                     <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
                 </div>
             </div>

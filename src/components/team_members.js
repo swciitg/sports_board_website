@@ -2,7 +2,7 @@ import img1 from "../images/about_icon.png";
 import React , { useRef,useState,useEffect }from "react";
 import { useLocation } from "react-router-dom";
 import Cursor from "./cursor";
-const Team_members = ()=>{
+const Team_members = (props)=>{
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -40,9 +40,9 @@ const Team_members = ()=>{
         <div className="team_block"  onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} >
           <div className="containerteam1">
             <div className="containerteam2">
-             <div className="head_about">TEAM MEMBERS</div>
+             <div className="head_about">{props.name}</div>
              <p className="para_about">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+             {props.desc}
              </p>
              <div className="firm-btn">
                 <a href="/#" className="btn" style={{textDecoration:"none"}}> Know More </a>
@@ -51,25 +51,15 @@ const Team_members = ()=>{
           </div>
             <div ref={ref} className="flex overflow-x-hidden cursor-grab">
             <div className="gridcontainer cursor-grab">
+              {<div className="imggrid">
+                  {props.media.map((image,index)=>{
+                     return index%2==0 ?<img src={"http://localhost:1337"+image.attributes.url} className="gridimg" alt=""/>:<></>
+                })}
+              </div>}
               <div className="imggrid">
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>  
-              </div>
-              <div className="imggrid">
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>
-              <img src={img1} className="gridimg" alt=""/>  
+              {props.media.map((image,index) =>{
+                    return index%2 ?<img src={"http://localhost:1337"+image.attributes.url} className="gridimg" alt=""/>:<></>
+                })}
               </div>
             </div>
            </div>
