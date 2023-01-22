@@ -5,13 +5,12 @@ import { useEffect } from "react";
 
 
 const About_us = (props)=>{
-
     return(
         <div className="overall_about">
         <div className="about_block">
             <div className="container1">
                 <div>
-                    <img src={img1} className="img1" alt="" />
+                    <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
                 </div>
             </div>
             <div className="container2">

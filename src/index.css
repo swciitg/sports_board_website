@@ -236,9 +236,7 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }*/
-.img1{
-  width:4000px
-}
+
 
 @media screen and (min-width: 600px ){
   .btn{

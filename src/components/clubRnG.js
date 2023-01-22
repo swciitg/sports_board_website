@@ -12,7 +12,7 @@ const ClubRnG = (props) => {
                     </p>
                 </div>
                 <div>
-                    <img src={img1} className="img1" alt="" />
+                    <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
                 </div>
             </div>
         </div>
