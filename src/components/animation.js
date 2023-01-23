@@ -2,6 +2,7 @@
 import bg from '../images/Rectangle 351.png';
 import hori from '../images/Group 89.png';
 import { motion, Variants } from "framer-motion";
+import './animation.css'
 
 /*const cardVariants: Variants = {
   offscreen: {
@@ -22,53 +23,14 @@ function Animation() {
   return (
     
     <div className="App">
-    <div class="flex flex-col gap-4">
-      <div class="flex relative">
-        <img  src={bg} class=""></img>
-      <div class="flex gap-5 justify-center absolute top-24 left-48 ">
-       <motion.div 
-         initial={{opacity:0, x:-50,}} 
-         whileInView={{opacity:1,x:-10}}    
-         transition={{
-           ease:"easeIn",
-            bounce:0.4,
-           duration:0.4,
-         }}
-         whileHover={{scale:1.05}}
-         viewport={{amount:0.4}}>
-        <img src={hori} alt="basket" class="w-11/12 pt-2 z-8"></img>
-       </motion.div>
-       <motion.div
-         initial={{opacity:0, x:50,}} 
-         whileInView={{opacity:1,x:10}}    
-         transition={{
-           ease:"easeIn",
-            bounce:0.4,
-           duration:0.4,
-         }}
-         whileHover={{scale:1.05}}
-         viewport={{amount:0.25}}
-        class="flex flex-col gap-6">
-        <div class="">
-          <h1 class="text-5xl font-bold pt-4 text-left">BASKETBALL</h1>
-        </div>
-        <div class="">
-          <p class="w-96 text-xl text-left">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
-          </p>
-        </div>
-       </motion.div>
-
+    <div class="flex flex-col gap-4 mt-12">
+      <div  class="flex relative">
+      <div  class="">  
+        <img  src={bg} className=" bg"></img>
       </div>
-        
-    </div>
-
-    <div class="flex relative flex-row-reverse">
-        <img  src={bg} class=""></img>
-      <div class="flex gap-16 justify-center absolute top-24 left-48  flex-row-reverse pl-24">
+     <div class="flex gap-8 absolute  textbox ">
        <motion.div 
-         initial={{opacity:0, x:100,}} 
+       initial={{opacity:0, x:-100,}} 
          whileInView={{opacity:1,x:0}}    
          transition={{
            ease:"easeIn",
@@ -76,77 +38,102 @@ function Animation() {
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}}>
-        <img src={hori} alt="basket" class="w-11/12 pt-2 z-8"></img>
-       </motion.div>
-       <motion.div
-         initial={{opacity:0, x:-50,}} 
-         whileInView={{opacity:1,x:-10}}    
+         viewport={{amount:0.25}}> 
+       <img src={hori} alt="basket" class=" z-12"></img>
+      </motion.div>
+      <motion.div initial={{opacity:0, x:100,}} 
+         whileInView={{opacity:1,x:0}}    
          transition={{
            ease:"easeIn",
             bounce:0.4,
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.4}}
-        class="flex flex-col gap-6">
-        <div class="">
-          <h1 class="text-5xl font-bold pt-4 text-left">BASKETBALL</h1>
+         viewport={{amount:0.25}} class="flex flex-col gap-4">
+        <div class="font-bold text-5xl">
+          BASKETBALL
         </div>
-        <div class="">
-          <p class="w-96 text-xl text-left">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
-          </p>
+        <div class="md:text-base lg:text-lg bhole1 h-64">
+            You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+            All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
         </div>
-       </motion.div>
-
+      </motion.div>
+     </div>
+     </div>
+    
+     <div  class="flex relative flex-row-reverse">
+      <div  class="">  
+        <img  src={bg} className=" bg"></img>
       </div>
-        
-    </div>
-
-
-    <div class="flex relative">
-        <img  src={bg} class=""></img>
-      <div class="flex gap-5 justify-center absolute top-24 left-48 ">
+     <div class="flex gap-8 absolute  textbox flex-row-reverse">
        <motion.div 
-         initial={{opacity:0, x:-50,}} 
-         whileInView={{opacity:1,x:-10}}    
+       initial={{opacity:0, x:100,}} 
+         whileInView={{opacity:1,x:0}}    
          transition={{
            ease:"easeIn",
             bounce:0.4,
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}}>
-        <img src={hori} alt="basket" class="w-11/12 pt-2 z-8"></img>
-       </motion.div>
-       <motion.div
-         initial={{opacity:0, x:50,}} 
-         whileInView={{opacity:1,x:10}}    
+         viewport={{amount:0.25}}> 
+       <img src={hori} alt="basket" class=" z-12"></img>
+      </motion.div>
+      <motion.div initial={{opacity:0, x:-100,}} 
+         whileInView={{opacity:1,x:0}}    
          transition={{
            ease:"easeIn",
             bounce:0.4,
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.4}}
-        class="flex flex-col gap-6">
-        <div class="">
-          <h1 class="text-5xl font-bold pt-4 text-left">BASKETBALL</h1>
+         viewport={{amount:0.25}} class="flex flex-col gap-4">
+        <div class="font-bold text-5xl">
+          BASKETBALL
         </div>
-        <div class="">
-          <p class="w-96 text-xl text-left">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
-          </p>
-          
+        <div class="md:text-base lg:text-lg bhole1 h-64">
+            You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+            All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
         </div>
-       </motion.div>
+      </motion.div>
+     </div>
+     </div>
 
+     <div  class="flex relative">
+      <div  class="">  
+        <img  src={bg} className=" bg"></img>
       </div>
-        
-    </div>
+     <div class="flex gap-8 absolute  textbox ">
+       <motion.div 
+       initial={{opacity:0, x:-100,}} 
+         whileInView={{opacity:1,x:0}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.25}}> 
+       <img src={hori} alt="basket" class=" z-12"></img>
+      </motion.div>
+      <motion.div initial={{opacity:0, x:100,}} 
+         whileInView={{opacity:1,x:0}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.25}} class="flex flex-col gap-4">
+        <div class="font-bold text-5xl">
+          BASKETBALL
+        </div>
+        <div class="md:text-base lg:text-lg bhole1 h-64">
+            You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+            All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
+        </div>
+      </motion.div>
+     </div>
+     </div>
     </div>
     </div>
   );
