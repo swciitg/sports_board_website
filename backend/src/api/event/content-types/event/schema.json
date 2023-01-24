@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,7 +19,7 @@
     "Event_Slogan": {
       "type": "text"
     },
-    "Component": {
+    "Components": {
       "type": "component",
       "repeatable": true,
       "component": "component.component"
@@ -27,6 +28,31 @@
       "type": "component",
       "repeatable": true,
       "component": "media-components.media-component"
+    },
+    "Thumbnail_Content": {
+      "type": "richtext"
+    },
+    "Thumbnail_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Background_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
