@@ -23,7 +23,7 @@ function Animation() {
   return (
     
     <div className="App">
-    <div class="flex flex-col gap-4 mt-12">
+    <div class="flex flex-col gap-4 mt-12 dnb">
       <div  class="flex relative">
       <div  class="">  
         <img  src={bg} className=" bg"></img>
@@ -49,11 +49,11 @@ function Animation() {
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}} class="flex flex-col gap-4">
-        <div class="font-bold text-5xl">
+         viewport={{amount:0.25}} class="flex flex-col sm:gap-3 gap-1">
+        <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl">
           BASKETBALL
         </div>
-        <div class="md:text-base lg:text-lg bhole1 h-64">
+        <div class=" lg:text-lg bhole1 h-64 md:text-base sm:text-sm">
             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
         </div>
@@ -86,11 +86,11 @@ function Animation() {
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}} class="flex flex-col gap-4">
-        <div class="font-bold text-5xl">
+         viewport={{amount:0.25}} class="flex flex-col sm:gap-3 gap-1">
+        <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl">
           BASKETBALL
         </div>
-        <div class="md:text-base lg:text-lg bhole1 h-64">
+        <div class="lg:text-lg bhole1 h-64 md:text-base sm:text-sm">
             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
         </div>
@@ -123,11 +123,11 @@ function Animation() {
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}} class="flex flex-col gap-4">
-        <div class="font-bold text-5xl">
+         viewport={{amount:0.25}} class="flex flex-col sm:gap-4 gap-1">
+        <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl">
           BASKETBALL
         </div>
-        <div class="md:text-base lg:text-lg bhole1 h-64">
+        <div class="lg:text-lg bhole1 h-64 md:text-base sm:text-sm">
             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
             All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
         </div>
@@ -135,6 +135,141 @@ function Animation() {
      </div>
      </div>
     </div>
+
+    <div class=" geet2   ">
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img class=" mt-12 mb-20 w-4/5  float-right "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-left "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-right "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-left "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-right "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-left "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-right "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img class=" mt-12 mb-20 w-4/5  float-left "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+
+      <motion.div class= "group"
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-12 mb-20 w-4/5  float-right "   src={hori} alt ="my aqua team"/>
+         
+      </motion.div>
+      
+     
+    
+
+
+
+
+  </div>
     </div>
   );
 }

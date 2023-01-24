@@ -20,3 +20,52 @@
    width:30vw;
    height:40vh;
 } */
+@media screen and (min-width:550px){
+    .dnb{
+      display:flex;
+      
+    
+    } 
+    .geet2{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width:550px){
+    .geet2{
+      display:flex;
+      
+    
+    }
+    .geet2 {
+      
+      flex-direction: column;
+      align-items: flex-end;
+      max-width: 90vw;
+      margin: auto;
+    }
+   
+  
+    
+    .dnb{
+      display:none;
+    }
+}
+
+@media screen and (max-width:847px){
+   
+.bhole1{
+   font-size:smaller;
+    }
+
+
+}
+
+@media screen and (max-width:710px){
+   
+    .bhole1{
+       font-size:x-small;
+        }
+    
+    
+    }
