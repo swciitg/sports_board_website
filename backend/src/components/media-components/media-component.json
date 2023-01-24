@@ -1,11 +1,12 @@
 {
   "collectionName": "components_media_components_media_components",
   "info": {
-    "displayName": "Media_Component"
+    "displayName": "Media_Component",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Heading": {
+    "Component_name": {
       "type": "string",
       "required": true
     },
@@ -13,14 +14,15 @@
       "type": "text"
     },
     "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
