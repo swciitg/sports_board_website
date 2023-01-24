@@ -53,12 +53,12 @@ const Team_members = (props)=>{
             <div className="gridcontainer cursor-grab">
               {<div className="imggrid">
                   {props.media.map((image,index)=>{
-                     return index%2==0 ?<img src={"http://localhost:1337"+image.attributes.url} className="gridimg" alt=""/>:<></>
+                     return index%2==0 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>}
               <div className="imggrid">
               {props.media.map((image,index) =>{
-                    return index%2 ?<img src={"http://localhost:1337"+image.attributes.url} className="gridimg" alt=""/>:<></>
+                    return index%2 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>
             </div>
