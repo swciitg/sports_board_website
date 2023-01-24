@@ -4,7 +4,7 @@ import Cursor from "./cursor";
 import { NavLink } from "react-router-dom";
 import Marquee from "react-marquee-slider";
 import times from "lodash/times"
-const Facilities = ()=>{
+const Facilities = (props)=>{
   let isDown = false;
     let startX;
     let scrollLeft;
@@ -28,9 +28,9 @@ const Facilities = ()=>{
       <div className="facilities_block " onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
           <div className="containerteam1">
             <div className="containerteam2">
-             <div className="head_about">OUR FACILITIES</div>
+             <div className="head_about">{props.name}</div>
              <p className="para_about">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+             {props.desc}
             </p>
              <div className="our-firm-btn">
                     <a href="#" className="btn" style={{textDecoration:"none"}}><span>Know More </span></a>
@@ -39,18 +39,16 @@ const Facilities = ()=>{
           </div>
         <div ref={ref} className="flex overflow-x-hidden "> 
           <div className="gridcontainer cursor-grab">
-            <Marquee velocity={20}>
-            {times(7, Number).map(id => (
-              <img src={img1} key={`marquee-example-people-${id}`} className="scrollerimg" />
-            ))}
-              </Marquee>
-              <div className="imggrid">
-              <Marquee velocity={20}>
-            {times(7, Number).map(id => (
-              <img src={img1} key={`marquee-example-people-${id}`} className="scrollerimg"/>
-            ))}
-              </Marquee>
-              </div>
+                {<div className="imggrid">
+                  {props.media.map((image,index)=>{
+                     return index%2==0 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                })}
+              </div>}
+              {<div className="imggrid">
+                  {props.media.map((image,index)=>{
+                     return index%2!==0?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                })}
+              </div>}
             </div>
           </div> 
       </div>
