@@ -29,7 +29,7 @@ function Animation() {
         <img  src={bg} className=" bg"></img>
       </div>
      <div class="flex gap-8 absolute  textbox ">
-       <motion.div 
+       <motion.div className="relative group"
        initial={{opacity:0, x:-100,}} 
          whileInView={{opacity:1,x:0}}    
          transition={{
@@ -40,6 +40,13 @@ function Animation() {
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
        <img src={hori} alt="basket" class=" z-12"></img>
+       <motion.div class=" absolute  duration-500  group-hover:opacity-100 opacity-0  text-white font-sans font-bold name"
+         transition={{type:'spring'}}>
+          BASKETBALL CLUB
+        </motion.div>
+        <div class=" absolute  text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500 number">
+          01
+        </div>
       </motion.div>
       <motion.div initial={{opacity:0, x:100,}} 
          whileInView={{opacity:1,x:0}}    
@@ -66,7 +73,7 @@ function Animation() {
         <img  src={bg} className=" bg"></img>
       </div>
      <div class="flex gap-8 absolute  textbox flex-row-reverse">
-       <motion.div 
+       <motion.div className="group relative" 
        initial={{opacity:0, x:100,}} 
          whileInView={{opacity:1,x:0}}    
          transition={{
@@ -77,6 +84,13 @@ function Animation() {
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
        <img src={hori} alt="basket" class=" z-12"></img>
+       <motion.div class="name absolute top-7 duration-500 left-10 group-hover:opacity-100 opacity-0  text-white font-sans font-bold"
+         transition={{type:'spring'}}>
+          BASKETBALL CLUB
+        </motion.div>
+        <div class=" absolute  text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500 number">
+          01
+        </div>
       </motion.div>
       <motion.div initial={{opacity:0, x:-100,}} 
          whileInView={{opacity:1,x:0}}    
