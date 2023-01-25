@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HomePage_Heading": {
+      "type": "string"
+    },
+    "HomePage_Slogan": {
+      "type": "text"
+    },
+    "Component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.component"
+    },
+    "Media_Component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-components.media-component"
+    },
+    "Event": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event.event"
+    }
+  }
+}
