@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_event_events",
+  "info": {
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Event_Num": {
+      "type": "string",
+      "required": true
+    },
+    "Event_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Event_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
