@@ -11,11 +11,11 @@ return(
 <div className='main_image2'>
 <img src={"http://localhost:1337"+props.info.Image.url}/>
 </div>
-<div className='flexing2'><div className='heading2'>{props.info.Position_Name}</div>
+<div className='flexing2'><div className='heading2'><p style={{margin:"10px"}}>{props.info.Position_Name}</p></div>
 <div className='para2'>
     {props.info.Name} <br/>{props.info.Department}<br/><br/>"{props.info.Slogan}"<br/><br/>
    <div className='icons2'>
-    <div className='ico2'><IoMdCall size={50}/>{props.info.Phone_Num}</div>
+    <a href={"tel:"+props.info.Phone_Num} className='ico2'><IoMdCall size={50}/></a>
     <a href={"mailto:"+props.info.Mail_ID} className='ico2'><GrMail size={50}/></a>
     <a href={props.info.Linkedin_ID}className='ico2'><SiLinkedin size={50}/></a>
    
