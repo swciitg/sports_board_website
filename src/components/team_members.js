@@ -19,24 +19,11 @@ const Team_members = (props)=>{
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; 
     }
-    const [open,setOpen] = useState(false);
-    const ref2=useRef();
-    const {pathname}=useLocation();
-    useEffect(()=>{
-      if(pathname==="/stud/gymkhana/sports"){
-        ref2.current.style.position='relative';
-      }
-      else{
-        ref2.current.style.position='sticky';
-        ref2.current.style.top='0';
-      }
-      
-    })
    
     return(
         <>
          <Cursor />
-        <div className="team_blockoverall"  ref={ref2}>
+        <div className="team_blockoverall">
         <div className="team_block"  onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} >
           <div className="containerteam1">
             <div className="containerteam2">

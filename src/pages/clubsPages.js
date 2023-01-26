@@ -4,9 +4,22 @@ import Navbar from "../components/navbar";
 import info from "../components/info"
 import Animation from "../components/animation";
 import Clubone from "../components/clubone";
-
+import { useEffect, useState } from "react";
 
 const ClubPages = () => {
+  const [ data, setData]=useState();
+  
+  async function getData (){
+    const api = `http://localhost:1337/api/clubs?populate=*`;
+    const result =await fetch(api);
+    const getResult = await result.json();
+    setData(getResult.data[0]);
+  }
+    useEffect(()=>{
+      getData();
+  },[])
+ 
+  console.log(data);
    return (
        <div>
            {/* <Navbar
@@ -15,7 +28,7 @@ const ClubPages = () => {
           />
            <Animation/> 
           <Footer/>  */}
-         <Clubone></Clubone>
+         <Clubone  data={data}></Clubone>
 
        </div>
 
