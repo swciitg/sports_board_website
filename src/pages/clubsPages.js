@@ -7,17 +7,6 @@ import Clubone from "../components/clubone";
 import { useEffect, useState } from "react";
 
 const ClubPages = () => {
-  const [ data, setData]=useState();
-  
-  async function getData (){
-    const api = `http://localhost:1337/api/clubsdata`;
-    const result =await fetch(api);
-    const getResult = await result.json();
-    setData(getResult.data[0]);
-  }
-    useEffect(()=>{
-      getData();
-  },[])
  
    return (
        <div>
