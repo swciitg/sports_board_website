@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./navbar";
 import { useEffect, useState } from "react";
 import React from "react";
+import Animation2 from "./animation2";
 
 
 function Clubone()
@@ -97,10 +98,10 @@ async function getData (){
   console.log(data);
     return(
         <div>
-        <Navbar></Navbar>
+        <Navbar name={"Club Pages"}/>
         <div className="flex flex-col gap-4 mt-12 dnb">
         {data.map((item,index) =>{
-            return (index)%2===0?<Animation info={item}/>:<Animation info={item} />
+            return (index)%2===0?<Animation info={item}/>:<Animation2 info={item} />
         })}
         </div>
         <Footer></Footer>
