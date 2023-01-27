@@ -23,7 +23,7 @@ const Navbar = (props) => {
     return () => {};
   }, [index]);
   useEffect(()=>{
-    if(pathname==="/stud/gymkhana/sports/clubs"){
+    if(pathname==="/stud/gymkhana/sports/clubs"||pathname==="/stud/gymkhana/sports/events"){
       ref.current.style.position='relative';
     }
     else{
