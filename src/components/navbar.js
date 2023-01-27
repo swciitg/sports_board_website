@@ -55,7 +55,7 @@ const Navbar = (props) => {
 
 
                <div className="find"> 
-                <a className="inactive" href="#"> Students Gymkhana Council</a>
+                <a className="inactive" href="#"> SPORTS BOARD</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
            <div className="align">   <h3 className="texting">{props.name}</h3>
@@ -68,7 +68,7 @@ const Navbar = (props) => {
           <div className="navigation">
             <div className="mainbar">
             <div className="logosm">
-            <a className="inactivesm" href="#"> Students Gymkhana Council</a>
+            <a className="inactivesm" href="#"> SPORTS BOARD</a>
                 <a className="innsm" href="#">IIT GUWAHATI </a>
               
             </div>

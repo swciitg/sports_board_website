@@ -1,6 +1,7 @@
 import img1 from "../images/about_icon.png";
-import React , { useRef }from "react";
+import React , { useRef,useState,useEffect }from "react";
 import Cursor from "./cursor";
+import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Marquee from "react-marquee-slider";
 import times from "lodash/times"
@@ -9,6 +10,7 @@ const Facilities = (props)=>{
     let startX;
     let scrollLeft;
     const ref = useRef();
+    const ref1 = useRef();
     const handleMouseDown = (e)=>{ isDown = true; startX=(e.pageX)-ref.current.offsetLeft;scrollLeft = ref.current.scrollLeft;}
     const handleMouseLeave = ()=>{ isDown = false;}
     const handleMouseUp = ()=>{ isDown = false;}
@@ -20,7 +22,15 @@ const Facilities = (props)=>{
       /*console.log({x,startX});
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; }
-
+      const {pathname}=useLocation();
+    useEffect(()=>{
+      if(pathname==="/stud/gymkhana/sports/"){
+        ref1.current.style.display='relative';
+      }
+      else{
+        ref1.current.style.display='none';
+      }
+    })
     return(
       <>
       <Cursor />
@@ -33,7 +43,7 @@ const Facilities = (props)=>{
              {props.desc}
             </p>
              <div className="our-firm-btn">
-                    <a href="#" className="btn" style={{textDecoration:"none"}}><span>Know More </span></a>
+                    <a href="/stud/gymkhana/sports/contacts" className="btn" style={{textDecoration:"none"}} ref={ref1}><span>Know More </span></a>
                 </div>
             </div>
           </div>

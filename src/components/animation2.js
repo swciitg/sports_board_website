@@ -39,6 +39,13 @@ function Animation2(props) {
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
        <img src={hori} alt="basket" class=" z-12"></img>
+       <motion.div class=" absolute  duration-500  group-hover:opacity-100 opacity-0  text-white font-sans font-bold name"
+         transition={{type:'spring'}}>
+          {props.info.ClubName}
+        </motion.div>
+        <div class=" absolute  text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500 number">
+          {(props.index+1)<10?"0"+(props.index+1):props.index+1}
+        </div>
       </motion.div>
       <motion.div initial={{opacity:0, x:-100,}} 
          whileInView={{opacity:1,x:0}}    

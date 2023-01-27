@@ -7,6 +7,7 @@ const Team_members = (props)=>{
     let startX;
     let scrollLeft;
     const ref = useRef();
+    const ref1 = useRef();
     const handleMouseDown = (e)=>{ isDown = true; startX=(e.pageX)-ref.current.offsetLeft;scrollLeft = ref.current.scrollLeft;}
     const handleMouseLeave = ()=>{ isDown = false;}
     const handleMouseUp = ()=>{ isDown = false;}
@@ -19,7 +20,15 @@ const Team_members = (props)=>{
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; 
     }
-   
+    const {pathname}=useLocation();
+    useEffect(()=>{
+      if(pathname==="/stud/gymkhana/sports/"){
+        ref1.current.style.display='relative';
+      }
+      else{
+        ref1.current.style.display='none';
+      }
+    })
     return(
         <>
          <Cursor />
@@ -31,8 +40,8 @@ const Team_members = (props)=>{
              <p className="para_about">
              {props.desc}
              </p>
-             <div className="firm-btn">
-                <a href="/#" className="btn" style={{textDecoration:"none"}}> Know More </a>
+             <div className="firm-btn" ref={ref1}>
+                <a href="/stud/gymkhana/sports/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
           </div>

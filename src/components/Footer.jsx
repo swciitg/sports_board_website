@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from '../images/footer.png';
+import img1 from '../images/logo_sportsboard.jpg';
 import img2 from '../images/icona.png';
 import img3 from '../images/iconb.png';
 import img4 from '../images/iconc.png';
 import img5 from '../images/icond.png';
-import img6 from '../images/icone.png';
+import img6 from '../images/swc_logo.png';
 import img7 from '../images/smallicon.png';
 import "./footer.css"
 function Footer()
@@ -23,10 +23,10 @@ return(
         <p align="left" id="two" className="text-sm">+91 -361-258162<br/>sgc@iitg.ac.in</p>
     </div>
      <div id="small" className="flex flex-row p-3 ml-4 mt-0 relative right-6 ">
-        <img id="img1" className="h-8 w-8" src={img2} alt=""/>
-        <img id="img1" className="h-8 w-8" src={img3} alt=""/>
-        <img id="img1"  className="h-8 w-8" src={img4} alt=""/>
-        <img id="img1"  className="h-8 w-8"  src={img5} alt=""/>
+        <a href="https://www.youtube.com/@sportsboardiitguwahati"><img id="img1" className="h-8 w-8" src={img2} alt=""/></a>
+        <a href="https://twitter.com/IITGuwahati"><img id="img1" className="h-8 w-8" src={img3} alt=""/></a>
+        <a href="https://instagram.com/sports_iit_guwahati?igshid=YmMyMTA2M2Y="><img id="img1"  className="h-8 w-8" src={img4} alt=""/></a>
+        {/* <img id="img1"  className="h-8 w-8"  src={img5} alt=""/> */}
      </div>
     </div>
     </div>

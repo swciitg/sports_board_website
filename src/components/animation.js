@@ -45,7 +45,7 @@ function Animation(props) {
           {props.info.ClubName}
         </motion.div>
         <div class=" absolute  text-white font-bold font-sans group-hover:opacity-100 opacity-0 duration-500 number">
-          01
+          {(props.index+1)<10?"0"+(props.index+1):props.index+1}
         </div>
       </motion.div>
       <motion.div initial={{opacity:0, x:100,}} 
