@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import { useEffect, useState } from "react";
 import React from "react";
 import Animation2 from "./animation2";
+import { NavLink } from "react-router-dom";
 
 
 function Clubone()
@@ -101,7 +102,7 @@ async function getData (){
         <Navbar name={"Club Pages"}/>
         <div className="flex flex-col gap-4 mt-12 dnb">
         {data.map((item,index) =>{
-            return (index)%2===0?<Animation info={item} index={index}/>:<Animation2 info={item} index={index} />
+            return (index)%2===0?<NavLink to={"/stud/gymkhana/sports/clubs/"+item.ClubName}><Animation info={item} index={index}/></NavLink>:<NavLink to={"/stud/gymkhana/sports/clubs/"+item.ClubName}><Animation2 info={item} index={index}/></NavLink>
         })}
         </div>
         <Footer></Footer>
