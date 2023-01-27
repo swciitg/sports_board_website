@@ -69,3 +69,16 @@
     
     
     }
+
+
+    .name{
+      top:2vh;
+      left:2.5vw;
+      font-size:2vw;
+    }
+
+    .number{
+      top:18vw;
+      right:2vw;
+      font-size:2vw;
+    }
