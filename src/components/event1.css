@@ -392,3 +392,8 @@
    }
 
   }
+  @media screen and (max-width: 950px){
+    .overall_evemain{
+      z-index: 0;
+    }
+}

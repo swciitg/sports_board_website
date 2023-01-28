@@ -22,7 +22,7 @@ const Team_members = (props)=>{
     }
     const {pathname}=useLocation();
     useEffect(()=>{
-      if(pathname==="/stud/gymkhana/sports/"){
+      if(pathname==="/stud/gymkhana/sports/"||pathname==="/stud/gymkhana/sports"){
         ref1.current.style.display='relative';
       }
       else{
@@ -63,22 +63,21 @@ const Team_members = (props)=>{
         </div>
         <div className="smoverallcontainer_team">
         <div className="smteam_block" >
-          <div className="head_about max-sm:text-6xl">TEAM MEMBERS</div>
+          <div className="head_about max-sm:text-6xl">{props.name}</div>
           <div>
           <p className="para_about">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+              {props.desc}
              </p>
           </div>
           <div className="smgrid flex flex-row overflow-x-scroll">
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
+              {props.media.map((image,index)=>{
+                     return <img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>
+                })}
           </div>
         </div>
         <div>
-              <div className="smfirm-btn">
-                    <a href="/#" class="btn" style={{textDecoration:"none"}}> Know More </a>
+              <div className="smfirm-btn" ref={ref1}>
+                  <a href="/stud/gymkhana/sports/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
         </div>
       </div>

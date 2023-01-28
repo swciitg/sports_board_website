@@ -21,14 +21,13 @@ const About_us = (props)=>{
             </div>   
         </div>
         <div className="smabout_block">
-            <div className="head_about text-6xl max-sm:text-3xl">About US</div>
+            <div className="head_about text-6xl max-sm:text-3xl">{props.name}</div>
             <div style={{display:'flex',justifyContent:'center'}}>
-                    <img src={img1} className="gridimg" alt="" />
+                    <img src={"http://localhost:1337"+props.media} className="gridimg" alt="" />
             </div>
             <div>
                 <p className="para_about">
-                You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-                All outdoor sports like athletics, swimming, cricket, football, hockey, basketball, volleyball, etc. and indoor sports like table tennis, weight lifting, chess, carrom, squash, etc. are actively played by all throughout the year.
+                {props.desc}
                 </p>
             </div>
         </div>
