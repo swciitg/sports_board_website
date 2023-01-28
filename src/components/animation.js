@@ -39,7 +39,7 @@ function Animation(props) {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
-       <img src={hori} alt="basket" class=" z-12"></img>
+       <img  src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt="basket" class=" z-12"></img>
        <motion.div class=" absolute  duration-500  group-hover:opacity-100 opacity-0  text-white font-sans font-bold name"
          transition={{type:'spring'}}>
           {props.info.ClubName}

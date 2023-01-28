@@ -27,7 +27,7 @@ function Animationthree(props)
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
-       <img src={hori} alt="basket" class=" z-12"></img>
+       <img src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt="basket" class=" z-12"></img>
       </motion.div>
       <motion.div initial={{opacity:0, x:-100,}} 
          whileInView={{opacity:1,x:0}}    
