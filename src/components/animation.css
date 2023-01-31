@@ -1,71 +1,91 @@
+
+@import url(//fonts.googleapis.com/css2?family=Familjen+Grotesk);
 .bg{
-    width:30vw;
+  width:30vw;
 }
 .bhole{
-    width:30vw;
+  width:30vw;
 }
 .bhole1{
-    width:40vw;
+  width:40vw;
+  font-family: 'Familjen Grotesk', sans-serif;
+  color: #565656;
 }
 .textbox{
-    width:70vw;
-    /* background-image: url("../images/Rectangle 351.png"); */
-    top:10vh;
-    left:10vw;
-    
+  width:70vw;
+  /* background-image: url("../images/Rectangle 351.png"); */
+  top:9vw;
+  left:13vw;
+  height:24vw;
+  
+}
+.big{
+  height:24vw;
 }
 
+
 /* .textbox1{
-    background-image: url("../images/Rectangle 351.png");
-   width:30vw;
-   height:40vh;
+  background-image: url("../images/Rectangle 351.png");
+ width:30vw;
+ height:40vh;
 } */
 @media screen and (min-width:550px){
-    .dnb{
-      display:flex;
-      
+  .dnb{
+    display:flex;
     
-    } 
-    .geet2{
-      display:none;
-    }
-  }
-
-  @media screen and (max-width:550px){
-    .geet2{
-      display:flex;
-      
-    
-    }
-    .geet2 {
-      
-      flex-direction: column;
-      align-items: flex-end;
-      max-width: 90vw;
-      margin: auto;
-    }
-   
   
+  } 
+  .geet2{
+    display:none;
+  }
+}
+
+@media screen and (max-width:550px){
+  .geet2{
+    display:flex;
     
-    .dnb{
-      display:none;
-    }
+  
+  }
+  .geet2 {
+    
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 90vw;
+    margin: auto;
+  }
+ 
+
+  
+  .dnb{
+    display:none;
+  }
 }
 
 @media screen and (max-width:847px){
-   
+ 
 .bhole1{
-   font-size:smaller;
-    }
+ font-size:smaller;
+  }
 
 
 }
 
 @media screen and (max-width:710px){
-   
-    .bhole1{
-       font-size:x-small;
-        }
-    
-    
-    }
+ 
+  .bhole1{
+     font-size:x-small;
+      }
+  
+  
+  }
+  .uri{
+    left:3vw;
+
+  }
+
+ .number{
+  bottom:1vw;
+  right:1.3vw;
+  
+  
+ }
