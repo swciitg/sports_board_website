@@ -62,7 +62,7 @@ text-align:left;
  
 }
 .find{
-  background-image: url('./images/hmm.png');  
+  background-image: url('./images/logo_sportsboard.jpg');  
   position: absolute;
   width: 86px;
   height: 92px;
@@ -530,7 +530,6 @@ position: relative;
 width: 50%;
 height: 8%;
 right: 45%;
-top: 30%;
 
 font-family: 'Fira Sans Extra Condensed';
 font-style: normal;

@@ -15,11 +15,11 @@ module.exports = {
               },
         },
         populate: {
-          Component : {
+          Components : {
             populate : {Component_Image : true,},
           }, 
-          // Thumbnail_Image : true,
-          // Background_Image : true, 
+          Thumbnail_Image : true,
+          Background_Image : true, 
           Media_Component : {
             populate : { Images : true, }
           }

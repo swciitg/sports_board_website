@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_uses",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "Contact Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Position_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Department": {
+      "type": "text",
+      "required": true
+    },
+    "Slogan": {
+      "type": "text"
+    },
+    "Phone_Num": {
+      "type": "text"
+    },
+    "Mail_ID": {
+      "type": "text"
+    },
+    "Linkedin_ID": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

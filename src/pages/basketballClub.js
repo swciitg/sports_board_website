@@ -23,7 +23,7 @@ const BasketballClub = () => {
   console.log(data);
     return (
       <div>
-        <Navbar name={data.ClubName} slogan={data.ClubSlogan} />
+        <Navbar name={data.ClubName+"CLUB"} slogan={data.ClubSlogan} />
         {data.Components.map((item,index) =>{
             return (index)%2===0?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>:<ClubRnG name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>
         })}

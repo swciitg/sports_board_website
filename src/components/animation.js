@@ -132,7 +132,7 @@ function Animation() {
        <img src={hori} alt="basket" class=" z-12 big"></img>
        <motion.div class=" text-xs sm:text-sm  md:text-xl lg:text-2xl w-11/12 absolute top-4 duration-500  opacity-0 group-hover:opacity-100   text-white font-sans font-bold uri"
          transition={{type:'spring'}}>
-          FOOTBALL CLUB
+         FOOTBALL CLUB
         </motion.div>
         <div class=" md:text-5xl absolute md:bottom-3 sm:text-4xl text-3xl lg:text-6xl  text-white font-bold font-sans opacity-0 group-hover:opacity-100   duration-500 number">
           03

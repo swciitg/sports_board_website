@@ -23,7 +23,7 @@ const Navbar = (props) => {
     return () => {};
   }, [index]);
   useEffect(()=>{
-    if(pathname==="/stud/gymkhana/sports/clubs"){
+    if(pathname==="/stud/gymkhana/sports/clubs"||pathname==="/stud/gymkhana/sports/events"){
       ref.current.style.position='relative';
     }
     else{
@@ -55,7 +55,7 @@ const Navbar = (props) => {
 
 
                <div className="find"> 
-                <a className="inactive" href="#"> Students Gymkhana Council</a>
+                <a className="inactive" href="#"> SPORTS BOARD</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
            <div className="align">   <h3 className="texting">{props.name}</h3>
@@ -68,7 +68,7 @@ const Navbar = (props) => {
           <div className="navigation">
             <div className="mainbar">
             <div className="logosm">
-            <a className="inactivesm" href="#"> Students Gymkhana Council</a>
+            <a className="inactivesm" href="#"> SPORTS BOARD</a>
                 <a className="innsm" href="#">IIT GUWAHATI </a>
               
             </div>
@@ -81,13 +81,13 @@ const Navbar = (props) => {
 
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
-            <NavLink  to="/"   style={isActive => ({
+            <NavLink  to="/stud/gymkhana/sports/"   style={isActive => ({
     color: isActive ? "black" : "green"})}> Home </NavLink>
-                  <NavLink to="/events" style={isActive => ({
+                  <NavLink to="/stud/gymkhana/sports/events" style={isActive => ({
     color: isActive ? "black" : "green"})}>Events</NavLink>
-                  <NavLink to="/clubs" style={isActive => ({
+                  <NavLink to="/stud/gymkhana/sports/clubs" style={isActive => ({
     color: isActive ? "black" : "green"})}>Clubs</NavLink>
-                  <NavLink to="/contacts" style={isActive => ({
+                  <NavLink to="/stud/gymkhana/sports/contacts" style={isActive => ({
     color: isActive ? "black" : "green"})}>Contacts</NavLink>
              
              </div>
@@ -98,8 +98,8 @@ const Navbar = (props) => {
           </div>
           <div className="bodys">
             
-           <div className="bodyss"> <span> Lorem Epsum</span></div>
-            <div className="bodysss"> Empowering athlets something something has to be written
+           <div className="bodyss"> <span> {props.name}</span></div>
+            <div className="bodysss">{props.slogan}
            
             </div>         
             </div>
