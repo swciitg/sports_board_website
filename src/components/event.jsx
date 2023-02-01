@@ -2,8 +2,65 @@ import React from "react";
 import img1 from '../images/image 8.png';
 import Image from "./image";
 import "./hover.css";
+import { useState,useEffect } from "react";
 // 1280 px pe image ki position change karna fir ,, 1167px pe font ka size image ka position ,,
 function Event(){
+    const [ data, setData]=useState(
+        [
+          {
+            "id": 1,
+            "Event_Name": "Loading",
+            "Event_Slogan": "With the pride of your hostel at stake, this time in the sporting arena",
+            "createdAt": "2023-01-21T12:42:33.803Z",
+            "updatedAt": "2023-01-26T14:05:03.872Z",
+            "publishedAt": "2023-01-21T12:42:34.929Z",
+            "Thumbnail_Content": "You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.\n",
+            "Thumbnail_Image": {
+              "id": 1,
+              "name": "Loading.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 459,
+              "height": 470,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_Club.png",
+                  "hash": "thumbnail_Club_0a4c62f13d",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 152,
+                  "height": 156,
+                  "size": 62.93,
+                  "url": "/uploads/thumbnail_Club_0a4c62f13d.png"
+                }
+              },
+              "hash": "Club_0a4c62f13d",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 96.41,
+              "url": "/uploads/Club_0a4c62f13d.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "folderPath": "/",
+              "createdAt": "2023-01-21T10:10:39.413Z",
+              "updatedAt": "2023-01-22T13:30:13.266Z"
+            }
+          },
+        ]  
+      
+      );
+  
+  async function getData (){
+      const api = `http://localhost:1337/api/alleventdata`;
+      const result =await fetch(api);
+      const getResult = await result.json();
+      setData(getResult);
+    }
+    useEffect(()=>{
+      getData();
+  },[])
 return(
 <div className="overall_evemain">
 <div id="curve" className=" space-y-48 relative left-4em  " >
@@ -24,7 +81,7 @@ return(
    
      </div> */}
      <div className="one" >
-      <Image></Image>
+      <Image  image_url = {data[0].Thumbnail_Image.url}></Image>
      </div>
     {/* </div> */}
     </div>
@@ -44,7 +101,7 @@ return(
         <img className="two" src={img1}></img>
      </div> */}
      <div className="two">
-      <Image></Image>
+      <Image  image_url = {data[1].Thumbnail_Image.url}></Image>
      </div>
     
     </div>
@@ -64,7 +121,7 @@ return(
         <img className="three" src={img1}></img>
      </div> */}
      <div className="three">
-      <Image></Image>
+      <Image  image_url = {data[2].Thumbnail_Image.url}></Image>
      </div>
     </div>
     <div id="cont" className=" font-extrabold flex flex-row space-x-24">
@@ -83,7 +140,7 @@ return(
         <img className="four" src={img1}></img>
      </div> */}
      <div className="four">
-      <Image></Image>
+      <Image  image_url = {data[3].Thumbnail_Image.url}></Image>
      </div>
     </div>
    

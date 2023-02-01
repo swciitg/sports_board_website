@@ -57,6 +57,17 @@
             left: 36rem;
         }
     }
+    @media screen and (max-width:735px) {
+        #part1
+        {
+            margin-left: 4rem;
+        }
+        #part2
+        {
+            position: absolute;
+            left: 32rem;
+        }
+    }
    
    @media screen and (max-width:726px) {
       #one
@@ -199,16 +210,26 @@
   
 
    @media screen and (max-width:390px) {
+    /* #assam::before
+    {
+        content: "\a";
+        white-space: pre;
+    } */
     
+    #content-four::before
+    {
+        content: "\a";
+        white-space: pre;
+    }
     #img{
        width:107.42px;
-       height: 115px;
+       height: 110px;
        margin-top: 56px;
        margin-left: 80px;
     }
     #head
     {
-        font-size: 25px;
+        font-size: 27px;
     }
     #heading
     {
@@ -218,12 +239,12 @@
     #small
     {
         margin-top: 30px;
-        margin-left: 60px;
+        margin-left: 36px;
     }
    #img1
    {
-    width: 52.25px;
-    height: 52.25px;
+    width: 45.25px;
+    height: 45.25px;
    }
    #img3
    {
@@ -254,6 +275,7 @@
     position: absolute;
     top: 235px;
     left: -170px;
+    margin-left: 12px;
    }
    #two
    {
@@ -261,13 +283,14 @@
     position: absolute;
     top: 300px;
     left: -170px;
+    margin-left: 12px;
    }
     #part2
     {
         position: absolute;
         width: 158px;
         left: 390px;
-        margin-top: 260px;
+        top: 15.7rem;
     }
    #imglast
    {
@@ -289,7 +312,16 @@
    {
     margin-left: -10px;
    }
+    #four
+    {
+        margin-left: 2px;
+        font-size: 14px;
 
+    }
+    #three
+    {
+        font-size: 14px;
+    }
    }
    @media screen and (max-width:364px) {
     #one
@@ -305,6 +337,11 @@
     {
         margin-left: -188px;
     }
+    #content-four::before
+    {
+        content: "\a";
+        white-space: pre;
+    }
    }
    @media screen and (max-width:336px) {
     #img
@@ -317,11 +354,17 @@ margin-left: 60px;
     }
     #small
     {
-        margin-left: 35px;
+        margin-left: 15px;
+        width: 135px;
     }
     #one
     {
          font-size: 12px;
+    }
+    #img1
+    {
+        width: 33px;
+        height: 33px;
     }
     #two
     {
@@ -331,6 +374,14 @@ margin-left: 60px;
     #part2
     {
         margin-left: -220px;
+    }
+    #three
+    {
+        font-size: 12px;
+    }
+    #four
+    {
+        font-size: 12px;
     }
    }
    /* @media screen and (max-width:320px) {
@@ -374,19 +425,19 @@ margin-left: 60px;
     }
     #one
     {
-       font-size: 8px;
+       font-size: 10px;
     }
     #two
     {
-    font-size: 8px;
+    font-size: 10px;
     }
     #three
     {
-        font-size: 8px;
+        font-size: 10px;
     }
     #four
     {
-        font-size: 8px;
+        font-size: 10px;
     }
     #part2
     {
@@ -396,5 +447,10 @@ margin-left: 60px;
     {
         width: 30px;
         height: 30px;
+    }
+    #student::before
+    {
+        content: "\a";
+        white-space: pre;
     }
    }
