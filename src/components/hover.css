@@ -22,6 +22,7 @@
   top: 70px;
   font-size: 80px;
 }
+
 #curve
 {
   
@@ -362,7 +363,7 @@ top: -85%;
 #font3
 {
   position: absolute;
-  top: 590px;
+  top: 577px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 118px;  
   line-height: 123%;
@@ -444,9 +445,38 @@ top: -85%;
     
  }
 }
+@media screen and (max-width:1376px) {
+  #counter
+  {
+    left: 220px;
+  }
+  #counter1
+  {
+    left: 220px;
+  }
+  #counter2
+  {
+    left: 220px;
+  }
+  #counter3
+  {
+    left: 220px;
+  }
+}
+@media screen and (max-width:1225px) {
+  #counter
+  {
+    top: 108px;
+  }
+  #counter1
+  {
+    top: 235px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .one{
     right: 90px;
+   
   }
   .two{
     right: 90px;
@@ -539,43 +569,49 @@ top: -85%;
     }
     #font
     {
-      left: 175px;
+      left: 146px;
     }
     #font1
     {
-      left: 175px;
+      left: 146px;
     }
     #font2
     {
-      left: 175px;
+      left: 146px;
+      top: 430px;
     }
     #font3
     {
-      left: 175px;
+      left: 146px;
     }
    #counter
    {
-     left: 175px;
+     left: 165px;
    }
    #counter1
    {
-    left: 175px;
+    left: 165px;
    }
    #counter2
    {
-    left: 175px;
+    left: 165px;
    }
    #counter3
    {
-    left: 175px;
+    left: 165px;
+   }
+   .lines
+   {
+      position: absolute;
+      left: 175px;
    }
   }
-
+  
  @media screen and (max-width:953px) {
   
   .lines
   {
-    width: 650px;
+    width: 350px;
   }
   #cont
   {
@@ -583,19 +619,19 @@ top: -85%;
   }
   #font
   {
-    left: 110px;
+    left: 95px;
   }
   #font1
   {
-    left: 110px;
+    left: 95px;
   }
   #font2
   {
-    left: 110px;
+    left: 95px;
   }
   #font3
   {
-    left: 110px;
+    left: 95px;
   }
  #counter
  {
@@ -614,6 +650,25 @@ top: -85%;
   left: 110px;
  }
  }
+ @media screen and (max-width:905px) {
+  #line1
+  {
+    width: 700px;
+  }
+  #line4
+  {
+    width: 700px;
+  }
+  #line2
+  {
+    width: 700px;
+  }
+  #line3
+  {
+    width: 700px;
+  }
+ }
+ 
  @media screen and (max-width:795px) {
   #font
   {
@@ -636,11 +691,23 @@ top: -85%;
 
   #digit
   {
-    font-size: 38px;
+    font-size: 44px;
   }
   #counter
   {
-    height: 2.5em;
+    height: 15px;
+  }
+  #counter1
+  {
+    height: 15px;
+  }
+  #counter2
+  {
+    height: 15px;
+  }
+  #counter3
+  {
+    height: 15px;
   }
   .lines{
     width: 550px;
@@ -665,23 +732,53 @@ top: -85%;
   }
  #counter
  {
-   left: 70px;
+   left: 60px;
+   top: 76px;
  }
  #counter1
  {
-  left: 70px;
+  left: 60px;
+ }
+ #font
+ {
+  left: 45px;
+ }
+ #font1
+ {
+  left: 45px;
+ }
+ #font2
+ {
+  left: 45px;
+ }
+ #font3
+ {
+  left: 45px;
  }
  #counter2
  {
-  left: 70px;
+  top: 510px;
+  left: 60px;
  }
  #counter3
  {
-  left: 70px;
+  left: 60px;
  }
- .lines
+ #line
  {
-  width: 495px;
+  width: 480px;
+ }
+ #line1
+ {
+  width: 480px;
+ }
+ #line2
+ {
+  width: 480px;
+ }
+ #line3
+ {
+  width: 480px;
  }
  #cont
  {
@@ -689,84 +786,47 @@ top: -85%;
  }
  }
  @media screen and (max-width:612px) {
-    /* #font
-    {
-      font-size: 40px;
-    }
-    #font1
-    {
-      font-size: 40px;
-    }
-    #font2
-    {
-      font-size: 40px;
-    }
-    #font3
-    {
-      font-size: 40px;
-    } */
     .lines{
       width: 470px;
     }
  }
- @media screen and (max-width:572px) {
-  .lines
+@media screen and (max-width:520px) {
+  #line1
   {
-    width: 420px;
+    width: 390px;
   }
- }
- @media screen and (max-width:520px) {
-  .lines
+  #line2
   {
-    width: 340px;
+    width: 390px;
   }
-  /* #font
+  #line3
   {
-    font-size: 35px;
-  }
-  #font1
-  {
-    font-size: 35px;
-  }
-  #font2
-  {
-    font-size: 35px;
-  }
-  #font3
-  {
-    font-size: 35px;
-  } */
-
- }
- @media screen and (max-width:390px) {
-  .lines
-  {
-    width: 250px;
+    width: 390px;
   }
   #font
   {
-    font-size: 56px;
+    font-size: 50px;
   }
   #font1
   {
-    font-size: 56px;
+    font-size: 50px;
   }
   #font2
   {
-    font-size: 56px;
+    font-size: 50px;
   }
   #font3
   {
-    font-size: 56px;
+    font-size: 50px;
   }
+  #counter2
+  {
+    position: absolute;
+    top: 470px;
+  }
+}
 
 
-
-  
- }
- @media  screen and (max-width:320px) {
-  
- }
 
 
   @media screen and (max-width: 877px) {

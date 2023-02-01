@@ -2,7 +2,7 @@
 import bg from '../images/Rectangle 351.png';
 import hori from '../images/Group 89.png';
 import { motion} from "framer-motion";
-import mobHori from './images/fullHori.svg';
+import mobHori from '../images/fullHori.svg';
 import './animation.css'
 
 /*const cardVariants: Variants = {
