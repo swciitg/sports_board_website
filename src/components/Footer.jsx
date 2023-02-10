@@ -6,13 +6,37 @@ import img4 from '../images/iconc.png';
 import img5 from '../images/icond.png';
 import img6 from '../images/swc_logo.png';
 import img7 from '../images/smallicon.png';
-import img8 from "../images/linkedin.png"
+import img8 from "../images/linkedin.png";
+import { useState,useEffect } from "react";
 import "./footer.css"
 function Footer()
 {
+  const [ data, setData]=useState({"id":1,"HomePage_Heading":"Loading","HomePage_Slogan":"loading","createdAt":"2023-01-22T18:44:58.917Z","updatedAt":"2023-01-22T18:46:54.160Z","publishedAt":"2023-01-22T18:46:54.154Z","Thumbnail_Content":null,"Component":[{"id":54,"Component_name":"Loading","Component_data":"loading","Component_Image":{"id":1,"name":"Loading.png","alternativeText":null,"caption":null,"width":459,"height":470,"formats":{"thumbnail":{"name":"thumbnail_Club.png","hash":"thumbnail_Club_0a4c62f13d","ext":".png","mime":"image/png","path":null,"width":152,"height":156,"size":62.93,"url":"/uploads/thumbnail_Club_0a4c62f13d.png"}},"hash":"Club_0a4c62f13d","ext":".png","mime":"image/png","size":96.41,"url":"/uploads/Club_0a4c62f13d.png","previewUrl":null,"provider":"local","provider_metadata":null,"folderPath":"/","createdAt":"2023-01-21T10:10:39.413Z","updatedAt":"2023-01-22T13:30:13.266Z"}}],"Thumbnail_Image":null,"Background_Image":null,"Media_Component":[{"id":26,"Media_Description":"loading","Component_name":"Loading","Images":[{"id":1,"name":"Loading.png","alternativeText":null,"caption":null,"width":459,"height":470,"formats":{"thumbnail":{"name":"thumbnail_Club.png","hash":"thumbnail_Club_0a4c62f13d","ext":".png","mime":"image/png","path":null,"width":152,"height":156,"size":62.93,"url":"/uploads/thumbnail_Club_0a4c62f13d.png"}},"hash":"Club_0a4c62f13d","ext":".png","mime":"image/png","size":96.41,"url":"/uploads/Club_0a4c62f13d.png","previewUrl":null,"provider":"local","provider_metadata":null,"folderPath":"/","createdAt":"2023-01-21T10:10:39.413Z","updatedAt":"2023-01-22T13:30:13.266Z"}]}]});
+  
+  async function getData (){
+    const api = `http://localhost:1337/api/homepagedata`;
+    const result =await fetch(api);
+    const getResult = await result.json();
+    setData(getResult);
+  }
+  useEffect(()=>{
+    getData();
+},[])
+ 
+  console.log(data);
+  var c= data.length;
+  let text = "";
+  if(c%2==0)
+  {
+     text= "#D9D9D9";
+  }
+  else
+  {
+    text = "#7BB9C4";
+  }
 return(
 
-<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0 " style={{position:'relative' ,zIndex:'1'}} >
+<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0  " style={{position:'relative' ,zIndex:'1',backgroundColor: text }} >
 <div id="part1" className="flex flex-row ml-44 gap-x-6 ">
   <div className="image w-52 h-52"><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
   <div className="content flex flex-col flex-wrap items-start justify-start   ">

@@ -81,7 +81,7 @@ return(
    
      </div> */}
      <div className="one" >
-      <Image  image_url = {data[0].Thumbnail_Image.url}></Image>
+      <Image  image_url = {img1}></Image>
      </div>
     {/* </div> */}
     </div>
@@ -101,7 +101,7 @@ return(
         <img className="two" src={img1}></img>
      </div> */}
      <div className="two">
-      <Image  image_url = {data[1].Thumbnail_Image.url}></Image>
+      <Image  image_url = {img1}></Image>
      </div>
     
     </div>
@@ -121,7 +121,7 @@ return(
         <img className="three" src={img1}></img>
      </div> */}
      <div className="three">
-      <Image  image_url = {data[2].Thumbnail_Image.url}></Image>
+      <Image  image_url = {img1}></Image>
      </div>
     </div>
     <div id="cont" className=" font-extrabold flex flex-row space-x-24">
@@ -140,7 +140,8 @@ return(
         <img className="four" src={img1}></img>
      </div> */}
      <div className="four">
-      <Image  image_url = {data[3].Thumbnail_Image.url}></Image>
+      <Image  image_url = {img1}></Image>  
+      {/* {data[3].Thumbnail_Image.url} */}
      </div>
     </div>
    

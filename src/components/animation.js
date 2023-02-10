@@ -6,7 +6,7 @@ import mobHori from '../images/fullHori.svg';
 import './animation.css'
 
 /*const cardVariants: Variants = {
-  offscreen: {
+  offsitcreen: {
     x: 300
   },
   onscreen: {
