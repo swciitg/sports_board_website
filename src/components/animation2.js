@@ -28,7 +28,7 @@ function Animation2(props) {
         <img  src={bg} className=" bg"></img>
       </div>
      <div class="flex gap-8 absolute  textbox flex-row-reverse">
-       <motion.div 
+       <motion.div className="relative group"
        initial={{opacity:0, x:100,}} 
          whileInView={{opacity:1,x:0}}    
          transition={{

@@ -7,9 +7,9 @@ function Image(props)
     
     return(
      
-        <div className="container">
+        <div className="container w-80 h-80">
         <img src={"http://localhost:1337"+ props.image_url} />
-         <div className="top-left text-white">SPARDHA</div>  
+         <div className="top-left text-white">{props.name}</div>  
         <div className=" absolute right-3 bottom-1 text-8xl text-white ">01</div>
         </div>
 
