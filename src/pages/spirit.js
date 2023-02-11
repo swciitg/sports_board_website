@@ -31,7 +31,7 @@ const Spirit =  () => {
         })}
         
         
-        <Footer />
+        <Footer size= {data_Event.length} />
        </div> 
     );
 

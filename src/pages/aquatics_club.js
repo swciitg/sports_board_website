@@ -37,7 +37,7 @@ const AquaticsClub =  () => {
         })}
         
         
-        <Footer />
+        <Footer size={col1} />
        </div> 
     );
 

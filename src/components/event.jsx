@@ -246,7 +246,7 @@ return(
         <img className="two" src={img1}></img>
      </div> */}
      <div className="two">
-      <Image  name={data[1].Event_Name}    image_url = {data[1].Thumbnail_Image.url}></Image>
+      <Image  name={data[1].Event_Name} image_url = {data[1].Thumbnail_Image.url}></Image>
      </div>
     
     </div>

@@ -32,7 +32,7 @@ const BasketballClub = () => {
         })}
         
         
-        <Footer />
+        <Footer  />
        </div> 
     );
 
