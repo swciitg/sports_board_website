@@ -29,37 +29,40 @@
  width:30vw;
  height:40vh;
 } */
-@media screen and (min-width:550px){
+@media  screen and (min-width:550px){
   .dnb{
     display:flex;
     
   
   } 
-  .geet2{
+   .geet{
     display:none;
-  }
+  } 
 }
 
-@media screen and (max-width:550px){
-  .geet2{
+@media  screen and (max-width:550px){
+
+   .geet{
     display:flex;
-    
-  
-  }
-  .geet2 {
-    
     flex-direction: column;
-    align-items: flex-end;
+    
     max-width: 90vw;
     margin: auto;
-  }
- 
-
+    
+    
   
-  .dnb{
-    display:none;
-  }
+  } 
+.dnb{
+  display:none;
 }
+}
+.mobimage{
+  width:60vw;
+  height:60vw;
+}
+  
+
+
 
 @media screen and (max-width:847px){
  
@@ -91,23 +94,34 @@
   
  }
 
+   .mobName{
+    top:2vw;
+    left:18vw;
+    font-size:6vw;
+   }
+   .mobNumber{
+    bottom:1vw;
+    right:18vw;
+    font-size:6vw;
+   }
+    
    
-    .bhole1{
-       font-size:x-small;
-        }
-    
-    
     
 
 
     .name{
-      top:2vh;
-      left:2.5vw;
+      top:1vh;
+      left:1.5vw;
       font-size:2vw;
     }
 
     .number{
       top:18vw;
-      right:2vw;
+      right:1.5vw;
       font-size:2vw;
+    }
+
+    .image{
+      height: 21.5vw;
+      width: 22vw;
     }

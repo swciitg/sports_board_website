@@ -68,7 +68,7 @@ async function getData (){
     return(
         <div>
         <Navbar name={"EVENTS"}></Navbar>
-        <div className="flex flex-col gap-4 mt-12 dnb">
+        <div className="flex flex-col gap-4 mt-12 ">
         {data.map((item,index) =>{
           return (index)%2===0?<a href={"/stud/gymkhana/sports/events/"+item.Event_Name}><Animationfour info={item} index={index}/></a>:<a href={"/stud/gymkhana/sports/events/"+item.Event_Name}><Animationthree info={item} index={index}/></a>
         })}
