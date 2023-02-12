@@ -402,6 +402,7 @@ code {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+  justify-content: center;
   color: #565656;
 }
 .smabout_block,.smcnrg_block{
@@ -417,6 +418,7 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
+  display: flex;
 }
 
 .smoverallcontainer_team,.smcnrg_overall{
@@ -426,6 +428,7 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
+  display: flex;
 }
 .smcnrg_overall{
   background-color: #7BB9C4;
