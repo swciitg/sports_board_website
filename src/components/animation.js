@@ -5,6 +5,7 @@ import './animation.css'
 import ClubRnG from './clubRnG';
 import React from 'react';
 import { useEffect, useState } from "react";
+import fullHori from "../images/fullHori.svg"
 /*const cardVariants: Variants = {
   offscreen: {
     x: 300
@@ -23,7 +24,7 @@ function Animation(props) {
   console.log(props.info);
   return (
     <div className="App">
-      <div  class="flex relative  ">
+      <div  class="flex relative dnb ">
       <div  class="">  
         <img  src={bg} className=" bg"></img>
       </div>
@@ -38,7 +39,7 @@ function Animation(props) {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
-       <img   src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt="basket" class=" z-12"></img>
+       <img   src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt="basket" class="image z-48"></img>
        <motion.div class=" absolute  duration-500  group-hover:opacity-100 opacity-0  text-white font-sans font-bold name"
          transition={{type:'spring'}}>
           {props.info.ClubName}
@@ -56,15 +57,38 @@ function Animation(props) {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}} class="flex flex-col sm:gap-3 gap-1">
-        <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl">
+        <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl xl:text-6xl 2xl:text-7xl ">
                 {props.info.ClubName}
         </div>
-        <div class="lg:text-lg bhole1 h-64 md:text-base sm:text-sm ">
+        <div class="lg:text-lg xl:text-xl 2xl:text-2xl bhole1 h-64 md:text-base sm:text-sm">
                 {props.info.ClubSlogan}
         </div>
       </motion.div>
      </div>
      </div>
+
+     <div class="geet">
+      <motion.div class= "group "
+         initial={{opacity:0, y:50,}} 
+         whileInView={{opacity:1,y:10}}    
+         transition={{
+           ease:"easeIn",
+            bounce:0.4,
+           duration:0.4,
+         }}
+         whileHover={{scale:1.05}}
+         viewport={{amount:0.4}}>
+         <img  class=" mt-6 mb-10 mobimage  relative float-center ml-auto mr-auto "   src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt ="my aqua team"/>
+         <div class="absolute mt-6 mb-10 mobName duration-500 opacity-100  text-white font-sans font-bold ">
+         {props.info.ClubName}
+         </div>
+         <div class=" absolute  text-white font-bold font-sans  opacity-100 duration-500 mobNumber mt-6 mb-10">
+          {(props.index+1)<10?"0"+(props.index+1):props.index+1}
+        </div>
+         
+         
+      </motion.div>
+    </div>
 
     </div>
 

@@ -35,7 +35,7 @@ const Pages=()=> {
         })}
         <Event/>
         {data.Media_Component.map((item,index) =>{
-            return (index)%2===0?<Team_members name={item.Component_name} desc={item.Media_Description} media={item.Images} />:<Facilities name={item.Component_name} desc={item.Media_Description} media={item.Images}  />
+            return (index)%2?<Team_members name={item.Component_name} desc={item.Media_Description} media={item.Images} />:<Facilities name={item.Component_name} desc={item.Media_Description} media={item.Images}  />
         })}
       <Footer />
     
