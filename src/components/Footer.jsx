@@ -63,7 +63,7 @@ return(
         </div>
         <div id="last" className="element2 flex flex-row">
              <img id="imglast" src={img7} />
-            <p id="four" className="text-sm">STudents Gymkhana  <span id="content-four"> Council IIT Guwahati</span></p>
+            <p id="four" className="text-sm">Students Gymkhana  <span id="content-four"> Council IIT Guwahati</span></p>
         </div>
       </div>
   </div>
