@@ -418,7 +418,10 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
-  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    display: flex;
+  
 }
 
 .smoverallcontainer_team,.smcnrg_overall{
@@ -428,7 +431,10 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
-  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    display: flex;
+ 
 }
 .smcnrg_overall{
   background-color: #7BB9C4;
