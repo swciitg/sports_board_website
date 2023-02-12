@@ -226,7 +226,7 @@ return(
    
      </div> */}
      <div className="one" >
-      <Image name={data[0].Event_Name}  image_url = {data[0].Thumbnail_Image.url}></Image>
+      <Image name={data[0].Event_Name} image_url = {data[0].Thumbnail_Image.url}></Image>
      </div>
     {/* </div> */}
     </div>
