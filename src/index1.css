@@ -65,19 +65,10 @@ text-align:left;
   background-image: url('./images/logo_sportsboard.jpg');  
   position: absolute;
   width: 86px;
-
-
-
-
-
-
-
-
-
   height: 92px;
   left: 120px;
   top: 20px;
- 
+ background-size: 85px 90px;
 }
 .find .inactive{
 
