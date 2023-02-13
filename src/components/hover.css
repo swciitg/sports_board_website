@@ -711,15 +711,17 @@ top: -125%;
   {
     width: 700px;
   }
- 
+   div.lines{
+    width: 700px;
+   }
   #line2
   {
     width: 700px;
-  }
-  #line3
+  } 
+   #line3
   {
     width: 700px;
-  }
+  } 
  }
  
  @media screen and (max-width:795px) {
@@ -782,7 +784,9 @@ top: -125%;
   {
     width: 600px;
   }
-
+  div.lines{
+    width: 600px;
+   }
  }
  @media screen and (max-width:700px) {
   #font
@@ -862,6 +866,10 @@ top: -125%;
   width: 530px;
   left: 180px;
  }
+ div.lines{
+  width: 530px;
+  left: 180px;
+ }
  #cont
  {
   margin-left: -140px;
@@ -894,11 +902,17 @@ top: -125%;
   {
      width: 450px;
   }
+  div.lines{
+    width: 450px;
+   }
  }
  @media screen and (max-width:612px) {
     .lines{
       width: 470px;
     }
+    div.lines{
+      width: 470px;
+     }
  }
 @media screen and (max-width:520px) {
   #line1
@@ -917,6 +931,9 @@ top: -125%;
   {
     width: 390px;
   }
+  div.lines{
+    width: 390px;
+   }
   #font
   {
     font-size: 50px;
@@ -961,6 +978,9 @@ top: -125%;
   {
     width: 330px;
   }
+  div.lines{
+    width: 330px;
+   }
   #font
   {
     font-size: 40px;
@@ -1024,6 +1044,9 @@ top: -125%;
   {
     width: 280px;
   }
+  div.lines{
+    width: 280px;
+   }
 }
 @media screen and (max-width:364px) {
   #counter2
@@ -1048,6 +1071,9 @@ top: -125%;
   {
     width: 230px;
   }
+  div.lines{
+    width: 230px;
+   }
   #counter
   {
     left: 50px;

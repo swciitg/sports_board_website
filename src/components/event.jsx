@@ -219,7 +219,7 @@ return(
            </div>
     <h1 id="font" className="text-8xl absolute left-52">SPARDHA</h1>
      </div>
-    <div id="line4"> <div className="lines absolute top-1"></div></div>
+    <div id="line"> <div className="lines absolute top-1"></div></div>
      </div>
      {/* <div className="container">
         <img className="one" src={img1}></img>
