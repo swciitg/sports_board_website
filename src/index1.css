@@ -65,6 +65,15 @@ text-align:left;
   background-image: url('./images/logo_sportsboard.jpg');  
   position: absolute;
   width: 86px;
+
+
+
+
+
+
+
+
+
   height: 92px;
   left: 120px;
   top: 20px;
@@ -81,7 +90,7 @@ text-align:left;
   font-family: 'Fira Sans Extra Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 123%;
   /* or 20px */
   text-align: left;
@@ -141,7 +150,8 @@ width:100%;
   font-family: 'Familjen Grotesk';
   font-style: normal;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 15px;
+  padding-left: 8px;
   line-height: 123%;
   /* identical to box height, or 16px */
   

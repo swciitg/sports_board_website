@@ -24,9 +24,9 @@ function Footer(props)
   }
 return(
 
-<div id="container"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0  " style={{position:'relative' ,zIndex:'1',backgroundColor: text }} >
+<div id="containerone"  className="  flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0  " style={{position:'relative' ,zIndex:'1',backgroundColor: text }} >
 <div id="part1" className="flex flex-row ml-44 gap-x-6 ">
-  <div className="image w-52 h-52"><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
+  <div className="image w-52 h-52 "><img id="img" className=" h-52 w-52 " src={img1}alt=""/></div>
   <div className="content flex flex-col flex-wrap items-start justify-start   ">
     <div id="part3" className="details flex flex-col flex-wrap items-start justify-start gap-1  p-1 m-1 ">
     <div id="heading"><h1 className="text-2xl font-extrabold " id="head"  >STUDENTS GYMKHANA</h1><h1 className=" text-2xl   font-extrabold" id="head" >COUNCIL</h1></div>
@@ -46,12 +46,12 @@ return(
     </div>
       <div id="part2" className=" flex flex-col mt-14  gap-2">
         <div id="para" className="flex flex-row gap-2 ">
-            <img id="img3" className="h-16 w-16" src={img6} alt=""></img>
+           <div className="img3"> <img id="img3" className="h-16 w-16" src={img6} alt=""></img></div>
         <p align="left" id="three" className="text-sm content-start ">Maintained <span id="student">by Students</span><br/>Web committee<br/>IIT Guwahati</p>
         </div>
         <div id="last" className="element2 flex flex-row">
              <img id="imglast" src={img7} />
-            <p id="four" className="text-sm">Students Gymkhana  <span id="content-four"> Council IIT Guwahati</span></p>
+            <p id="four" className="text-sm">Students Gymkhana Council <span id="content-four"> Council IIT Guwahati</span></p>
         </div>
       </div>
   </div>

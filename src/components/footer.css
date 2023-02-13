@@ -1,17 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Open+Sans&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
 
-
+#img
+{
+    position: relative;
+    left: 5rem;
+}
 
 #part2
 {
     padding-top: 3.5%;
 }
+@media screen and (max-width:1228px) {
+    #img
+    {
+        left: 3rem;
+    }
+}
+@media screen and (max-width:1140px) {
+    #img
+    {
+        left: 1.5rem;
+    }
+}
 
-#container
+#containerone
 {
 
-    height:min-content;
+  
     width: 100%;
 }
 
@@ -113,7 +129,7 @@
       #part3
       {
         position: absolute;
-        left: 160px;
+        left: 190px;
       }
        #small
        {
@@ -127,16 +143,13 @@
         width: 45px;
         height: 45px;
     }
-     #container
-     {
-        background-color: aqua;
-     }
+ 
    }
    @media screen and (max-width:558px) {
        #img{
         width: 120px;
         height: 120px;
-        margin-left: 35px;
+        
        }
        #small
        {
@@ -174,19 +187,52 @@
     #part2
     {
         margin-top: 45px;
-        margin-left: -125px;
+        margin-left: -120px;
+    }
+    #part3
+    {
+        left: 170px;
+    }
+   }
+   @media screen and (max-width:427.2px) {
+    #four
+    {
+        margin-left: -20px;
+        font-size: 12px;
+        width: 90px;
+    }
+    #img
+    {
+        width: 100px;
+        height: 100px;
+       margin-left: -12px;
+    }
+    #head
+    {
+        font-size: 19px;
+    }
+    #para
+    {
+        margin-left: -20px;
+    }
+    #part3
+    {
+        left :140px
+    }
+  
+       #part2
+    {
+       
+        margin-left: -175px;
     }
    }
    @media screen and (max-width:415px) {
- #container
- {
-    width: max-content;
- }
+
     #img
     {
-        width:107.42px;
-        height: 115px;
-        margin-left: 25px;
+        width:90px;
+        height: 90px;
+        
 
     }
     #head
@@ -199,19 +245,42 @@
     }
     #part3
     {
-        left :140px
+        left :130px
     }
     #part2
     {
        
-        margin-left: -165px;
+        margin-left: -175px;
     }
     #four
     {
         margin-left: -30px;
     }
    }
-  
+   @media screen and (max-width:458px) {
+    #img
+    {
+        left: 3.5rem;
+    }
+   }
+   @media screen and (max-width:406px) {
+    #four
+    {
+        font-size: 10px;
+    }
+    #three
+    {
+        font-size: 10px;
+    }
+    #one
+    {
+        font-size: 10px;
+    }
+    #two
+    {
+        font-size: 10px;
+    }
+   }
 
    @media screen and (max-width:390px) {
     /* #assam::before
@@ -219,17 +288,18 @@
         content: "\a";
         white-space: pre;
     } */
-    
+  
     #content-four::before
     {
         content: "\a";
         white-space: pre;
     }
     #img{
-       width:107.42px;
-       height: 110px;
-       margin-top: 56px;
-       margin-left: 80px;
+       width:90.42px;
+       height: 90px;
+       left: 6rem;
+       top: 1.7rem;
+     
     }
     #head
     {
@@ -237,8 +307,8 @@
     }
     #heading
     {
-        margin-top: 56px;
-        margin-left: 60px;
+        margin-top: 25px;
+        margin-left: 50px;
     }
     #small
     {
@@ -255,6 +325,7 @@
     width: 43px;
     height: 46px;
    
+   
    }
    .heading
    {
@@ -268,33 +339,34 @@
     left: 30px;
    }
   
-   #container
+   #containerone
    {
     width: 100%;
-    height: 443px;
+    height: 400px;
+   
    }
    #one
    {
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
-    top: 235px;
-    left: -170px;
-    margin-left: 12px;
+    top: 190px;
+    left: -110px;
+    
    }
    #two
    {
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
-    top: 300px;
-    left: -170px;
-    margin-left: 12px;
+    top: 250px;
+    left: -110px;
+  
    }
     #part2
     {
         position: absolute;
-        width: 158px;
-        left: 390px;
-        top: 15.7rem;
+        width: 90px;
+        left: 375px;
+        top: 11.7rem;
     }
    #imglast
    {
@@ -304,13 +376,11 @@
    #one
    {
     position: absolute;
-       margin-top: 20px;
-       margin-left:  60px;
+       
    }
    #two
    {
-    margin-top: 20px;
-    margin-left:  60px;
+ 
    }
    #last
    {
@@ -319,12 +389,39 @@
     #four
     {
         margin-left: 2px;
-        font-size: 14px;
+        font-size: 12px;
+       position: absolute;
+       top: 65px;
+       right: 20px;
+       width: fit-content;
 
     }
     #three
     {
-        font-size: 14px;
+        font-size: 12px;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        height: 10px;
+       
+    }
+   }
+   @media screen and (max-width:375.20px) {
+    #three
+    {
+    }
+    #four
+    {
+        margin-left: -25px;
+    }
+    #one
+    {
+        width: 70px;
+       
+    }
+    #two
+    {
+      top: 310px;
     }
    }
    @media screen and (max-width:364px) {
@@ -335,7 +432,7 @@
     }
     #two
     {
-        margin-left: 40px;
+        
     }
     #part2
     {
@@ -350,11 +447,16 @@
    @media screen and (max-width:336px) {
     #img
     {
-margin-left: 60px;
+margin-left: -25px;
+    }
+    .img3
+    {
+        width: 24px;
+        height: 24px;
     }
     #heading
     {
-       margin-left: 35px;
+       margin-left: 15px;
     }
     #small
     {
@@ -374,6 +476,9 @@ margin-left: 60px;
     {
 
         font-size: 12px;
+        position: absolute;
+        top: 340px;
+        left: px;
     }
     #part2
     {
@@ -386,6 +491,13 @@ margin-left: 60px;
     #four
     {
         font-size: 12px;
+        top: 50px;
+    }
+    #small
+    {
+        position: absolute;
+        top: 90px;
+        width: 110px;
     }
    }
    /* @media screen and (max-width:320px) {
@@ -423,7 +535,7 @@ margin-left: 60px;
 
    }
    @media screen and (max-width:308px) {
-    #head
+    /* #head
     {
         font-size: 20px;
     }
@@ -456,5 +568,5 @@ margin-left: 60px;
     {
         content: "\a";
         white-space: pre;
-    }
+    } */
    }
