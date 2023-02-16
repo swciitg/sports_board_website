@@ -4,7 +4,7 @@ FROM node:14-alpine
 # RUN mkdir -p /usr/src/app/frontend
 # Set working directory so that all
 # subsequent command runs in this folder
-WORKDIR /usr/src/app/frontend
+WORKDIR .
 # Copy package json and install dependencies
 COPY package*.json ./
 RUN npm install
