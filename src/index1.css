@@ -205,7 +205,8 @@ height: 100%;
 
 
 
-  .logosm{ background-image: url('./images/hmm.png');  
+  .logosm{ background-image: url('./images/logo_sportsboard.jpg');  
+    background-size: 75px 80px;
     position: relative;
     background-repeat: no-repeat;
     width: 100%;
