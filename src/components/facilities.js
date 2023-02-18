@@ -24,7 +24,7 @@ const Facilities = (props)=>{
       ref.current.scrollLeft = scrollLeft-walk; }
       const {pathname}=useLocation();
     useEffect(()=>{
-      if(pathname==="/stud/gymkhana/sports/"||pathname==="/stud/gymkhana/sports"){
+      if(pathname==="/"||pathname==="/stud/gymkhana/sports"){
         ref1.current.style.display='relative';
       }
       else{
@@ -43,7 +43,7 @@ const Facilities = (props)=>{
              {props.desc}
             </p>
              <div className="our-firm-btn">
-                    <a href="/stud/gymkhana/sports/contacts" className="btn" style={{textDecoration:"none"}} ref={ref1}><span>Know More </span></a>
+                    <a href="/contacts" className="btn" style={{textDecoration:"none"}} ref={ref1}><span>Know More </span></a>
                 </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Facilities = (props)=>{
           </div>
           <div>
              <div className="smfirm-btn">
-                <a href="/stud/gymkhana/sports/contacts" className="btn" style={{textDecoration:"none"}} ref={ref1}><span>Know More </span></a>
+                <a href="/contacts" className="btn" style={{textDecoration:"none"}} ref={ref1}><span>Know More </span></a>
             </div>
           </div>
       </div>
