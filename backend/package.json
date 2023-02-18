@@ -10,10 +10,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/strapi": "4.5.3",
-    "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/plugin-i18n": "4.5.3",
+    "@strapi/plugin-users-permissions": "4.5.3",
+    "@strapi/strapi": "4.5.3",
     "better-sqlite3": "7.4.6",
+    "pg": "^8.9.0",
     "strapi-plugin-populate-deep": "^2.0.0",
     "uuid": "^9.0.0"
   },
