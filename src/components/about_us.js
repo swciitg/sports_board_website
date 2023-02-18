@@ -1,6 +1,7 @@
 import img1 from "../images/about_icon.png";
 import React from "react";
 import { useEffect } from "react";
+import BACKEND_URL from "../constants";
 
 
 
@@ -10,7 +11,7 @@ const About_us = (props)=>{
         <div className="about_block">
             <div className="container1">
                 <div>
-                    <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
+                    <img src={BACKEND_URL+props.media}className="img1" alt="" />
                 </div>
             </div>
             <div className="container2">
@@ -23,7 +24,7 @@ const About_us = (props)=>{
         <div className="smabout_block">
             <div className="head_about text-6xl max-sm:text-3xl">{props.name}</div>
             <div style={{display:'flex',justifyContent:'center'}}>
-                    <img src={"http://localhost:1337"+props.media} className="gridimg" alt="" />
+                    <img src={BACKEND_URL+props.media} className="gridimg" alt="" />
             </div>
             <div>
                 <p className="para_about">

@@ -4,13 +4,14 @@ import { SiLinkedin } from "react-icons/si";
 import { GrMail } from "react-icons/gr";
 import { IoMdCall } from "react-icons/io";
 import "./conta.css"
+import BACKEND_URL from '../constants';
 const Conta = (props)=>{
 
 return(
 <div className='idhar'>
 <div className='main_chair' >
 <div className='main_image'>
-<img className='img2' src={"http://localhost:1337"+props.info.Image.url} alt=""/>
+<img className='img2' src={BACKEND_URL+props.info.Image.url} alt=""/>
 </div>
 <div className='flexing'><div className='heading'><p style={{margin:"10px"}}>{props.info.Position_Name}</p></div>
 <div className='para'>

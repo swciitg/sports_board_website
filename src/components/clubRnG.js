@@ -1,5 +1,6 @@
 import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
+import BACKEND_URL from "../constants";
 const ClubRnG = (props) => {
     return ( 
         <>
@@ -12,7 +13,7 @@ const ClubRnG = (props) => {
                     </p>
                 </div>
                 <div style={{display:'flex',alignItems:'center'}}>
-                    <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
+                    <img src={BACKEND_URL+props.media}className="img1" alt="" />
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@ const ClubRnG = (props) => {
                 <div className="smcnrg_block">
                 <div className="head_about text-6xl max-sm:text-3xl">{props.name}</div>
                     <div style={{display:'flex',justifyContent:'center'}}>
-                        <img src={"http://localhost:1337"+props.media} className="gridimg" alt="" />
+                        <img src={BACKEND_URL+props.media} className="gridimg" alt="" />
                     </div>
                     <div className="flex flex-col pr-6">
                         <p className="para_about">

@@ -6,11 +6,12 @@ import Animation from "../components/animation";
 import Clubone from "../components/clubone";
 import { useEffect, useState } from "react";
 import Eventone from "../components/eventone";
+import BACKEND_URL from "../constants";
 const EventPages = () => {
   const [ data, setData]=useState();
   
   async function getData (){
-    const api = `http://localhost:1337/api/alleventdata`;
+    const api = `${BACKEND_URL}/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);

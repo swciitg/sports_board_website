@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Marquee from "react-marquee-slider";
 import times from "lodash/times"
+import BACKEND_URL from "../constants";
 const Facilities = (props)=>{
   let isDown = false;
     let startX;
@@ -51,12 +52,12 @@ const Facilities = (props)=>{
           <div className="gridcontainer cursor-grab">
                 {<div className="imggrid">
                   {props.media.map((image,index)=>{
-                     return index%2==0 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                     return index%2==0 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>}
               {<div className="imggrid">
                   {props.media.map((image,index)=>{
-                     return index%2!==0?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                     return index%2!==0?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>}
             </div>
@@ -73,7 +74,7 @@ const Facilities = (props)=>{
             </div>
           <div className="smgrid flex flex-row overflow-x-scroll">
                 {props.media.map((image,index)=>{
-                     return <img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>
+                     return <img src={BACKEND_URL+image.url} className="gridimg" alt=""/>
                 })}
           </div>
           </div>

@@ -6,6 +6,7 @@ import ClubRnG from './clubRnG';
 import React from 'react';
 import { useEffect, useState } from "react";
 import fullHori from "../images/fullHori.svg"
+import BACKEND_URL from '../constants';
 /*const cardVariants: Variants = {
   offscreen: {
     x: 300
@@ -21,7 +22,7 @@ import fullHori from "../images/fullHori.svg"
   }
 };*/
 function Animation(props) {
-  console.log(props.info);
+  // console.log(props.info);
   return (
     <div className="App">
       <div  class="flex relative dnb ">
@@ -39,7 +40,7 @@ function Animation(props) {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.25}}> 
-       <img   src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt="basket" class="image z-48"></img>
+       <img   src={BACKEND_URL+props.info.Thumbnail_Image.url} alt="basket" class="image z-48"></img>
        <motion.div class=" absolute  duration-500  group-hover:opacity-100 opacity-0  text-white font-sans font-bold name"
          transition={{type:'spring'}}>
           {props.info.ClubName}
@@ -78,7 +79,7 @@ function Animation(props) {
          }}
          whileHover={{scale:1.05}}
          viewport={{amount:0.4}}>
-         <img  class=" mt-6 mb-10 mobimage  relative float-center ml-auto mr-auto "   src={"http://localhost:1337"+props.info.Thumbnail_Image.url} alt ="my aqua team"/>
+         <img  class=" mt-6 mb-10 mobimage  relative float-center ml-auto mr-auto "   src={BACKEND_URL+props.info.Thumbnail_Image.url} alt ="my aqua team"/>
          <div class="absolute mt-6 mb-10 mobName duration-500 opacity-100  text-white font-sans font-bold ">
          {props.info.ClubName}
          </div>

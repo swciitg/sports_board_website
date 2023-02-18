@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Animationthree from "./animation3";
 import Animationfour from "./animation4";
+import BACKEND_URL from "../constants";
 function Eventone()
 {
     const [ data, setData]=useState(
@@ -55,7 +56,7 @@ function Eventone()
     );
 
 async function getData (){
-    const api = `http://localhost:1337/api/alleventdata`;
+    const api = `${BACKEND_URL}/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

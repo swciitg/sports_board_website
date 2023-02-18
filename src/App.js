@@ -10,6 +10,7 @@ import Interiit from "./pages/interiit";
 import Spirit from "./pages/spirit";
 import EventPages from "./pages/eventspage";
 import { useEffect, useState } from "react";
+import BACKEND_URL from "./constants";
 function App() {
   const [ data, setData]=useState([
     {
@@ -90,7 +91,7 @@ function App() {
   const [ data2, setData2]=useState();
   
   async function getData2 (){
-    const api = `http://localhost:1337/api/alleventdata`;
+    const api = `${BACKEND_URL}/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);
@@ -100,7 +101,7 @@ function App() {
   },[])
  
   async function getData (){
-    const api = `http://localhost:1337/api/clubsdata`;
+    const api = `${BACKEND_URL}/clubsdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);

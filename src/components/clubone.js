@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Animation2 from "./animation2";
 import { Link } from "react-router-dom";
+import BACKEND_URL from "../constants";
 
 
 function Clubone()
@@ -87,7 +88,7 @@ function Clubone()
     ]);
 
 async function getData (){
-    const api = `http://localhost:1337/api/clubsdata`;
+    const api =  ` ${BACKEND_URL}/clubsdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

@@ -5,6 +5,7 @@ import Conta2 from '../components/conta2'
 import Conta3 from '../components/conta3'
 import Footer from '../components/Footer'
 import { useEffect, useState } from "react";
+import BACKEND_URL from '../constants'
 const Contactus = () => {
   const [ data, setData]=useState([
     {
@@ -55,7 +56,7 @@ const Contactus = () => {
   ]);
   
   async function getData (){
-    const api = `http://localhost:1337/api/contactinfo`;
+    const api = `${BACKEND_URL}/contactinfo`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

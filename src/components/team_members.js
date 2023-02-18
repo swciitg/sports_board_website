@@ -2,6 +2,7 @@ import img1 from "../images/about_icon.png";
 import React , { useRef,useState,useEffect }from "react";
 import { useLocation } from "react-router-dom";
 import Cursor from "./cursor";
+import BACKEND_URL from "../constants";
 const Team_members = (props)=>{
     let isDown = false;
     let startX;
@@ -49,12 +50,12 @@ const Team_members = (props)=>{
             <div className="gridcontainer cursor-grab">
               {<div className="imggrid">
                   {props.media.map((image,index)=>{
-                     return index%2==0 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                     return index%2==0 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>}
               <div className="imggrid">
               {props.media.map((image,index) =>{
-                    return index%2 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                    return index%2 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
               </div>
             </div>
@@ -71,7 +72,7 @@ const Team_members = (props)=>{
           </div>
           <div className="smgrid flex flex-row overflow-x-scroll">
               {props.media.map((image,index)=>{
-                     return <img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>
+                     return <img src={BACKEND_URL+image.url} className="gridimg" alt=""/>
                 })}
           </div>
         </div>

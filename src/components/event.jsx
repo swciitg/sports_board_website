@@ -3,6 +3,7 @@ import img1 from '../images/image 8.png';
 import Image from "./image";
 import "./hover.css";
 import { useState,useEffect } from "react";
+import BACKEND_URL from "../constants";
 // 1280 px pe image ki position change karna fir ,, 1167px pe font ka size image ka position ,,
 function Event(){
     const [ data, setData]=useState(
@@ -198,7 +199,7 @@ function Event(){
       );
   
   async function getData (){
-      const api = `http://localhost:1337/api/alleventdata`;
+      const api = `${BACKEND_URL}/alleventdata`;
       const result =await fetch(api);
       const getResult = await result.json();
       setData(getResult);
