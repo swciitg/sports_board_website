@@ -22,7 +22,7 @@ const Team_members = (props)=>{
     }
     const {pathname}=useLocation();
     useEffect(()=>{
-      if(pathname==="/stud/gymkhana/sports/"||pathname==="/stud/gymkhana/sports"){
+      if(pathname==="/"||pathname==="/stud/gymkhana/sports"){
         ref1.current.style.display='relative';
       }
       else{
@@ -41,7 +41,7 @@ const Team_members = (props)=>{
              {props.desc}
              </p>
              <div className="firm-btn" ref={ref1}>
-                <a href="/stud/gymkhana/sports/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
+                <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Team_members = (props)=>{
         </div>
         <div>
               <div className="smfirm-btn" ref={ref1}>
-                  <a href="/stud/gymkhana/sports/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
+                  <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
         </div>
       </div>

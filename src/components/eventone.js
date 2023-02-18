@@ -70,7 +70,7 @@ async function getData (){
         <Navbar name={"EVENTS"}></Navbar>
         <div className="flex flex-col gap-4 mt-12 ">
         {data.map((item,index) =>{
-          return (index)%2===0?<a href={"/stud/gymkhana/sports/events/"+item.Event_Name}><Animationfour info={item} index={index}/></a>:<a href={"/stud/gymkhana/sports/events/"+item.Event_Name}><Animationthree info={item} index={index}/></a>
+          return (index)%2===0?<a href={"/events/"+item.Event_Name}><Animationfour info={item} index={index}/></a>:<a href={"/events/"+item.Event_Name}><Animationthree info={item} index={index}/></a>
         })}
         </div>
         <Footer></Footer>

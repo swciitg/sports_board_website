@@ -23,7 +23,7 @@ const Navbar = (props) => {
     return () => {};
   }, [index]);
   useEffect(()=>{
-    if(pathname==="/stud/gymkhana/sports/clubs"||pathname==="/stud/gymkhana/sports/events"){
+    if(pathname==="/clubs"||pathname==="/events"){
       ref.current.style.position='relative';
     }
     else{
@@ -39,13 +39,13 @@ const Navbar = (props) => {
                  <div className="topnav">
              
 
-                   <NavLink to="/stud/gymkhana/sports/contacts" style={isActive => ({
+                   <NavLink to="/contacts" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Contacts</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/clubs" style={isActive => ({
+                  <NavLink to="/clubs" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Clubs</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/events" style={isActive => ({
+                  <NavLink to="/events" style={isActive => ({
     color: isActive ? "white" : "blue"})}>Events</NavLink>
-                  <NavLink  to="/stud/gymkhana/sports/"   style={isActive => ({
+                  <NavLink  to="/"   style={isActive => ({
     color: isActive ? "white" : "blue"})}> Home </NavLink>
              
                
@@ -81,13 +81,13 @@ const Navbar = (props) => {
 
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
-            <NavLink  to="/stud/gymkhana/sports/"   style={isActive => ({
+            <NavLink  to="/"   style={isActive => ({
     color: isActive ? "black" : "green"})}> Home </NavLink>
-                  <NavLink to="/stud/gymkhana/sports/events" style={isActive => ({
+                  <NavLink to="/events" style={isActive => ({
     color: isActive ? "black" : "green"})}>Events</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/clubs" style={isActive => ({
+                  <NavLink to="/clubs" style={isActive => ({
     color: isActive ? "black" : "green"})}>Clubs</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/contacts" style={isActive => ({
+                  <NavLink to="/contacts" style={isActive => ({
     color: isActive ? "black" : "green"})}>Contacts</NavLink>
              
              </div>
