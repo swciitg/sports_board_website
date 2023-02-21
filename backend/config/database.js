@@ -12,7 +12,7 @@ module.exports = ({ env }) => ({
       schema: 'public', // Not required
       ssl:  false,
     },
-    debug: false,
+    useNullAsDefault: true,
   },
 });
  
