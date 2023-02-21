@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: 'localhost',
+      host: 'host.docker.internal',
       port: 5432,
       database: 'sports_board',
       user: 'sports_board_user',
