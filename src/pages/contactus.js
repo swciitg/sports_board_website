@@ -56,7 +56,7 @@ const Contactus = () => {
   ]);
   
   async function getData (){
-    const api = `${BACKEND_URL}api/contactinfo`;
+    const api = `${BACKEND_URL}/api/contactinfo`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

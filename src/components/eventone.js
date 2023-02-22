@@ -56,7 +56,7 @@ function Eventone()
     );
 
 async function getData (){
-    const api = `${BACKEND_URL}api/alleventdata`;
+    const api = `${BACKEND_URL}/api/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

@@ -14,7 +14,7 @@ const AquaticsClub =  () => {
   const {id}=useParams()
   async function getData (){
     // console.log(id);
-    const api = `${BACKEND_URL}api/clubinfo?page=${id}`;
+    const api = `${BACKEND_URL}/api/clubinfo?page=${id}`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult[0]);

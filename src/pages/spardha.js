@@ -14,7 +14,7 @@ const Spardha =  () => {
   const [col1,setCol1]=useState(0);
   async function getData (){
     // console.log(id)
-    const api = `${BACKEND_URL}api/eventdata?page=${id}`;
+    const api = `${BACKEND_URL}/api/eventdata?page=${id}`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult[0]);
