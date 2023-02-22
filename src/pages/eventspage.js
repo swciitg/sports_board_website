@@ -11,7 +11,7 @@ const EventPages = () => {
   const [ data, setData]=useState();
   
   async function getData (){
-    const api = `${BACKEND_URL}/alleventdata`;
+    const api = `${BACKEND_URL}api/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);

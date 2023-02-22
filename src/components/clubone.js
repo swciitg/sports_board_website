@@ -88,7 +88,7 @@ function Clubone()
     ]);
 
 async function getData (){
-    const api =  ` ${BACKEND_URL}/clubsdata`;
+    const api =  ` ${BACKEND_URL}api/clubsdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult);

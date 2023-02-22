@@ -91,7 +91,7 @@ function App() {
   const [ data2, setData2]=useState();
   
   async function getData2 (){
-    const api = `${BACKEND_URL}/alleventdata`;
+    const api = `${BACKEND_URL}/api/alleventdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);
@@ -101,7 +101,7 @@ function App() {
   },[])
  
   async function getData (){
-    const api = `${BACKEND_URL}/clubsdata`;
+    const api = `${BACKEND_URL}/api/clubsdata`;
     const result =await fetch(api);
     const getResult = await result.json();
     setData(getResult.data[0]);
