@@ -270,26 +270,7 @@ return(
       <Image  name={data[2].Event_Name}    image_url = {data[2].Thumbnail_Image.url}></Image>
      </div>
     </div>
-    <div id="cont" className=" font-extrabold flex flex-row space-x-24">
-    <div id="fourth"  >
-    <div>
-    <div id="counter3" class="animated">
-               
-               <ul id="digit" class="digit3 digit3-third luckie"> <li> 0 </li><li> 0</li></ul>
-               <ul id="digit" class="digit3 digit3-third luckie"> <li> 4</li>  <li> 4</li></ul>
-           </div>
-    <h1 id="font3" className="text-8xl  ">MANTHAN</h1>
-    </div>
-    <div id="line3" className="lines absolute top-1 "></div>
-    </div>
-    {/* <div>
-        <img className="four" src={img1}></img>
-     </div> */}
-     <div className="four">
-      <Image  name={data[3].Event_Name}    image_url = {data[3].Thumbnail_Image.url}></Image>  
-      {/* {data[3].Thumbnail_Image.url} */}
-     </div>
-    </div>
+    
    
 </div>
 
