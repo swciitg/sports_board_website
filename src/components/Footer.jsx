@@ -16,7 +16,7 @@ function Footer(props)
   let text = "";
   if(c%2==0)
   {
-     text= "#D9D9D9";
+     text= "#f4f4f4";
   }
   else
   {

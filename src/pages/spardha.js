@@ -17,8 +17,9 @@ const Spardha =  () => {
     const api = `${BACKEND_URL}/api/eventdata?page=${id}`;
     const result =await fetch(api);
     const getResult = await result.json();
-    setData(getResult[0]);
+    setData(getResult);
     setCol1(getResult[0].Components.length);
+    setData(getResult)
   }
   useEffect(()=>{
     getData();
@@ -36,7 +37,7 @@ const Spardha =  () => {
         })}
         
         
-        <Footer size= {data_Event.length} />
+        <Footer size= {data_Event.length+1} />
        </div> 
     );
 
