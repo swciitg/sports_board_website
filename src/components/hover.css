@@ -4,7 +4,7 @@
   background-color:#7BB9C4;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100vh;
+  height: 1000px;
   padding-bottom: 10%;
   width: 100%;
   margin: 0;
@@ -36,6 +36,7 @@
   left: 0px;
   padding-bottom: 0;
   height:1000px;
+  margin-top:20vh;
 }
 .container
 {
@@ -1005,7 +1006,7 @@ top: -125%;
   {
     position: absolute;
     bottom: 180px;
-    top: 480px;
+    top: 467px;
   } 
   #digit
   {
@@ -1019,7 +1020,7 @@ top: -125%;
 @media screen and (max-width:408px) {
   #counter2
   {
-    top: 495px;
+    top: 455px;
   }
   #font
   {
@@ -1048,11 +1049,14 @@ top: -125%;
   div.lines{
     width: 280px;
    }
+   #counter2{
+    top:460px;
+   }
 }
 @media screen and (max-width:364px) {
   #counter2
   {
-    top: 495px;
+    top: 460px;
   }
 }
 @media screen and (max-width:330px) {
@@ -1087,6 +1091,7 @@ top: -125%;
   #counter2
   {
     left: 49px;
+    top:455px;
   }
   #counter3
   {
