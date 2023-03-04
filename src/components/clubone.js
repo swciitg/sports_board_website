@@ -11,80 +11,69 @@ import BACKEND_URL from "../constants";
 function Clubone()
 {
     const [ data, setData]=useState([
-        {
-        "id": 1,
-        "ClubName": "Loading ",
-        "ClubSlogan": "Loading",
-        "createdAt": "2023-01-21T10:08:34.537Z",
-        "updatedAt": "2023-01-26T14:02:23.230Z",
-        "publishedAt": "2023-01-21T10:36:09.116Z",
-        "Thumbnail_Content": "You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.\n",
+      {
+        "id": 3,
+        "ClubName": "Aquatics",
+        "ClubSlogan": null,
+        "Thumbnail_Content": null,
+        "createdAt": "2023-02-22T20:48:06.216Z",
+        "updatedAt": "2023-03-04T14:18:41.172Z",
+        "publishedAt": "2023-02-22T20:55:24.210Z",
         "Thumbnail_Image": {
-          "id": 6,
-          "name": "bb_slide3.jpg",
-          "alternativeText": null,
-          "caption": null,
-          "width": 1200,
-          "height": 794,
-          "formats": {
-            "thumbnail": {
-              "name": "thumbnail_bb_slide3.jpg",
-              "hash": "thumbnail_bb_slide3_8cf55d6dc6",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "path": null,
-              "width": 236,
-              "height": 156,
-              "size": 7.6,
-              "url": "/uploads/thumbnail_bb_slide3_8cf55d6dc6.jpg"
-            },
-            "large": {
-              "name": "large_bb_slide3.jpg",
-              "hash": "large_bb_slide3_8cf55d6dc6",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "path": null,
-              "width": 1000,
-              "height": 662,
-              "size": 63.88,
-              "url": "/uploads/large_bb_slide3_8cf55d6dc6.jpg"
-            },
-            "medium": {
-              "name": "medium_bb_slide3.jpg",
-              "hash": "medium_bb_slide3_8cf55d6dc6",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "path": null,
-              "width": 750,
-              "height": 496,
-              "size": 40.4,
-              "url": "/uploads/medium_bb_slide3_8cf55d6dc6.jpg"
-            },
-            "small": {
-              "name": "small_bb_slide3.jpg",
-              "hash": "small_bb_slide3_8cf55d6dc6",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "path": null,
-              "width": 500,
-              "height": 331,
-              "size": 22.23,
-              "url": "/uploads/small_bb_slide3_8cf55d6dc6.jpg"
-            }
-          },
-          "hash": "bb_slide3_8cf55d6dc6",
-          "ext": ".jpg",
-          "mime": "image/jpeg",
-          "size": 86.72,
-          "url": "/uploads/bb_slide3_8cf55d6dc6.jpg",
-          "previewUrl": null,
-          "provider": "local",
-          "provider_metadata": null,
-          "folderPath": "/3",
-          "createdAt": "2023-01-21T11:01:05.081Z",
-          "updatedAt": "2023-01-21T11:01:20.928Z"
+        "id": 11,
+        "name": "spirit.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 534,
+        "height": 960,
+        "formats": {
+        "small": {
+        "ext": ".jpg",
+        "url": "/uploads/small_spirit_90522ace8a.jpg",
+        "hash": "small_spirit_90522ace8a",
+        "mime": "image/jpeg",
+        "name": "small_spirit.jpg",
+        "path": null,
+        "size": 18.86,
+        "width": 278,
+        "height": 500
+        },
+        "medium": {
+        "ext": ".jpg",
+        "url": "/uploads/medium_spirit_90522ace8a.jpg",
+        "hash": "medium_spirit_90522ace8a",
+        "mime": "image/jpeg",
+        "name": "medium_spirit.jpg",
+        "path": null,
+        "size": 33.58,
+        "width": 417,
+        "height": 750
+        },
+        "thumbnail": {
+        "ext": ".jpg",
+        "url": "/uploads/thumbnail_spirit_90522ace8a.jpg",
+        "hash": "thumbnail_spirit_90522ace8a",
+        "mime": "image/jpeg",
+        "name": "thumbnail_spirit.jpg",
+        "path": null,
+        "size": 3.39,
+        "width": 86,
+        "height": 156
         }
-       },
+        },
+        "hash": "spirit_90522ace8a",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 40.82,
+        "url": "/uploads/spirit_90522ace8a.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "folderPath": "/",
+        "createdAt": "2023-02-22T21:06:36.742Z",
+        "updatedAt": "2023-03-04T14:33:48.361Z"
+        }
+        },
     ]);
 
 async function getData (){

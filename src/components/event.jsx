@@ -38,7 +38,7 @@ return(
    
      </div> */}
      <div className="one" >
-      <Image name={data[0].Event_Name} image_url = {data[0].Thumbnail_Image.url}></Image>
+      <Image name={data[0].Event_Name} image_url = {BACKEND_URL+data[0].Thumbnail_Image.url}></Image>
      </div>
     {/* </div> */}
     </div>
@@ -58,7 +58,7 @@ return(
         <img className="two" src={img1}></img>
      </div> */}
      <div className="two">
-      <Image  name={data[1].Event_Name} image_url = {data[1].Thumbnail_Image.url}></Image>
+      <Image  name={data[1].Event_Name} image_url = {BACKEND_URL+data[1].Thumbnail_Image.url}></Image>
      </div>
     
     </div>
@@ -78,7 +78,7 @@ return(
         <img className="three" src={img1}></img>
      </div> */}
      <div className="three">
-      <Image  name={data[2].Event_Name}    image_url = {data[2].Thumbnail_Image.url}></Image>
+      <Image  name={data[2].Event_Name}    image_url = {BACKEND_URL+data[2].Thumbnail_Image.url}></Image>
      </div>
     </div>
     <div id="cont" className=" font-extrabold flex flex-row space-x-24">
@@ -97,7 +97,7 @@ return(
         <img className="four" src={img1}></img>
      </div> */}
      <div className="four">
-      <Image  name={data[3].Event_Name}    image_url = {data[3].Thumbnail_Image.url}></Image>  
+      <Image  name={data[3].Event_Name}    image_url = {BACKEND_URL+data[3].Thumbnail_Image.url}></Image>  
       {/* {data[3].Thumbnail_Image.url} */}
      </div>
     </div>
