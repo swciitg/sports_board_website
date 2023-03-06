@@ -13,7 +13,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.firm-btn{
+   display: none;
+}
+.our-firm-btn
+{
+  display: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -451,6 +457,7 @@ code {
   padding-left: 10%;
   padding-top: 7%;
   padding-bottom: 7%;
+  display: none;
 }
 .smgrid:hover{
   cursor:crosshair;

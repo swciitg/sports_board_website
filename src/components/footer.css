@@ -6,7 +6,10 @@
     position: relative;
     left: 5rem;
 }
-
+#part1
+{
+    margin-top: 5%;
+}
 #part2
 {
     padding-top: 3.5%;

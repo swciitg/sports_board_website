@@ -36,7 +36,7 @@ const Contactus = () => {
       {data.map((item,index)=>{
         return index%2?<Conta2 info={item}/>:<Conta info={item}/>
       })}
-      <Footer/>
+      <Footer size={2} />
     </div>) : 
     (<Loader/>)
     

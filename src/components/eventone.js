@@ -40,7 +40,7 @@ const [isLoaded,setLoad] = useState(false);
             return (index)%2===0?<a href={"/events/"+item.Event_Name}><Animationfour info={item} index={index}/></a>:<a href={"/events/"+item.Event_Name}><Animationthree info={item} index={index}/></a>
           })}
           </div>
-          <Footer></Footer>
+          <Footer size={2}></Footer>
           </div>):
           (<Loader/>)
        

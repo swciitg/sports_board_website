@@ -47,7 +47,7 @@ return(
       <div id="part2" className=" flex flex-col mt-14  gap-2">
         <div id="para" className="flex flex-row gap-2 ">
            <div className="img3"> <img id="img3" className="h-16 w-16" src={img6} alt=""></img></div>
-        <p align="left" id="three" className="text-sm content-start ">Maintained <span id="student">by Students</span><br/>Web committee<br/>IIT Guwahati</p>
+        <p align="left" id="three" className="text-sm content-start ">Maintained and Developed <span id="student">by Students</span><br/>Web committee<br/>IIT Guwahati</p>
         </div>
         <div id="last" className="element2 flex flex-row">
              <img id="imglast" src={img7} />

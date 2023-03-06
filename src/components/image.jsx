@@ -9,11 +9,10 @@ function Image(props)
     return(
      
         <div className="container w-80 h-80">
-        <img src={BACKEND_URL+ props.image_url} />
+        <img  src={img1} />
          <div className="top-left text-white">{props.name}</div>  
-        <div className=" absolute right-3 bottom-1 text-8xl text-white ">01</div>
         </div>
-
+//   src={BACKEND_URL+ props.image_url}
 
     );
 }
