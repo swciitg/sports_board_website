@@ -53,7 +53,7 @@ const Facilities = (props)=>{
                 {<div className="imggrid">
                 <Marquee>
                   {props.media.map((image,index)=>{
-                     return index%2==0 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
+                     return index%2==0 ?<img  src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
                 </Marquee>
               </div>}

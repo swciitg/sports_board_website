@@ -230,6 +230,8 @@ code {
 .gridimg{
   padding:10px 10px 10px;
   box-sizing: border-box;
+  height: 35vh;
+  width: 20vw;
 }
 .imggrid{
     display: flex;
