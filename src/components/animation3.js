@@ -49,7 +49,7 @@ function Animationthree(props)
         <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl xl:text-6xl 2xl:text-7xl ">
         {props.info.Event_Name}
         </div>
-        <div class="lg:text-lg xl:text-xl 2xl:text-2xl bhole1 h-64 md:text-base sm:text-sm">
+        <div class=" ThumbContent h-64 ">
         {props.info.Event_Slogan}
         </div>
       </motion.div>

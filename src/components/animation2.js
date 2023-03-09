@@ -61,8 +61,8 @@ function Animation2(props) {
         <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl xl:text-6xl 2xl:text-7xl">
                 {props.info.ClubName}
         </div>
-        <div class="lg:text-lg xl:text-xl 2xl:text-2xl bhole1 h-64 md:text-base sm:text-sm">
-                {props.info.ClubSlogan}
+        <div class=" ThumbContent h-64 ">
+                {props.info.Thumbnail_Content}
         </div>
       </motion.div>
      </div>

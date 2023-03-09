@@ -2,14 +2,18 @@
 @import url(//fonts.googleapis.com/css2?family=Familjen+Grotesk);
 .bg{
   width:30vw;
+
 }
+
 .bhole{
   width:30vw;
 }
-.bhole1{
+.ThumbContent{
   width:40vw;
   font-family: 'Familjen Grotesk', sans-serif;
   color: #565656;
+  font-size:1.3vw;
+  line-height: 123%;
 }
 .textbox{
   width:70vw;
@@ -66,8 +70,8 @@
 
 @media screen and (max-width:847px){
  
-.bhole1{
- font-size:smaller;
+.ThumbContent{
+ font-size:1.3vw;
   }
 
 
@@ -76,8 +80,8 @@
 @media screen and (max-width:710px){
 
  
-  .bhole1{
-     font-size:x-small;
+  .ThumbContent{
+     font-size:1.3vw;
       }
   
   

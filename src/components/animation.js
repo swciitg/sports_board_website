@@ -57,12 +57,12 @@ function Animation(props) {
            duration:0.4,
          }}
          whileHover={{scale:1.05}}
-         viewport={{amount:0.25}} class="flex flex-col sm:gap-3 gap-1">
+         viewport={{amount:0.25}} class="flex flex-col sm:gap-3 gap-1 ">
         <div class="font-bold lg:text-5xl md:text-4xl sm:text-2xl xl:text-6xl 2xl:text-7xl ">
                 {props.info.ClubName}
         </div>
-        <div class="lg:text-lg xl:text-xl 2xl:text-2xl bhole1 h-64 md:text-base sm:text-sm">
-                {props.info.ClubSlogan}
+        <div class=" ThumbContent h-64  ">
+                {props.info.Thumbnail_Content}
         </div>
       </motion.div>
      </div>
