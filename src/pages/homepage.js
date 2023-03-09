@@ -10,6 +10,7 @@ import Animation from "../components/animation";
 import Message from "../components/message";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
+import New from "../components/New";
 import BACKEND_URL from "../constants";
 const Pages=()=> {
   const [ data, setData]=useState({});
@@ -42,7 +43,7 @@ const Pages=()=> {
       {data.Component.map((item,index) =>{
             return (index)%2===0?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>:<ClubRnG name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>
         })}
-        <Event/>
+        <New/>
         {data.Media_Component.map((item,index) =>{
             return (index)%2?<Team_members name={item.Component_name} desc={item.Media_Description} media={item.Images} />:<Facilities name={item.Component_name} desc={item.Media_Description} media={item.Images}  />
         })}

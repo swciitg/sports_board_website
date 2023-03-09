@@ -1,18 +1,20 @@
 import React from "react"
-import styles from "./Loading.module.css"
+import  "./Loading.css"
 
 const Loader = (props) =>{
     return(
-        <div className="flex items-center  rounded-2xl ">
-            <div className="text-lg font-atkinson mx-4 text-gray-700">
-                {props.text}
-            </div>
-            <div class={styles.loader}>
-            <div class={styles.circle}>
-                <div></div>
-            </div>
-            </div>
-        </div>
+        <div>
+        <div className="wrapper-load">
+        <span className="circle-lpad circle-1"></span>
+        <span className="circle-load circle-2"></span>
+        <span className="circle-load circle-3"></span>
+        <span className="circle-load circle-4"></span>
+        <span className="circle-load circle-5"></span>
+        <span className="circle-load circle-6"></span>
+        <span className="circle-load circle-7"></span>
+        <span className="circle-load circle-8"></span>
+      </div>
+      </div>
     )
 }
-export default Loader;
+export default Loader;

@@ -3,6 +3,7 @@ import React , { useRef,useState,useEffect }from "react";
 import { useLocation } from "react-router-dom";
 import Cursor from "./cursor";
 import BACKEND_URL from "../constants";
+import Marquee from "react-marquee-slider";
 const Team_members = (props)=>{
     let isDown = false;
     let startX;
@@ -41,7 +42,7 @@ const Team_members = (props)=>{
              <p className="para_about">
              {props.desc}
              </p>
-             <div className="firm-btn" ref={ref1}>
+             <div className="firm-btn  " ref={ref1}>
                 <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
@@ -49,15 +50,21 @@ const Team_members = (props)=>{
             <div ref={ref} className="flex overflow-x-hidden cursor-grab">
             <div className="gridcontainer cursor-grab">
               {<div className="imggrid">
-                  {props.media.map((image,index)=>{
+                     <Marquee>
+                   {props.media.map((image,index)=>{
                      return index%2==0 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
+                </Marquee>
               </div>}
+           
               <div className="imggrid">
+              <Marquee>
               {props.media.map((image,index) =>{
                     return index%2 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
+                </Marquee>
               </div>
+              
             </div>
            </div>
           </div>

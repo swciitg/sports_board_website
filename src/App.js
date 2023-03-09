@@ -6,6 +6,7 @@ import { Route , Routes} from "react-router-dom";
 import Contactus from "./pages/contactus";
 import EventPages from "./pages/eventspage";
 import { useEffect, useState } from "react";
+import New from "./components/New";
 import BACKEND_URL from "./constants";
 function App() {
   const [ data, setData]=useState([]);
