@@ -7,6 +7,7 @@ import img5 from '../images/icond.png';
 import img6 from '../images/swc_logo.png';
 import img7 from '../images/smallicon.png';
 import img8 from "../images/linkedin.png";
+import img9 from "../images/CopyRightImage.svg"
 import { useState,useEffect } from "react";
 import "./footer.css"
 function Footer(props)
@@ -50,7 +51,7 @@ return(
         <p align="left" id="three" className="text-sm content-start ">Maintained and Developed <span id="student">by Students</span><br/>Web committee<br/>IIT Guwahati</p>
         </div>
         <div id="last" className="element2 flex flex-row">
-             <img id="imglast" src={img7} />
+             <img id="imglast" src={img9} />
             <p id="four" className="text-sm">Students Gymkhana Council <span id="content-four"> Council IIT Guwahati</span></p>
         </div>
       </div>

@@ -6,6 +6,11 @@
     position: relative;
     left: 5rem;
 }
+#imglast
+{
+    width: 20px;
+    height: 20px;
+}
 #part1
 {
     margin-top: 5%;
@@ -217,7 +222,14 @@
     }
     #para
     {
-        margin-left: -20px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+    }
+    #last
+    {
+        margin-left: 25px;
     }
     #part3
     {
@@ -267,25 +279,7 @@
         left: 3.5rem;
     }
    }
-   @media screen and (max-width:406px) {
-    #four
-    {
-        font-size: 10px;
-    }
-    #three
-    {
-        font-size: 10px;
-    }
-    #one
-    {
-        font-size: 10px;
-    }
-    #two
-    {
-        font-size: 10px;
-    }
-   }
-
+ 
    @media screen and (max-width:390px) {
     /* #assam::before
     {
@@ -339,8 +333,9 @@
    #small
    {
     position: absolute;
-    top: 140px;
-    left: 30px;
+    width: 110px;
+   top: 90px;
+   left: 35px;
    }
   
    #containerone
@@ -369,8 +364,7 @@
     {
         position: absolute;
         width: 90px;
-        left: 375px;
-        top: 11.7rem;
+        top: 85px;
     }
    #imglast
    {
@@ -382,9 +376,10 @@
     position: absolute;
        
    }
-   #two
+   #img3
    {
- 
+    position: absolute;
+    top: 25px;
    }
    #last
    {
@@ -395,182 +390,93 @@
         margin-left: 2px;
         font-size: 12px;
        position: absolute;
-       top: 65px;
-       right: 20px;
-       width: fit-content;
+       left: -50px;
+       width: 50px;
+       top: 80px;
 
     }
     #three
     {
         font-size: 12px;
         position: absolute;
-        top: 10px;
-        left: 40px;
+        /* top: 10px;
+        left: 40px; */
+        top: 80px;
         height: 10px;
        
     }
    }
-   @media screen and (max-width:375.20px) {
-    #three
+  @media screen and (max-width:343px) {
+    #one
     {
+        width: 90px;
+    }
+    #two
+    {
+        top:  280px;
     }
     #four
     {
-        margin-left: -25px;
+        margin-left: -40px;
     }
-    #one
+    #img3
     {
-        width: 70px;
-       
+        margin-left: -40px;
     }
-    #two
+    #three
     {
-      top: 310px;
+        margin-left: -40px;
+        width: 50px;
     }
-   }
-   @media screen and (max-width:364px) {
-    #one
+    #last
     {
-        margin-left:  40px;
-
+        width: 35px;
     }
-    #two
+    #para
     {
-        
+        width: 35px;
     }
     #part2
     {
-        margin-left: -188px;
+        width: 35px;
     }
-    #content-four::before
-    {
-        content: "\a";
-        white-space: pre;
-    }
-   }
-   @media screen and (max-width:336px) {
+  }
+  @media screen and (max-width:315px) {
     #img
     {
-margin-left: -25px;
+        margin-left: -40px;
+        width: 90px;
     }
-    .img3
+    #small
     {
-        width: 24px;
-        height: 24px;
+        margin-left: -0px;
     }
     #heading
     {
-       margin-left: 15px;
+        margin-left: 10px;
     }
-    #small
+  }
+  @media screen and (max-width:300px) {
+    #four
     {
-        margin-left: 15px;
-        width: 135px;
+        margin-left: -60px;
     }
-    #one
+    #img3
     {
-         font-size: 12px;
-    }
-    #img1
-    {
-        width: 33px;
-        height: 33px;
-    }
-    #two
-    {
-
-        font-size: 12px;
-        position: absolute;
-        top: 340px;
-        left: px;
-    }
-    #part2
-    {
-        margin-left: -220px;
+        margin-left: -70px;
     }
     #three
     {
-        font-size: 12px;
+
+        margin-left: -70px;
     }
-    #four
-    {
-        font-size: 12px;
-        top: 50px;
-    }
-    #small
-    {
-        position: absolute;
-        top: 90px;
-        width: 110px;
-    }
-   }
-   /* @media screen and (max-width:320px) {
-    #img1
-    {
-        width: 40px;
-        height: 40px;
-    }
-    #one
-    {
-       font-size: 12px;
-    }
-    #two
-    {
-    font-size: 12px;
+  }
+  @media screen and (max-width:288px) {
+    #part2{
+        margin-left: -188px;
     }
     #img3
     {
         width: 35px;
-        height: 35px;
     }
-    #part2
-    {
-        margin-left: -65px;
-    }
-   } */
-   @media screen and (max-width:365px) {
-    
-   #img3
-   {
-    width: 30px;
-    height: 30px;
-   }
-
-
-   }
-   @media screen and (max-width:308px) {
-    /* #head
-    {
-        font-size: 20px;
-    }
-    #one
-    {
-       font-size: 10px;
-    }
-    #two
-    {
-    font-size: 10px;
-    }
-    #three
-    {
-        font-size: 10px;
-    }
-    #four
-    {
-        font-size: 10px;
-    }
-    #part2
-    {
-        margin-left: -240px;
-    }
-    #img3
-    {
-        width: 30px;
-        height: 30px;
-    }
-    #student::before
-    {
-        content: "\a";
-        white-space: pre;
-    } */
-   }
+  }

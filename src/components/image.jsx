@@ -10,7 +10,7 @@ function Image(props)
      
         <div className="container w-80 h-80">
         <img  src={img1} />
-         <div className="top-left text-white">{props.name}</div>  
+         <div className="top-left text-white font-medium ml-6 ">{props.name}</div>  
         </div>
 //   src={BACKEND_URL+ props.image_url}
 

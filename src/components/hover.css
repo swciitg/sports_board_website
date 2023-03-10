@@ -963,7 +963,7 @@ top: -99%;
   }
 }
 
-@media screen and (max-width:460px) {
+/* @media screen and (max-width:460px) {
   #line1
   {
     width: 330px;
@@ -1016,7 +1016,7 @@ top: -99%;
   {
     margin-top: 10px;
   }
-}
+} */
 @media screen and (max-width:408px) {
   #counter2
   {
@@ -1097,10 +1097,10 @@ top: -99%;
   {
     left: 49px;
   }
-  #digit
+  /* #digit
   {
     margin-top: 10px;
-  }
+  } */
   #font2
   {
     top: 425px;
