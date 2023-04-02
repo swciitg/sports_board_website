@@ -11,7 +11,9 @@ module.exports = {
         populate: ['Thumbnail_Image', 'EventName', 'Thumbnail_Content'],
       });
       ctx.body += await strapi.entityService.findOne('api::event-list.event-list', 1, {
-        populate: ['carousel'],
+        populate: {
+          carousel : true,
+        },
       });
     } catch (err) {
       ctx.body = err;

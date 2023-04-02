@@ -25,9 +25,6 @@ module.exports = {
           }
         },
       });
-      ctx.body += await strapi.entityService.findOne('api::club-list.club-list', 1, {
-        populate: ['carousel'],
-      });
     } catch (err) {
       ctx.body = err;
     }
