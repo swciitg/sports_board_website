@@ -17,7 +17,8 @@ module.exports = {
           },
           Event : {
             populate : { Event_Image : true, }
-          }
+          },
+          carousel : true,
         },
       });
     } catch (err) {
