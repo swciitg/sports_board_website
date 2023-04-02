@@ -7,10 +7,10 @@
 module.exports = {
   exampleAction: async (ctx, next) => {
     try {
-      ctx.body = await strapi.entityService.findMany('api::event.event', {
+      ctx.body["data"] = await strapi.entityService.findMany('api::event.event', {
         populate: ['Thumbnail_Image', 'EventName', 'Thumbnail_Content'],
       });
-      ctx.body += await strapi.entityService.findOne('api::event-list.event-list', 1, {
+      ctx.body["images"] = await strapi.entityService.findOne('api::event-list.event-list', 1, {
         populate: {
           carousel : true,
         },
