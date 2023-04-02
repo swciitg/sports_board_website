@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "club_lists",
+  "info": {
+    "singularName": "club-list",
+    "pluralName": "club-lists",
+    "displayName": "club_list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

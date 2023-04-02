@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_lists",
+  "info": {
+    "singularName": "event-list",
+    "pluralName": "event-lists",
+    "displayName": "event_list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
