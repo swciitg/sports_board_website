@@ -43,7 +43,7 @@ const Pages=()=> {
       {data.Component.map((item,index) =>{
             return (index)%2===0?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>:<ClubRnG name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>
         })}
-        {/* <New/> */}
+        <New/>
         {data.Media_Component.map((item,index) =>{
             return (index)%2?<Team_members name={item.Component_name} desc={item.Media_Description} media={item.Images} />:<Facilities name={item.Component_name} desc={item.Media_Description} media={item.Images}  />
         })}
