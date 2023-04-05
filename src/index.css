@@ -422,7 +422,8 @@ code {
   top:0;
   height: 100vh;
   flex-direction: column;
-    justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
     display: flex;
   z-index: 1;
 }
@@ -435,7 +436,8 @@ code {
   top:0;
   height: 100vh;
   flex-direction: column;
-    justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
     display: flex;
  z-index: 1;
 }
