@@ -2,11 +2,14 @@ import img1 from "../images/about_icon.png";
 import React , { useRef,useState,useEffect }from "react";
 import { useLocation } from "react-router-dom";
 import Cursor from "./cursor";
+import BACKEND_URL from "../constants";
+import Marquee from "react-marquee-slider";
 const Team_members = (props)=>{
     let isDown = false;
     let startX;
     let scrollLeft;
     const ref = useRef();
+    const ref1 = useRef();
     const handleMouseDown = (e)=>{ isDown = true; startX=(e.pageX)-ref.current.offsetLeft;scrollLeft = ref.current.scrollLeft;}
     const handleMouseLeave = ()=>{ isDown = false;}
     const handleMouseUp = ()=>{ isDown = false;}
@@ -19,7 +22,15 @@ const Team_members = (props)=>{
       console.log(ref);*/
       ref.current.scrollLeft = scrollLeft-walk; 
     }
-   
+    const {pathname}=useLocation();
+    useEffect(()=>{
+      if(pathname==="/"||pathname==="/stud/gymkhana/sports"){
+        ref1.current.style.display='relative';
+      }
+      else{
+        ref1.current.style.display='none';
+      }
+    })
     return(
         <>
          <Cursor />
@@ -31,45 +42,50 @@ const Team_members = (props)=>{
              <p className="para_about">
              {props.desc}
              </p>
-             <div className="firm-btn">
-                <a href="/#" className="btn" style={{textDecoration:"none"}}> Know More </a>
+             <div className="firm-btn  " ref={ref1}>
+                <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
           </div>
             <div ref={ref} className="flex overflow-x-hidden cursor-grab">
             <div className="gridcontainer cursor-grab">
               {<div className="imggrid">
-                  {props.media.map((image,index)=>{
-                     return index%2==0 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                     <Marquee>
+                   {props.media.map((image,index)=>{
+                     return index%2==0 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
+                </Marquee>
               </div>}
+           
               <div className="imggrid">
+              <Marquee>
               {props.media.map((image,index) =>{
-                    return index%2 ?<img src={"http://localhost:1337"+image.url} className="gridimg" alt=""/>:<></>
+                    return index%2 ?<img src={BACKEND_URL+image.url} className="gridimg" alt=""/>:<></>
                 })}
+                </Marquee>
               </div>
+              
             </div>
            </div>
           </div>
         </div>
         <div className="smoverallcontainer_team">
         <div className="smteam_block" >
-          <div className="head_about max-sm:text-6xl">TEAM MEMBERS</div>
+          <div className="head_about max-sm:text-6xl">{props.name}</div>
           <div>
           <p className="para_about">
-             You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
+              {props.desc}
              </p>
           </div>
           <div className="smgrid flex flex-row overflow-x-scroll">
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
-            <img src={img1} className="gridimg" alt=""/>
+              {props.media.map((image,index)=>{
+                     return <img src={BACKEND_URL+image.url} className="gridimg" alt=""/>
+                })}
           </div>
         </div>
         <div>
-              <div className="smfirm-btn">
-                    <a href="/#" class="btn" style={{textDecoration:"none"}}> Know More </a>
+              <div className="smfirm-btn" ref={ref1}>
+                  <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
               </div>
         </div>
       </div>

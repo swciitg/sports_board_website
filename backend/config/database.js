@@ -1,11 +1,18 @@
-const path = require('path');
+// path: ./config/database.js
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
+    client: 'postgres',
     connection: {
-      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+      host: 'host.docker.internal',
+      port: 5432,
+      database: 'sports_board',
+      user: 'sports_board_user',
+      password: 'KHU4VUOZuRiwLyv',
+      schema: 'public', // Not required
+      ssl:  false,
     },
     useNullAsDefault: true,
   },
 });
+ 

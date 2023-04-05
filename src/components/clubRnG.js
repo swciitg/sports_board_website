@@ -1,5 +1,6 @@
 import img1 from "../images/about_icon.png";
 import React , { useRef }from "react";
+import BACKEND_URL from "../constants";
 const ClubRnG = (props) => {
     return ( 
         <>
@@ -12,22 +13,19 @@ const ClubRnG = (props) => {
                     </p>
                 </div>
                 <div style={{display:'flex',alignItems:'center'}}>
-                    <img src={"http://localhost:1337"+props.media}className="img1" alt="" />
+                    <img src={BACKEND_URL+props.media}className="img1" alt="" />
                 </div>
             </div>
         </div>
             <div className="smcnrg_overall">
                 <div className="smcnrg_block">
-                <div className="head_about text-6xl max-sm:text-3xl">Rules and guidelines</div>
+                <div className="head_about text-6xl max-sm:text-3xl">{props.name}</div>
                     <div style={{display:'flex',justifyContent:'center'}}>
-                        <img src={img1} className="gridimg" alt="" />
+                        <img src={BACKEND_URL+props.media} className="gridimg" alt="" />
                     </div>
                     <div className="flex flex-col pr-6">
                         <p className="para_about">
-                        You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-                        All outdoor sports like athletics, swimming, cricket, 
-                        You are here for an overall development of your personality, so to keep you healthy and fit, we have all the facilities for sports, both indoor and outdoor.
-                        All outdoor sports like athletics, swimming, cricket, 
+                        {props.desc}  
                         </p>
                     </div>
                 </div>

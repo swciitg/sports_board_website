@@ -1,17 +1,18 @@
 // props use karna padega
 import React from "react";
+import BACKEND_URL from "../constants";
 import img1 from '../images/image 8.png';
 
-function Image()
+function Image(props)
 {
+    
     return(
      
-        <div className="container">
-        <img src={img1} />
-         <div className="top-left text-white">SPARDHA</div>  
-        <div className=" absolute right-3 bottom-1 text-8xl text-white ">01</div>
+        <div className="container w-80 h-80">
+        <img  src={img1} />
+         <div className="top-left text-white font-medium ml-6 ">{props.name}</div>  
         </div>
-
+//   src={BACKEND_URL+ props.image_url}
 
     );
 }
