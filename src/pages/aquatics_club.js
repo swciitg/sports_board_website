@@ -21,7 +21,7 @@ const AquaticsClub =  () => {
     const getResult = await result.json();
     setLoad(true);
     setCol1(getResult[0].Components.length);
-    setData(getResult);
+    setData(getResult[0]);
     }
     catch
     {

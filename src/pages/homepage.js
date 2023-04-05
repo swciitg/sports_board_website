@@ -39,7 +39,8 @@ const Pages=()=> {
       <Navbar 
         name = {data.HomePage_Heading}
         slogan = {data.HomePage_Slogan}
-      />
+        carousel ={data.carousel}
+      /> 
       {data.Component.map((item,index) =>{
             return (index)%2===0?<About_us name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>:<ClubRnG name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>
         })}

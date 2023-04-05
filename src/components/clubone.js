@@ -21,7 +21,7 @@ async function getData (){
     const result =await fetch(api);
     const getResult = await result.json();
     setLoad(true);
-    setData(getResult);
+    setData(getResult.data);
   }
   catch
   {

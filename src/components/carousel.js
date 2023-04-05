@@ -1,10 +1,9 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import img1 from "../images/hm.png";
 import { useLocation } from "react-router-dom";
-import { Carousal } from "./carousel/Carousal";
+import BackgroundSlider from "react-background-slider";
 const Navbar = (props) => {
   const [open,setOpen] = useState(false);
   const ref=useRef();
@@ -18,47 +17,53 @@ const Navbar = (props) => {
       ref.current.style.top='0';
     }
   })
-  const activeNavlinkStyle=( { isActive })=>{
-        return{
-          color: isActive ? "#7BB9C4":"white",
-          textDecorationLine: isActive ?"underline":"none",
-        }
-  }
+  
   return (
 
     <div ref={ref}>
-          <div className="nav">
-            <Carousal images={props.carousel}/>
-            <div className="navheader">
-              <div className="find"> 
+              <div className="nav">
+                 <div className="topnav">
+             
+
+                   <NavLink to="/contacts" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Contacts</NavLink>
+                  <NavLink to="/clubs" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Clubs</NavLink>
+                  <NavLink to="/events" style={isActive => ({
+    color: isActive ? "white" : "blue"})}>Events</NavLink>
+                  <NavLink  to="/"   style={isActive => ({
+    color: isActive ? "white" : "blue"})}> Home </NavLink>
+             
+               
+               </div>
+
+
+
+
+               <div className="find"> 
                 <a className="inactive" href="#"> SPORTS BOARD</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
-                <div className="navurlsdesk">
-                <NavLink to="/contacts" style={activeNavlinkStyle}>Contacts</NavLink>
-                <NavLink to="/clubs" style={activeNavlinkStyle}>Clubs</NavLink>
-                <NavLink to="/events" style={activeNavlinkStyle}>Events</NavLink>
-                <NavLink  to="/"   style={activeNavlinkStyle}> Home </NavLink>
-              </div>
-            </div>
-            <div className="align">   <h3 className="texting">{props.name}</h3>
+           <div className="align">   <h3 className="texting">{props.name}</h3>
                 <h6 className="text">{props.slogan}</h6>
-            </div>
+        </div>
+          <div className="tomp">
+              </div>
         </div>
         
-        <div className="navigation">
-        <Carousal />
-          <div className="mainbar">
-          <div className="logosm">
+          <div className="navigation">
+            <div className="mainbar">
+            <div className="logosm">
             <a className="inactivesm" href="#"> SPORTS BOARD</a>
-            <a className="innsm" href="#">IIT GUWAHATI </a>
+                <a className="innsm" href="#">IIT GUWAHATI </a>
               
-          </div>
-          
-          <div className="dropdown">
-          <div className="dropbtn"  onClick={()=>{setOpen(!open)}}>
-              <h>  <GiHamburgerMenu /></h>
-          </div>
+            </div>
+
+        
+            <div className="dropdown">
+            <div className="dropbtn"  onClick={()=>{setOpen(!open)}}>
+                <h>  <GiHamburgerMenu /></h>
+            </div>
 
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
