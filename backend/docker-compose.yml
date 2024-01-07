@@ -5,7 +5,7 @@ services:
   strapi:
     container_name: sportsBoard_backend_strapi
     build: .
-    image: strapi:latest
+    image: sportsBoard_backend_strapi
     restart: unless-stopped
     env_file: .env
     environment:
