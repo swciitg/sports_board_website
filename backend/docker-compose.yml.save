@@ -1,8 +1,8 @@
-# path: ./docker-compose.yml
 
+# path: ./docker-compose.yml
 version: '3'
 services:
-  sports_strapi:
+  strapi:
     container_name: sports_board_backend_strapi
     build: .
     image: sports_board_image

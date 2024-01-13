@@ -4,4 +4,5 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: 'https://swc.iitg.ac.in/sports_board_backend/',
 });
