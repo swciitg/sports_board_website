@@ -29,7 +29,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
-      - '1339:1337'
+      - '1340:1337'
     networks:
       - cult-board-strapi
 
