@@ -1,4 +1,5 @@
 // path: ./config/database.js
+const path = require('path');
 
 module.exports = ({ env }) => ({
   connection: {
