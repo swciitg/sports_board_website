@@ -2,8 +2,8 @@
 
 version: '3.1'
 services:
-  strapi_cult_board:
-    container_name: cult_board_backend_strapi
+  strapi_welfare_board:
+    container_name: welfare_board_backend_strapi
     build: .
     image: sports_board_image
     restart: unless-stopped
@@ -29,14 +29,14 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
-      - '1340:1337'
+      - '1341:1337'
     networks:
-      - cult-board-strapi
+      - welfare-board-strapi
 
 
 volumes:
-  cultBoard-strapi-data:
+  welfareBoard-strapi-data:
 
 networks:
-  cult-board-strapi:
+  welfare-board-strapi:
     driver: bridge
