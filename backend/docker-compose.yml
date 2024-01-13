@@ -2,8 +2,8 @@
 
 version: '3.1'
 services:
-  strapi_sports_board:
-    container_name: sports_board_backend_strapi
+  strapi_cult_board:
+    container_name: cult_board_backend_strapi
     build: .
     image: sports_board_image
     restart: unless-stopped
@@ -31,12 +31,12 @@ services:
     ports:
       - '1339:1337'
     networks:
-      - sports-board-strapi
+      - cult-board-strapi
 
 
 volumes:
-  sportsBoard-strapi-data:
+  cultBoard-strapi-data:
 
 networks:
-  sports-board-strapi:
+  cult-board-strapi:
     driver: bridge
