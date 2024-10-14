@@ -1,0 +1,52 @@
+@media screen and (max-width:390px) {
+.heading2
+{
+  position: relative;
+  top: -0.45em;
+  padding-right: 5px;
+  right: 1.25em;
+  margin-right: 20%;
+}    
+ .para2
+ {
+    font-size: 16px;
+    position: relative;
+    margin-top: 200px;
+    width: max-content;
+    margin-right: 5px;
+    padding-right: 5px;
+    align :center;
+ }  
+ .main_image2
+ {
+    position: relative;
+    right: -7em;
+ }
+ .icons2
+{
+  position: relative;
+  margin-top: 50px;
+ 
+}
+}
+
+@media screen and (max-width:350px) {
+  .para2
+  {
+    margin-left: -29px;
+  }
+  
+}
+@media screen and (max-width:303px) {
+  .para2
+  {
+    font-size: 14px;
+  }
+}
+
+
+.img1
+{
+   
+    width: 30vw;
+} 

@@ -224,6 +224,8 @@ code {
 .gridimg{
   padding:10px 10px 10px;
   box-sizing: border-box;
+  height: 35vh;
+  width: 20vw;
 }
 .imggrid{
     display: flex;
@@ -359,6 +361,7 @@ code {
 @media screen and (max-width: 950px ){
   .about_block,.cnrg_overall,.facilities_blockoverall,.team_blockoverall{
     display: none;
+ 
   }
   .gridimg{
     width: 70%;
@@ -402,6 +405,7 @@ code {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+  justify-content: center;
   color: #565656;
 }
 .smabout_block,.smcnrg_block{
@@ -417,6 +421,11 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+    display: flex;
+  z-index: 1;
 }
 
 .smoverallcontainer_team,.smcnrg_overall{
@@ -426,6 +435,11 @@ code {
   position: sticky;
   top:0;
   height: 100vh;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+    display: flex;
+ z-index: 1;
 }
 .smcnrg_overall{
   background-color: #7BB9C4;
@@ -442,6 +456,7 @@ code {
   padding-left: 10%;
   padding-top: 7%;
   padding-bottom: 7%;
+  display: none;
 }
 .smgrid:hover{
   cursor:crosshair;

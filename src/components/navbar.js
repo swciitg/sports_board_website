@@ -4,26 +4,13 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import img1 from "../images/hm.png";
 import { useLocation } from "react-router-dom";
+import { Carousal } from "./carousel/Carousal";
 const Navbar = (props) => {
   const [open,setOpen] = useState(false);
   const ref=useRef();
   const {pathname}=useLocation();
-  const [index, setIndex] = React.useState(0);
-  const colors = [img1,img1];
-  const delay = 2500;
-  React.useEffect(() => {
-    setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-      ref.current.style.backgroundImage=colors[index];
-    return () => {};
-  }, [index]);
   useEffect(()=>{
-    if(pathname==="/stud/gymkhana/sports/clubs"){
+    if(pathname==="/clubs"||pathname==="/events"){
       ref.current.style.position='relative';
     }
     else{
@@ -31,53 +18,47 @@ const Navbar = (props) => {
       ref.current.style.top='0';
     }
   })
-  
+  const activeNavlinkStyle=( { isActive })=>{
+        return{
+          color: isActive ? "#7BB9C4":"white",
+          textDecorationLine: isActive ?"underline":"none",
+        }
+  }
   return (
 
     <div ref={ref}>
-              <div className="nav">
-                 <div className="topnav">
-             
-
-                   <NavLink to="/stud/gymkhana/sports/contacts" style={isActive => ({
-    color: isActive ? "white" : "blue"})}>Contacts</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/clubs" style={isActive => ({
-    color: isActive ? "white" : "blue"})}>Clubs</NavLink>
-                  <NavLink to="/stud/gymkhana/sports/events" style={isActive => ({
-    color: isActive ? "white" : "blue"})}>Events</NavLink>
-                  <NavLink  to="/stud/gymkhana/sports/"   style={isActive => ({
-    color: isActive ? "white" : "blue"})}> Home </NavLink>
-             
-               
-               </div>
-
-
-
-
-               <div className="find"> 
-                <a className="inactive" href="#"> Students Gymkhana Council</a>
+          <div className="nav">
+            <Carousal images={props.carousel}/>
+            <div className="navheader">
+              <div className="find"> 
+                <a className="inactive" href="#"> SPORTS BOARD</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
-           <div className="align">   <h3 className="texting">{props.name}</h3>
-                <h6 className="text">{props.slogan}</h6>
-        </div>
-          <div className="tomp">
+                <div className="navurlsdesk">
+                <NavLink to="/contacts" style={activeNavlinkStyle}>Contacts</NavLink>
+                <NavLink to="/clubs" style={activeNavlinkStyle}>Clubs</NavLink>
+                <NavLink to="/events" style={activeNavlinkStyle}>Events</NavLink>
+                <NavLink  to="/"   style={activeNavlinkStyle}> Home </NavLink>
               </div>
+            </div>
+            <div className="align">   <h3 className="texting">{props.name}</h3>
+                <h6 className="text">{props.slogan}</h6>
+            </div>
         </div>
         
-          <div className="navigation">
-            <div className="mainbar">
-            <div className="logosm">
-            <a className="inactivesm" href="#"> Students Gymkhana Council</a>
-                <a className="innsm" href="#">IIT GUWAHATI </a>
+        <div className="navigation">
+        <Carousal />
+          <div className="mainbar">
+          <div className="logosm">
+            <a className="inactivesm" href="#"> SPORTS BOARD</a>
+            <a className="innsm" href="#">IIT GUWAHATI </a>
               
-            </div>
-
-        
-            <div className="dropdown">
-            <div className="dropbtn"  onClick={()=>{setOpen(!open)}}>
-                <h>  <GiHamburgerMenu /></h>
-            </div>
+          </div>
+          
+          <div className="dropdown">
+          <div className="dropbtn"  onClick={()=>{setOpen(!open)}}>
+              <h>  <GiHamburgerMenu /></h>
+          </div>
 
             <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
             <div  className="dropdown-content">
@@ -98,8 +79,8 @@ const Navbar = (props) => {
           </div>
           <div className="bodys">
             
-           <div className="bodyss"> <span> Lorem Epsum</span></div>
-            <div className="bodysss"> Empowering athlets something something has to be written
+           <div className="bodyss"> <span> {props.name}</span></div>
+            <div className="bodysss">{props.slogan}
            
             </div>         
             </div>

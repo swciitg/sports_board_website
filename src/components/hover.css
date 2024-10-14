@@ -4,13 +4,17 @@
   background-color:#7BB9C4;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 1500px;
+  height: 1000px;
   padding-bottom: 10%;
   width: 100%;
   margin: 0;
   padding: 0;
   z-index: 1;
   
+}
+#counter1
+{
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 #font
 {
@@ -20,8 +24,10 @@
   font-style: Semibold ;
   left: 200.4px;
   top: 70px;
+  width: 100%;
   font-size: 80px;
 }
+
 #curve
 {
   
@@ -29,6 +35,8 @@
   position: relative;
   left: 0px;
   padding-bottom: 0;
+  height:1000px;
+  margin-top:20vh;
 }
 .container
 {
@@ -81,11 +89,11 @@ font-size: 96px;
 .one{
   position: absolute;
   right: 240px;
-  top : 45px;
+  margin-top : -50px;
   transform: rotate(0deg);
  visibility: hidden;
-width: 391px;
-height: 334px;
+  width: 391px;
+  height: 200px;
 
 
 animation-name: none;
@@ -189,7 +197,10 @@ animation-name: none;
   position: absolute;
    top: 115px;
    left: 230.4px;
+   margin-bottom: auto;
+
   height: 3em;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -236,9 +247,10 @@ animation-name: none;
 }
 #counter1 {
   height: 3em;
+  width: 100%;
   overflow: hidden;
   position: absolute;
-  top: 235px;
+  top: 225px;
   left: 230.4px;
 }
 
@@ -281,40 +293,43 @@ animation-name: none;
 }
 #line1
 {
-top: -85%;  
+top: -99%;  
 }
 #line2
 {
-  top: -110px;
+  top: -90px;
 }
 #font1
 {
   position: absolute;
-  top: 260px;
+  top: 250px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 70px;  
   font-size: 80px;
   line-height: 123%;
   font-style: Semibold ;
   left: 200.4px;
+  width: 100%;
 }
 
 #font2
 {
   position: absolute;
-  top: 450px;
+  top: 435px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 70px;  
   font-size: 80px;
   font-style: Semibold ;
   left: 200.4px;
+  width: 100%;
 }
 #counter2 {
+  width: 100%;
   height: 3em;
   overflow: hidden;
   position: absolute;
   left: 230.4px;
-  bottom: 470px;
+  bottom: 570px;
 }
 
 .digit2 {
@@ -362,16 +377,18 @@ top: -85%;
 #font3
 {
   position: absolute;
-  top: 590px;
+  top: 577px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 118px;  
   line-height: 123%;
   font-size: 80px;
   font-style: Semibold ;
   left: 200.4px;
+  width: 100%;
 }
 
 #counter3 {
+  width: 100%;
   height: 3em;
   overflow: hidden;
   position: absolute;
@@ -444,9 +461,63 @@ top: -85%;
     
  }
 }
+@media screen and (max-width:1376px) {
+  #counter
+  {
+    left: 220px;
+  }
+  #counter1
+  {
+    left: 220px;
+  }
+  #counter2
+  {
+    left: 220px;
+  }
+  #counter3
+  {
+    left: 220px;
+  }
+}
+@media screen and (max-width:1283px) {
+  #counter
+  {
+    top: 105px;
+  }
+}
+@media screen and (max-width:1225px) {
+  #counter
+  {
+    top: 108px;
+  }
+  #counter1
+  {
+    top: 235px;
+  }
+}
+@media screen and (max-width:1222px) {
+  #counter
+  {
+    top: 102px;
+  }
+  #counter1
+  {
+    top: 225px;
+  }
+  #counter2
+  {
+    bottom:565px;
+  }
+  #counter3
+  {
+    bottom:320px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .one{
     right: 90px;
+   
   }
   .two{
     right: 90px;
@@ -462,20 +533,35 @@ top: -85%;
 
 @media  screen and (max-width: 1167px ) {
   #font{
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 15px;
   }
   #font1{
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 15px;
+    top: 246px;
   }
   #font2{
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 15px;
+    top: 422px;
   }
   #font3{
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 15px;
+    top: 564px;
+  }
+  #line1
+  {
+    top: -52px;
+  }
+  #line2
+  {
+    top:-125px;
+  }
+  #line3
+  {
+   top: -210px; 
   }
   .lines
   {
@@ -499,6 +585,7 @@ top: -85%;
     left: 220px;
 
   }
+  
   
  
   }
@@ -539,43 +626,50 @@ top: -85%;
     }
     #font
     {
-      left: 175px;
+      left: 116px;
     }
     #font1
     {
-      left: 175px;
+      left: 116px;
     }
     #font2
     {
-      left: 175px;
+      left: 116px;
+      top: 420px;
     }
     #font3
     {
-      left: 175px;
+      left: 116px;
     }
    #counter
    {
-     left: 175px;
+     left: 130px;
    }
    #counter1
    {
-    left: 175px;
+    left: 130px;
    }
    #counter2
    {
-    left: 175px;
+    left: 130px;
    }
    #counter3
    {
-    left: 175px;
+    left: 130px;
+   }
+   .lines
+   {
+      position: absolute;
+      left: 149px;
    }
   }
-
+  
  @media screen and (max-width:953px) {
   
   .lines
   {
-    width: 650px;
+    width: 350px;
+  
   }
   #cont
   {
@@ -583,39 +677,57 @@ top: -85%;
   }
   #font
   {
-    left: 110px;
+    left: 62px;
   }
   #font1
   {
-    left: 110px;
+    left: 62px;
   }
   #font2
   {
-    left: 110px;
+    left: 62px;
   }
   #font3
   {
-    left: 110px;
+    left: 62px;
   }
  #counter
  {
-   left: 110px;
+   left: 75px;
  }
  #counter1
  {
-  left: 110px;
+  left: 75px;
  }
  #counter2
  {
-  left: 110px;
+  left: 75px;
  }
  #counter3
  {
-  left: 110px;
+  left: 75px;
  }
  }
+ @media screen and (max-width:905px) {
+  #line1
+  {
+    width: 700px;
+  }
+   div.lines{
+    width: 700px;
+   }
+  #line2
+  {
+    width: 700px;
+  } 
+   #line3
+  {
+    width: 700px;
+  } 
+ }
+ 
  @media screen and (max-width:795px) {
-  #font
+  /* #font
   {
     font-size: 56px;
   }
@@ -636,15 +748,47 @@ top: -85%;
 
   #digit
   {
-    font-size: 38px;
+    font-size: 44px;
   }
   #counter
   {
-    height: 2.5em;
+    height: 15px;
   }
-  .lines{
-    width: 550px;
+  #counter1
+  {
+    height: 15px;
   }
+  #counter2
+  {
+    height: 15px;
+  }
+  #counter3
+  {
+    height: 15px;
+  } */
+  #counter
+  {
+    top:87px;
+  }
+  #line1
+  {
+    width: 600px;
+  }
+  #line4
+  {
+    width: 600px;
+  }
+  #line2
+  {
+    width: 600px;
+  }
+  #line3
+  {
+    width: 600px;
+  }
+  div.lines{
+    width: 600px;
+   }
  }
  @media screen and (max-width:700px) {
   #font
@@ -654,6 +798,7 @@ top: -85%;
   #font1
   {
     left: 70px;
+    top: 250px;
   }
   #font2
   {
@@ -662,112 +807,305 @@ top: -85%;
   #font3
   {
     left: 70px;
+    top: 570px;
   }
  #counter
  {
-   left: 70px;
+   left: 60px;
+   top: 76px;
  }
  #counter1
  {
-  left: 70px;
+  left: 60px;
+ }
+ #font
+ {
+  left: 45px;
+  font-size: 60px;
+ }
+ #font1
+ {
+  left: 45px;
+  font-size: 60px;
+ }
+ #font2
+ {
+  left: 45px;
+  font-size: 60px;
+ }
+ #font3
+ {
+  left: 45px;
+  font-size: 60px;
  }
  #counter2
  {
-  left: 70px;
+  top: 510px;
+  left: 60px;
  }
  #counter3
  {
-  left: 70px;
+  left: 60px;
  }
- .lines
+ #line4
  {
-  width: 495px;
+  width: 530px;
+  left: 180px;
+
+ }
+ #line1
+ {
+  width: 530px;
+  left: 180px;
+ }
+ #line2
+ {
+  width: 530px;
+  left: 180px;
+ }
+ #line3
+ {
+  width: 530px;
+  left: 180px;
+ }
+ div.lines{
+  width: 530px;
+  left: 180px;
  }
  #cont
  {
   margin-left: -140px;
  }
  }
+ @media screen and (max-width:640px) {
+  #counter2
+  {
+    top: 495px;
+  }
+ }
+ @media screen and (max-width:593px) {
+  #counter2
+  {
+    top: 495px;
+  }
+  #line1
+  {
+     width: 450px;
+  }
+  #line2
+  {
+     width: 450px;
+  }
+  #line3
+  {
+     width: 450px;
+  }
+  #line4
+  {
+     width: 450px;
+  }
+  div.lines{
+    width: 450px;
+   }
+ }
  @media screen and (max-width:612px) {
-    /* #font
-    {
-      font-size: 40px;
-    }
-    #font1
-    {
-      font-size: 40px;
-    }
-    #font2
-    {
-      font-size: 40px;
-    }
-    #font3
-    {
-      font-size: 40px;
-    } */
     .lines{
       width: 470px;
     }
+    div.lines{
+      width: 470px;
+     }
  }
- @media screen and (max-width:572px) {
-  .lines
+@media screen and (max-width:520px) {
+  #line1
   {
-    width: 420px;
+    width: 390px;
   }
- }
- @media screen and (max-width:520px) {
-  .lines
+  #line2
   {
-    width: 340px;
+    width: 390px;
   }
-  /* #font
+  #line3
   {
-    font-size: 35px;
+    width: 390px;
+  }
+  #line4
+  {
+    width: 390px;
+  }
+  div.lines{
+    width: 390px;
+   }
+  #font
+  {
+    font-size: 50px;
+    top: 85px;
   }
   #font1
   {
-    font-size: 35px;
+    font-size: 50px;
+    top: 260px;
   }
   #font2
   {
-    font-size: 35px;
+    font-size: 50px;
   }
   #font3
   {
-    font-size: 35px;
-  } */
-
- }
- @media screen and (max-width:390px) {
-  .lines
+    font-size: 50px;
+    top: 580px;
+  }
+  #counter2
   {
-    width: 250px;
+    position: absolute;
+    bottom: 180px;
+    top: 480px;
+  }
+}
+
+/* @media screen and (max-width:460px) {
+  #line1
+  {
+    width: 330px;
+  }
+  #line2
+  {
+    width: 330px;
+  }
+  #line3
+  {
+    width: 330px;
+  }
+  #line4
+  {
+    width: 330px;
+  }
+  div.lines{
+    width: 330px;
+   }
+  #font
+  {
+    font-size: 40px;
+    top: 85px;
+  }
+  #font1
+  {
+    font-size: 40px;
+    top: 260px;
+  }
+  #font2
+  {
+    font-size: 40px;
+  }
+  #font3
+  {
+    font-size: 40px;
+    top: 580px;
+  }
+  #counter2
+  {
+    position: absolute;
+    bottom: 180px;
+    top: 467px;
+  } 
+  #digit
+  {
+    font-size: 38px;
+  }
+  #digit
+  {
+    margin-top: 10px;
+  }
+} */
+@media screen and (max-width:408px) {
+  #counter2
+  {
+    top: 455px;
   }
   #font
   {
-    font-size: 56px;
+
+    top: 90px;
   }
-  #font1
+}
+@media screen and (max-width:392px) {
+
+   #line1
   {
-    font-size: 56px;
+    width: 280px;
   }
+  #line2
+  {
+    width: 280px;
+  }
+  #line3
+  {
+    width: 280px;
+  }
+  #line4
+  {
+    width: 280px;
+  }
+  div.lines{
+    width: 280px;
+   }
+   #counter2{
+    top:460px;
+   }
+}
+@media screen and (max-width:364px) {
+  #counter2
+  {
+    top: 460px;
+  }
+}
+@media screen and (max-width:330px) {
+  #line1
+  {
+    width: 230px;
+  }
+  #line2
+  {
+    width: 230px;
+  }
+  #line3
+  {
+    width: 230px;
+  }
+  #line4
+  {
+    width: 230px;
+  }
+  div.lines{
+    width: 230px;
+   }
+  #counter
+  {
+    left: 50px;
+    top: 75px;
+  }
+  #counter1
+  {
+    left: 49px;
+  }
+  #counter2
+  {
+    left: 49px;
+    top:455px;
+  }
+  #counter3
+  {
+    left: 49px;
+  }
+  /* #digit
+  {
+    margin-top: 10px;
+  } */
   #font2
   {
-    font-size: 56px;
+    top: 425px;
   }
-  #font3
-  {
-    font-size: 56px;
-  }
-
-
-
-  
- }
- @media  screen and (max-width:320px) {
-  
- }
-
+}
 
   @media screen and (max-width: 877px) {
   #cont:hover .one{
